@@ -1,0 +1,26 @@
+body{
+    padding-left: 12em;
+    font-family: Arial;
+    color:black;
+    background-color:rgb(255, 238, 144);
+}
+
+h1{
+    font-family:'MS Comic Sans';
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 50px;
+    top: 100px;
+}
+
+p{
+    padding: 10px;
+    margin-right: 30em;
+    color:black;
+    background-color: lightgrey;
+    border: 5px solid brown;
+}

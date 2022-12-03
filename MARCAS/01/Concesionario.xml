@@ -1,0 +1,23 @@
+<concesionario>
+    <coche diaEntrada="01/10/2022" diaSalida="07/10/2022" cliente="001">
+    <modelo casa="Mercedes" modelo="ClaseA" color="Ocre"></modelo>
+    </coche>
+    <coche diaEntrada="02/10/2022" diaSalida="05/10/2022" cliente="002">
+        <modelo casa="BMW" modelo="Z" color="Blanco"></modelo>
+    </coche>
+    <coche diaEntrada="04/10/2022" diaSalida="08/10/2022" cliente="002">
+        <modelo casa="Seat" modelo="Ibiza 2015" color="Amarillo Cani"></modelo>
+    </coche>
+    <coche diaEntrada="06/10/2022" diaSalida="06/10/2022" cliente="003">
+        <modelo casa="Fiat" modelo="Punto" color="Merde d'oie"></modelo>
+    </coche>
+    <empleado iD="001" puesto="Encargado">
+        <datosPersonales nombre="Karen" apellido="Cias"></datosPersonales>
+    </empleado>
+    <empleado iD="002" puesto="Jefa de Sección">
+        <datosPersonales nombre="Monica" apellido="Bestro"></datosPersonales>
+    </empleado>
+    <empleado iD="003" puesto="Peón">
+        <datosPersonales nombre="Santi" apellido="Clima"></datosPersonales>
+    </empleado>
+</concesionario>

@@ -1,0 +1,1 @@
+javac -classpath .;C:\Users\mirau\Desktop\ejercicio7\lib\json.jar org\paquete1\Saludos.java org\paquete2\ClaseMain.java

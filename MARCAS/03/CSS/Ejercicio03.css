@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    width: 900px;
+    height: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid black;
+
+}
+
+.fila {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border: 1px solid yellow;
+}
+
+.bandera {
+    position: relative;
+    box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    float: left;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+
+.vertBelg {
+    height: 100%;
+    width: 33.33%;
+    float: left;
+}
+
+.vertBelg:nth-child(1) {
+    background: black;
+}
+
+.vertBelg:nth-child(2) {
+    background: #ffde00;
+}
+
+.vertBelg:nth-child(3) {
+    background: #ee0000;
+}
+
+.horCostaRicaAzul,
+.horCostaRicaBlanco,
+#horCostaRicaRojo{
+    width: 100%;
+    height: 16.66%;
+}
+
+.horCostaRicaAzul {
+    background-color: #000080;
+}
+
+#horCostaRicaRojo {
+    background-color: crimson;
+    height:33.32%;
+}
+
+.horCostaRicaBlanco {
+    background-color: white;
+}
+
+#espana > div{
+    width: 100%;
+}
+
+.horEspaRojo{
+    height: 25%;
+    background-color: crimson;
+}
+
+#horEspaAmarillo{
+    height: 50%;
+    background-color: gold;
+}
+
+#cruzGrec {
+    position: absolute;
+    background-color: #000080;
+    z-index: 100;
+    height: 55.55%;
+    /* aspect-ratio es una propiedad nueva. al tener un valor
+    de alto o ancho lo multiplica por un valor y lo aplica a
+    la propiedad sin valor explícito. */
+    aspect-ratio: 1/1;
+}
+
+#horCruz {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 20%;
+    top: 40%;
+}
+
+#vertCruz {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    left: 40%;
+    top: 0;
+}
+
+.horGrec {
+    height: 11.11%;
+}
+
+.horGrec:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+.horGrec:nth-child(even) {
+    background-color: #000080;
+}
+
+.horEmiratos{
+    width:100%;
+    height:33.33%;
+}
+
+#vertEmiratos{
+    position: absolute;
+    width:25%;
+    height: 100%;
+    background-color: crimson;
+}
+
+.horEmiratos:nth-child(2){
+    background-color: green;
+}
+
+.horEmiratos:nth-child(3){
+    background-color: white;
+}
+
+.horEmiratos:nth-child(4){
+    background-color: black;
+}
+
+#fondoNor{
+    width: 100%;
+    height:100%;
+    background-color: crimson;
+}
+
+#noruega div{
+    position: absolute;
+}
+
+#vertNorBlanco{
+    width:16%;
+    height:100%;
+    left:24%;
+    background-color: white;
+}
+
+#horNorBlanco{
+    width: 100%;
+    height: 24%;
+    top:36%;
+    background-color: white;
+}
+
+#vertNorAzul{
+    width:8%;
+    height:100%;
+    left:28%;
+    background-color: darkblue;
+}
+
+#horNorAzul{
+    width: 100%;
+    height: 12%;
+    top:42%;
+    background-color: darkblue;
+}
+
+@keyframes gibraltar { 
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
+#espana{
+    background-image: url("gibraltar.jpeg");
+    background-size: contain;
+}
+
+#espana div:hover{
+    animation: gibraltar 0.5s;
+}

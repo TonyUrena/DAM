@@ -1,0 +1,4 @@
+cd oper
+javac Operacion.java
+cd..
+javac -d C:\users\mirau\Desktop\clasesEjercicio4 Calculadora.java

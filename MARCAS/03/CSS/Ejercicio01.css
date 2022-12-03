@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+/* aplicamos  a todos los div hijos
+pero no al contenedor*/
+div > div{
+    float:left;
+    height: 200px;
+}
+
+#contenedorPadre{
+    max-width: 1300px;
+}
+
+#contenedor1, #contenedor2, #contenedor3{
+    width:33.33%;
+}
+
+#contenedor5, #contenedor6{
+    width: 50%;
+}
+
+#contenedor1{
+    background-color: red;
+}
+
+#contenedor2{
+    background-color: green;
+}
+
+#contenedor3{
+    background-color: blue;
+}
+
+#contenedor4{
+    width: 100%;
+    background-color: black;
+}
+
+#contenedor5{
+    background-color: pink;
+}
+
+#contenedor6{
+    background-color: orange;
+}

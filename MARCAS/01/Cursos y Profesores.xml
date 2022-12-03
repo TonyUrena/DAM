@@ -1,0 +1,42 @@
+<DAM>
+    <curso año="1">
+        <asignatura nombre="Programación1" clase="1A">
+            <profesor nombrePila="Paco" apellido="García"></profesor>
+        </asignatura>
+        <asignatura nombre="Bases de Datos" clase="1A">
+            <profesor nombrePila="Juan" apellido="de Dios"></profesor>
+        </asignatura>
+        <asignatura nombre="Entornos de Desarrollo" clase="2A">
+            <profesor nombrePila="Alfredo" apellido="Antilambda"></profesor>
+        </asignatura>
+        <asignatura nombre="Inglés" clase="3A">
+            <profesor nombrePila="Elena" apellido="Nito"></profesor>
+        </asignatura>
+        <asignatura nombre="Lenguajes de Marcas" clase="4A">
+            <profesor nombrePila="Luís" apellido="Santiago"></profesor>
+        </asignatura>
+        <asignatura nombre="Sistemas Informáticos" clase="4A">
+            <profesor nombrePila="Santiago" apellido="Luís"></profesor>
+        </asignatura>
+    </curso>
+    <curso año="2">
+        <asignatura nombre="Acceso a datos" clase="1A">
+            <profesor nombrePila="Paco" apellido="García"></profesor>
+        </asignatura>
+        <asignatura nombre="Desarrollo de Interfaces" clase="1A">
+            <profesor nombrePila="Francisco" apellido="Fernández"></profesor>
+        </asignatura>
+        <asignatura nombre="Programación Multimedia" clase="2A">
+            <profesor nombrePila="Elena" apellido="Nito"></profesor>
+        </asignatura>
+        <asignatura nombre="Programación de Servicios" clase="3A">
+            <profesor nombrePila="Rosa" apellido="Melano"></profesor>
+        </asignatura>
+        <asignatura nombre="FOL" clase="3A">
+            <profesor nombrePila="Inés" apellido="Crotolamo"></profesor>
+        </asignatura>
+        <asignatura nombre="Inglés" clase="4A">
+            <profesor nombrePila="Paco" apellido="García"></profesor>
+        </asignatura>
+    </curso>
+</DAM>

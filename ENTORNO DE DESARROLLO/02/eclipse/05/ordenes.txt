@@ -1,0 +1,1 @@
+javac org\ClaseA.java org\ClaseB.java org\iesalvarofalomir\entornos\ClaseD.java org\iesalvarofalomir\ClaseC.java org\iesalvarofalomir\ClasePrincipal.java

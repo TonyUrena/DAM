@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 5</title>
+</head>
+
+<body>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Rellenar</legend>
+            <input type="checkbox" name="conector" id="conectorusb" value="usb">
+            <label for="usb">USB</label>
+            <input type="checkbox" name="conector" id="conectorparalelo" value="paralelo">
+            <label for="paralelo">Paralelo</label>
+            <input type="checkbox" name="conector" id="conectorps2" value="ps2">
+            <label for="ps2">PS2</label><br>
+            <textarea name="escriba" id="escriba" cols="55" rows="8" placeholder="Por favor, escriba aquí."></textarea><br>
+            <input type="radio" name="ciclo" id="cicloasir" value="cicloasir">
+            <label for="cicloasir">ASIR</label><br>
+            <input type="radio" name="ciclo" id="ciclodam" value="ciclodam">
+            <label for="ciclodam">DAM</label><br>
+            <input type="radio" name="ciclo" id="ciclodaw" value="ciclodaw">
+            <label for="ciclodaw">DAW</label><br>
+            <label for="fecha">Elija una fecha</label>
+            <input type="date" name="fecha" id="fecha"><br>
+            <select name="asignatura" id="asignatura" size="4">
+                <option value="geografia">Geografía</option>
+                <option value="lengua">Lengua</option>
+                <option value="matematicas">Matemáticas</option>
+                <option value="historia">Historia</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Formulario de opciones</legend>
+            <label for="fecha2">Elija una fecha</label>
+            <input type="date" name="fecha2" id="fecha2"><br>
+            <label for="fichero"></label>
+            <input type="file" name="fichero" id="fichero"><br>
+            <label for="color">Color Favorito:</label>
+            <input type="color" name="color" id="color"><br>
+            <input type="checkbox" name="asignatura" id="asignaturalengua" value="lengua">
+            <label for="lengua">Lengua</label>
+            <input type="checkbox" name="asignatura" id="asignaturamatematicas" value="matematicas">
+            <label for="matematicas">Matemáticas</label>
+            <input type="checkbox" name="asignatura" id="asignaturahistoria" value="historia">
+            <label for="historia">Historia</label>
+            <input type="checkbox" name="asignatura" id="asignaturageografia" value="geografia">
+            <label for="geografia">Geografía</label><br>
+            <select name="medio_transporte" id="medio_transporte" size="3">
+                <option value="automovil">Automóvil</option>
+                <option value="moto">Moto</option>
+                <option value="autobus">Autobús</option>
+            </select><br>
+            <textarea name="escriba2" id="escriba2" cols="60" rows="7" placeholder="Utilice este recuadro por favor"></textarea><br>
+            <input type="radio" name="editor" id="editornotepad" value="editornotepad">
+            <label for="editornotepad">Notepad</label><br>
+            <input type="radio" name="editor" id="editoremacs" value="editoremacs">
+            <label for="editoremacs">Emacs</label><br>
+            <input type="radio" name="editor" id="editorotro" value="editorotro">
+            <label for="editorotro">Otro</label><br>
+            <label for="fecha">Elija una hora</label>
+            <input type="datetime-local" name="hora" id="hora"><br>
+        </fieldset>
+        <button type="submit" name="enviar" id="enviar">Ok</button>
+    </form>
+
+</body>
+</html>

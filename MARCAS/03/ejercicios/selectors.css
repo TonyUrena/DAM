@@ -1,0 +1,100 @@
+/*----------------------------------------------------------*/
+/* Crea las siguientes reglas css para lograr formatear.... */
+/*----------------------------------------------------------*/
+
+/* Dale al elemento <body> un color de fondo #bdc3c7 */
+
+    body{
+        background-color: #bdc3c7;
+    }
+
+/* Dale al elemento <h1> un color de texto #9b59b6 */
+
+    h1{
+        color: #9b59b6;
+    }
+
+/* Haz que los elementos <h2> tengan color de fondo orange */
+
+    h2{
+        background-color: orange;
+    }
+
+/* haz que todos los elementos <li> sean de color azul (elige tu propio azul con un código Hexadecimal)*/
+
+    li{
+        color: #0099FF;
+    }
+
+/*Cambia todos los párrafos(<p>) para que tengan color de texto yellow*/
+
+    p{
+        color: yellow;
+    }
+
+/*Haz que todos los inputs tengan un borde rojo con anchura de 3px */
+
+    input{
+        border:3px solid red;
+    }
+
+/* Todo elemento que contenga la clase 'hello' debe tener un color de fondo blanco */
+
+    .hello{
+        background-color: white;
+    }
+
+/* El elemento con id = 'special' debe tener un borde de 2px de ancho, de color azul y tipo solid*/
+
+    #special{
+        border: 2px solid blue;
+    }
+
+/* Haz que todos los <p>’s que se encuentren dentro de <div>’s tengan un tamaño de letra de 25px */
+
+    div > p{
+        font-size: 25px;
+    }
+
+/*Los inputs de tipo texto deben tener un color de fondo gris*/
+
+    input[type=text] {
+        background-color: grey;
+    }
+
+/*Dale a los 2 <p>’s que se encuentran en el interior del tercer <div> un color de fondo rosa*/
+
+    div:nth-of-type(3) p{
+        background-color: pink;
+    }
+
+/*Al segundo <p> dentro del tercer <div> dale un borde de color blanco, de anchura 5px y tipo solid */
+    div:nth-of-type(3) p:nth-of-type(2){
+        border: 5px solid white;
+    }
+/*Al elemento <em> dentro del tercer <div> dale color de texto blanco y tamaño del texto 20px*/
+
+    div:nth-of-type(3) em {
+        color: white;
+        font-size: 20px;
+    }
+
+/*BONUS*/
+
+/*haz que todos los elementos <input> de tipo checkbox que estan seleccionados(checked) tengan un margen por la izquierda de 50px */
+
+    input[type=checkbox]:checked{
+        margin-left: 50px;
+    }
+
+/*Haz que se cambie el color de fondo del elemento <h1> cuando se pase el raton por encima*/
+
+    h1:hover{
+        background-color:#FF00FF;
+    }
+
+/*Haz que los enlaces visitados (elemento <a>) se conviertan en color gris */
+
+    a:visited{
+        color: grey;
+    }

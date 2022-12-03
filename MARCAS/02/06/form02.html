@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de prueba de HTML5</title>
+    <style>
+        form{
+            border: 2px solid; 
+            padding: 15px; 
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="GET">
+        <label for="nombre" id="nombre">Nombre:</label>
+        <input type="text" name="nombre" required autofocus><br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required><br>
+        <label for="url">URL:</label>
+        <input type="url" name="url" id="url" placeholder="Escribe la URL de tu página web personal"><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha"><br>
+        <label for="tiempo">Tiempo:</label>
+        <input type="time" name="tiempo" id="tiempo"><br>
+        <label for="fechaHora">Fecha y hora:</label>
+        <input type="datetime-local" name="fechaHora" id="fechaHora"><br>
+        <label for="mes">Mes:</label>
+        <input type="month" name="mes" id="mes"><br>
+        <label for="semana">Semana:</label>
+        <input type="week" name="semana" id="semana"><br>
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" min="-10"  max="10"><br>
+        <label for="color">Color Favorito:</label>
+        <input type="color" name="color" id="color"><br>
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
+        <button type="reset" name="reset" id="reset">Borrar Formulario</button>
+    </form>
+
+</body>
+</html>

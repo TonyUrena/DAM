@@ -1,0 +1,38 @@
+tr:nth-child(1) {
+    color:teal;
+}
+tr:nth-child(2) {
+    color:red;
+}
+tr:nth-child(3) {
+    color:blue;
+}
+tr:nth-child(4) {
+    color:orange;
+}
+tr:nth-child(5) {
+    color:purple;
+}
+tr:nth-child(6) {
+    color:olive;
+}
+tr:nth-child(7) {
+    color:fuchsia;
+}
+tr:nth-child(8) {
+    color:green;
+}
+
+table td:nth-child(2) {
+    background-color:red;
+}
+table td:nth-child(3) {
+    background-color:green;
+}
+table td:nth-child(4) {
+    background-color:blue;
+}
+
+td{
+    border-color: black;
+}

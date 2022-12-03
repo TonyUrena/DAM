@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 4</title>
+</head>
+
+<body>
+    <h1>Pedido de pizza</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>La pizza</legend>
+            <label for="ingredientes" id="ingredientes">Ingredientes</label><br>
+            <input type="checkbox" name="queso" id="queso" value="queso">
+            <label for="queso">Queso</label><br>
+            <input type="checkbox" name="pimiento" id="pimiento" value="pimiento">
+            <label for="pimiento">Pimiento</label><br>
+            <input type="checkbox" name="cebolla" id="cebolla" value="cebolla">
+            <label for="cebolla">Cebolla</label><br>
+            <label for="tamaño" id="tamaño">Tamaño</label><br>
+            <input type="radio" name="tamaño" id="pequeña" value="pequeña">
+            <label for="pequeña">Pequeña</label><br>
+            <input type="radio" name="tamaño" id="mediana" value="mediana">
+            <label for="mediana">Mediana</label><br>
+            <input type="radio" name="tamaño" id="grande" value="grande">
+            <label for="grande">Grande</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de entrega</legend>
+            <label for="nombre" id="nombre">Nombre:</label>
+            <input type="text" name="nombre"><br>
+            <label for="direccion" id="direccion">Dirección:</label>
+            <input type="text" name="direccion"><br>
+            <label for="telefono" id="telefono">Teléfono:</label>
+            <input type="text" name="telefono"><br>
+            <label for="instrucciones" id="instrucciones">Instrucciones especiales:</label><br>
+            <textarea name="instrucciones"></textarea><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Método de pago</legend>
+            <select name="pago" id="pago" >
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="cheque">Cheques restaurante</option>
+            </select>
+        </fieldset>
+        <button type="submit" name="enviar" id="enviar">Ok</button>
+    </form>
+
+</body>
+</html>

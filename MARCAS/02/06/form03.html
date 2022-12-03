@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 3</title>
+    <style>
+        form{
+            background-color: lightblue;
+            padding: 15px; 
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#" method="GET">
+        <label for="nombre" id="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" maxlength="30"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="correo@empresa.com" required><br>
+        <select name="asunto" id="asunto" size="3">
+            <option value="presupuesto">Pedir presupuesto</option>
+            <option value="cita">Solicitar cita Previa</option>
+            <option value="otros">Otros</option>
+        </select>
+        <label for="conocido" id="conocido">¿Cómo nos ha conocido?</label>
+        <input type="checkbox" name="amigo" id="amigo" value="amigo"><br>
+        <label for="novedades">un amigo</label><br>
+        <input type="checkbox" name="googleando" id="googleando" value="googleando" checked>
+        <label for="novedades">googleando</label><br>
+        <input type="checkbox" name="buzoneo" id="buzoneo" value="buzoneo">
+        <label for="novedades">buzoneo</label><br>
+        <input type="checkbox" name="otros" id="otros" value="otros">
+        <label for="novedades">otros</label><br>
+        <label for="msg">Un mensaje</label><br>
+        <textarea name="msg" id="msg" maxlength="300"></textarea><br>
+        <input type="checkbox" name="EULA" id="EULA" value="EULA" required>
+        <label for="EULA">He leído y aceptro el aviso legal y la política de privacidad.</label><br>
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
+    </form>
+
+</body>
+</html>
