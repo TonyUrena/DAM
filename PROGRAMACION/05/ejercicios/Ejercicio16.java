@@ -10,18 +10,22 @@ public class Ejercicio16 {
 
         System.out.println("Dime un número: ");
         numero = reader.nextInt();
-        
-        // iniciamos el contador en 2, pues cualquier numero puede
-        // dividirse entre 1.
-        for (int i = 2; i < Math.sqrt(numero); i++) {
 
-            // sólo comprobamos si es divisible entre el contador,
-            // pues cualquier número es divisible por sí mismo.
-            if (numero % i == 0){
+        // Recorremos todos los números desde el introducido hasta 1 y no 0
+        // ya que un número siempre puede dividirse entre 1.
+        for (int i = numero; i > 1; i--) {
+
+            // A cada paso del bucle comprobamos si el número es divisible
+            // tanto por si mismo como por el índice del bucle.
+            // Con esto comprobamos todos los números entre el mismo y 1.
+            if (numero % i == 0 && numero != i){
                 divisibleOtro = true;
             }
+
         }
 
+        // Un número siempre puede dividirse entre sí mismo, no necesitamos comprobar
+        // esta condición
         if (divisibleOtro){
             System.out.println("No Es primo.");
         } else {
