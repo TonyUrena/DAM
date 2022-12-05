@@ -12,13 +12,8 @@ public class StarWars {
         
         String textoNivel1, textoNivel2, textoNivel3,
         textoNivel4, textoNivel5, textoTeclaIntro,
-        textoInicio, textoGanar, textoPerder, textoFin,
-        borrarTerminal;
+        textoInicio, textoGanar, textoPerder, textoFin;
 
-        String teclaIntro = "a";
-        int numeroS1, numeroS2, sumatorioS1S2 = 0, solucionNivel1;
-        int numeroP1, numeroP2, productorioP1P2 = 1, solucionNivel2 ;
-        int numeroN, factorialN10 = 1, solucionNivel3;
         int numeroP, numeroPEsPrimo = 0, solucionNivel4; boolean divisibleOtro = false;
         int numeroMinutos, numeroSegundos, factorialM = 1, factorialS = 1, sumaFactoriales, solucionNivel5;
 
@@ -101,8 +96,6 @@ public class StarWars {
 
 
         // Inicialización de textos
-        // \033[H\033[2J es el código ANSI para borrar la pantalla del terminal.
-        borrarTerminal = "\f";
         textoInicio = "=== STAR WARS CÓDIGOS SECRETOS ===\n\nHace mucho tiempo, en una galaxia muy, muy lejana…\n\nLa Princesa Leia, Luke Skywalker, Han Solo, Chewbacca, C3PO y R2D2 viajan\nen una nave imperial robada en una misión secreta para infiltrarse en otra\nestrella de la muerte que el imperio está construyendo para destruirla.\n\n(Presiona Intro para continuar)";
         textoTeclaIntro = "La princesa Leia te dirige una mirada de reojo. Saca un cuaderno y un\nbolígrafo de un bolsillo oculto en su toga intergaláctica y escribe una nota:\n\n    Requisitos para próximos agentes:\n       -Nivel de matemáticas: 4º ESO\n       -Nivel de comprensión lectora: 2º Parvulario.\n\nCierra su bloc de notas y lo guarda junto al bolígrafo. Te mira fijamente y repite:\n\n(Presiona Intro para continuar)";
         textoNivel1 = "Los problemas empiezan cuando deben realizar un salto hiperespacial hasta\nel sistema " + numeroS1 + " en el sector " + numeroS2 +", pero el sistema de navegación está estropeado\ny el computador tiene problemas para calcular parte de las coordenadas de salto.\n\nChewbacca, piloto experto, se da cuenta que falta el cuarto número de la serie.\n\nRecuerda de sus tiempos en la academia de pilotos que para calcularlo hay que\ncalcular el sumatorio entre el nº del sistema y el nº del sector (ambos inclusive).\n\n¿Qué debe introducir?\n";
@@ -118,7 +111,6 @@ public class StarWars {
     // INICIO
     //////////////
 
-    System.out.print(borrarTerminal);
     System.out.println(textoInicio);
 
     while (!teclaIntro.equals("")){
@@ -137,10 +129,9 @@ public class StarWars {
     // Nivel 1
     /////////////
 
-        System.out.print(borrarTerminal);
         System.out.println(textoNivel1);
         // Debug muestra numeros aleatorio sumatorio
-        System.out.println(numeroS1 + "-" + numeroS2 + " Sumatorio = " + sumatorioS1S2);
+        //System.out.println(numeroS1 + "-" + numeroS2 + " Sumatorio = " + sumatorioS1S2);
 
         solucionNivel1 = reader.nextInt();
         
@@ -152,10 +143,9 @@ public class StarWars {
     // Nivel 2
     /////////////
 
-        System.out.print(borrarTerminal);
         System.out.println(textoNivel2);
         // Debug muestra numeros aleatorios productorio
-        System.out.println(numeroP1 + "-" + numeroP2 + " Productorio = " + productorioP1P2);
+        //System.out.println(numeroP1 + "-" + numeroP2 + " Productorio = " + productorioP1P2);
 
         solucionNivel2 = reader.nextInt();
 
@@ -167,10 +157,9 @@ public class StarWars {
     // Nivel 3
     /////////////
         
-        System.out.print(borrarTerminal);
         System.out.println(textoNivel3);
         // Debug muestra numero aletorio / 10 factorial
-        System.out.println("Factorial de " + numeroN + ": " + factorialN10 );
+        //System.out.println("Factorial de " + numeroN + ": " + factorialN10 );
 
         solucionNivel3 = reader.nextInt();
 
@@ -182,10 +171,9 @@ public class StarWars {
     // Nivel 4
     /////////////
 
-        System.out.print(borrarTerminal);
         System.out.println(textoNivel4);
         // Debug muestra si es primo
-        System.out.println("El número " + numeroP + "es primo?: " + numeroPEsPrimo);
+        //System.out.println("El número " + numeroP + "es primo?: " + numeroPEsPrimo);
 
         solucionNivel4 = reader.nextInt();
 
@@ -197,10 +185,9 @@ public class StarWars {
     // Nivel 5
     /////////////
 
-        System.out.print(borrarTerminal);
         System.out.println(textoNivel5);
         // Debug muestra la suma de los factoriales
-        System.out.println("La suma de los factoriales es: " + sumaFactoriales);
+        //System.out.println("La suma de los factoriales es: " + sumaFactoriales);
 
         solucionNivel5 = reader.nextInt();
 
@@ -212,7 +199,6 @@ public class StarWars {
     // GANAR
     /////////////
         
-        System.out.print(borrarTerminal);
         System.out.println(textoGanar);
 
         }}}}}
@@ -221,7 +207,6 @@ public class StarWars {
     // FIN
     /////////////
         
-        System.out.print(borrarTerminal);
         System.out.println(textoFin);
     }
 }
