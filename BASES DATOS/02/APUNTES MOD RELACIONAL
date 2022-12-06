@@ -1,0 +1,145 @@
+0 GLOSARIO:
+    Atómico - No divisible.
+    Nulo - Sin valor.
+    Integridad - Plausibilidad de los datos
+
+    Relación - Tabla con datos.
+    Tupla/Registro - Fila con datos relacionados.
+    Atributo/Campo - Columna.
+    Dominio - Conjunto finito de valores atómicos.
+    Intensión/Esquema - nombre y atributos de la relación.
+    Extensión - Cantidad de tuplas y sus valores.
+    Cardinalidad - Cantidad de tuplas.
+    Superclave - Identifica la tupla.
+
+1 MODELO RELACIONAL:
+    - Ayuda a que la base de datos se perciba como un conjunto de relaciones.
+    - La información se representa únicamente mediante valores atómicos.
+    
+    1.1 Estructura de los datos:
+    - Toda relación tiene un nombre que la identifica.
+    - Cada Tupla guarda datos de un objeto.
+    - Cada columna contiene datos de un mismo tipo.
+    - Las celdas almacenan los valores.
+
+        1.1.1 Dominios:
+        Los atributos sólo pueden tomar valores incluidos dentro de su respectivo dominio.
+
+        Pueden ser de dos tipos.
+            - Predefinidos. Enteros, cadenas, etc.
+            - Definidos por el Usuario. Debe constar como mínimo del nombre y descripción de los valores que lo forman.
+                (Ejemplo) el atributo "edad" puede tener un dominio de valores enteros entre 18 y 65 años.
+
+        1.1.2 Relaciones:
+        Se compone de.
+            - Esquema (Intensión) - Nombre de la relación y conjunto de atributos
+            - Extensión - Cantidad de tuplas con sus valores.
+
+        Debe escribirse el nombre de la relación en mayúsculas, y los atributos en minúsculas con camelCase.
+
+        La cantidad de atributos de un esquema determina el grado de la Relación.
+            (Ejemplo) Una relación con un esquema con atributos "nombre" "apellido" "DNI" es de grado 3.
+        
+        La cardinalidad de una relación viene determinada por la cantidad de tuplas de su extensión.
+            (Ejemplo) Una Relación con una extensión que contiene datos de 3 empleados tendrá una cardinalidad de 3.
+
+            1.1.2.1 Atributos:
+            Pueden tener valores nulos.
+
+            1.1.2.2 Tuplas:
+            No pueden haber varias tuplas repetidas con valores idénticos.
+            
+            1.1.2.3 Superclaves:
+            Las tuplas de las relaciones se identifican mediante superclaves únicas.
+            No pueden ser nulas.
+            Pueden existir varias superclaves en una tupla, pero sólo se elige una primaria.
+                - Candidatas. Permiten identificar las tuplas. Se representa subrayada.
+                - Primaria. Clave elegida para distinguir cada tupla del resto.
+                - Alternativas. Clave que podría identificar la tupla.
+            
+            Si no se encuentra un atributo que pueda identificar las tuplas por si mismo puede buscarse un subconjunto de atributos o crear un atributo adicional como identificador.
+
+            1.1.2.4 Claves Foráneas:
+            Proporciona conexiones entre tuplas mediante un conjunto de atributos que referencia la clave primária de otra relación.
+            Debe tener el mismo número de atributos que la clave primária a la que hace referencia y sus dominios deben corresponderse o ser compatibles.
+            Entre los atributos de la clave foránea y la primñaria debe poder establecerse una correspondencia.
+        
+        1.1.3 Operaciones:
+        Debe permitir.
+            - Actualización. Cambiar los datos de la base de datos mediante Inserción o Borrado de tuplas y Modificado de los valores de sus atributos
+            - Consulta. Obtención de datos deducibles a partir de las relaciones de la base de datos.
+    
+    1.2 Reglas de Integridad:
+    La integridad es la propiedad de los datos de ser plausibles.
+
+    Las restricciones para garantizar la integridad pueden ser de dos tipos.
+        - Del usuario. Específicas de cada base de datos. Aplicadas a casos concretos.
+        - Del modelo. Generales para todas las bases de datos del modelo relacional. Son.
+            · Unicidad de la clave primaria. Una clave primaria no debe tener valores repetidos.
+            · Entidad de la clave primaria. Una clave primaria no puede tener valor nulo
+            · Integridad referencial. Todos los valores de una clave foránea deben ser nulos.
+
+2 TRADUCCIÓN DEL MODELO ENTIDAD RELACIÓN AL RELACIONAL:
+    2.1 Traducción de las entidades con sus atributos y clave primaria:
+    Cada entidad se traduce en una Relación
+    Los atributos de la entidad pasan a atributos de la Relación respetando su clave primaria.
+
+    2.2 Traducción de las interacciones:
+        
+        2.2.1 Interrelaciones binarias 1:1:
+        Se añade la clave primaria de una de las Relaciones como clave foránea de la otra, vigilando la obligatoriedad de los datos.
+
+        2.2.2 Interrelaciones binarias 1:N:
+        Se añade a la Relación de la entidad con N la clave primaria de la relación de la entidad con el 1 como clave foránea.
+
+        2.2.3 Interrelaciones binarias N:M:
+        Se crea una nueva relación con el nombre de la interrelación entre las entidades.
+        La clave primaria de esta relación es los atributos que son clave primaria en las entidades que interrelaciona
+        Los atributos de la interrelacion (si hubieran) se añaden a la nueva Relación.
+
+        2.2.4 Interrelación ternaria N:M:P:
+        Ver 2.2.3
+
+        2.2.5 Interrelación ternaria 1:N:M:
+        Ver 2.2.3, pero la clave primaria está formada por los atributos primarios de las entidades N.
+
+        2.2.6 Interrelación ternaria 1:1:N:
+        Ver 2.2.3 no habiendo preferencia de elección si son 1 o N.
+
+        2.2.7 Interrelación ternaria 1:1:1:
+        Ver 2.2.3 pero la clave primaria está formada por dos atributos que son claves primarias en dos Relaciones que se originen de dos entidades.
+
+        2.2.8 Interrelación recursiva binaria 1:1:
+        Ver 2.2.1
+
+        2.2.9 Interrelación recursiva binaria 1:N:
+        Ver 2.2.2
+
+        2.2.10 Interrelación recursiva binaria N:M:
+        Ver 2.2.3
+        
+
+    2.3 Traducción de las entidades débiles y las generalizaciones/especializaciones:
+        2.3.1 Entidad débil:
+        Ver 2.2.2, además este atributo forma parte de la clave primaria de la Relación de la entidad con N
+
+        2.3.2 Generalización y especialización:
+        Para cada subclase se crea una Relación con todos sus atributos, añadiendo los atributos de la clave primaria de la superclase indicando que son clave foranea.
+        La clave primaria de estas Relaciones es la misma que la superclase.
+
+#TODO
+3 NORMALIZACIÓN:
+La normalización elimina redundancias y anomalías
+Siempre es posible normalizar hasta la tercera forma normal
+    3.1 Dependencia Funcional:
+
+    3.2 Anomalias del diseño:
+
+    3.3 Teoría de la normalización:
+        3.3.1 Primera Forma Normal:
+
+        3.3.1 Segunda Forma Normal:
+
+        3.3.1 Tercera Forma Normal:
+
+    
