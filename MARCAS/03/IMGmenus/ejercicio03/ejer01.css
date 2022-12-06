@@ -11,7 +11,7 @@ h1{
 
 ul{
     background-color: white;
-    list-style-image: url("ejercicio_1_2_3/recursos/Imagenes_ejercicio/flecha_inactiva.png");
+    list-style-image: url("../ejercicio_1_2_3/recursos/Imagenes_ejercicio/flecha_inactiva.png");
     list-style-position: inside;
     border: 1px solid grey;
     margin: 0;
@@ -30,7 +30,7 @@ li{
 }
 
 li:hover{
-    list-style-image: url("ejercicio_1_2_3/recursos/Imagenes_ejercicio/flecha_activa.png");
+    list-style-image: url("../ejercicio_1_2_3/recursos/Imagenes_ejercicio/flecha_activa.png");
 }
 
 a{
