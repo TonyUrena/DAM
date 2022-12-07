@@ -60,9 +60,7 @@
             Si no se encuentra un atributo que pueda identificar las tuplas por si mismo puede buscarse un subconjunto de atributos o crear un atributo adicional como identificador.
 
             1.1.2.4 Claves Foráneas:
-            Proporciona conexiones entre tuplas mediante un conjunto de atributos que referencia la clave primária de otra relación.
-            Debe tener el mismo número de atributos que la clave primária a la que hace referencia y sus dominios deben corresponderse o ser compatibles.
-            Entre los atributos de la clave foránea y la primñaria debe poder establecerse una correspondencia.
+            La clave Foránea se utiliza para conectar con la clave primaria de otra tabla, por lo que debe almacenar un valor que ya exista en esa clave primaria, por eso debe tener el mismo número de atributos que la clave primaria a la que hace referencia y sus dominios deben corresponderse o ser compatibles.
         
         1.1.3 Operaciones:
         Debe permitir.
@@ -127,19 +125,37 @@
         Para cada subclase se crea una Relación con todos sus atributos, añadiendo los atributos de la clave primaria de la superclase indicando que son clave foranea.
         La clave primaria de estas Relaciones es la misma que la superclase.
 
-#TODO
 3 NORMALIZACIÓN:
-La normalización elimina redundancias y anomalías
+Una relación puede tener su clave primaria formada por varios atributos, como por ejemplo "Nombre Dirección" (porque un nombre puede repetirse en varias direcciones, pero la combinacion nombre-dirección es mas "única").
+
+La normalización elimina las redundancias y anomalías
+que pueden acarrear este tipo descuidado de diseño de relaciones.
+
 Siempre es posible normalizar hasta la tercera forma normal
-    3.1 Dependencia Funcional:
+
+    3.1 Dependencias Funcionales:
+    Una dependencia funcional aparece cuando el cambio del valor en un atributo que no es clave altera el valor de otra columna que no es clave.
 
     3.2 Anomalias del diseño:
-
+    #TODO
     3.3 Teoría de la normalización:
+    Se basa en el principio de que toda relación debe describir un concepto semántico único.
+
+    Una Relación está en una forma normal si satisface unas restricciones determinadas.
+
         3.3.1 Primera Forma Normal:
+        Todos los atributos de la relación son atómicos, no descomponibles y no repetitivos.
+
+        Los atributos no clave deben depender de los campos clave.
+
+        El modelo relacional siempre garantiza la primera forma normal.
 
         3.3.1 Segunda Forma Normal:
+        La clave primaria debe tener un solo atributo y todo atributo no clave depende de la clave primaria.
+        Podemos generar otras relaciones para evitar las claves con varios atributos.
 
         3.3.1 Tercera Forma Normal:
+        No hay dependencias funcionales entre valores.
+        Podemos generar otras relaciones para evitar las dependencias funcionales.
 
     
