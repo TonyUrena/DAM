@@ -79,83 +79,59 @@
 
 2 TRADUCCIÓN DEL MODELO ENTIDAD RELACIÓN AL RELACIONAL:
     2.1 Traducción de las entidades con sus atributos y clave primaria:
-    Cada entidad se traduce en una Relación
-    Los atributos de la entidad pasan a atributos de la Relación respetando su clave primaria.
+    Cada entidad se traduce en una Relación con sus atributos y clave primaria.
 
     2.2 Traducción de las interacciones:
+    Las claves foráneas no necesitan tener en el esquema el mismo nombre que las primarias a las que referencian, en los apartados siguientes resolvemos las conexiones que realizan, no sus nombres.
         
-        2.2.1 Interrelaciones binarias 1:1:
-        Se añade la clave primaria de una de las Relaciones como clave foránea de la otra, vigilando la obligatoriedad de los datos.
+        2.2.1 Binarias || recursiva 1:1:
+        Se añade la primaria de una como foránea de la otra.
 
-        2.2.2 Interrelaciones binarias 1:N:
-        Se añade a la Relación de la entidad con N la clave primaria de la relación de la entidad con el 1 como clave foránea.
+        2.2.2 binarias || recursiva 1:N:
+        Se añade a la N la primaria del 1 como foránea.
+        (Si es débil se añade la primaria de la N)
 
-        2.2.3 Interrelaciones binarias N:M:
-        Se crea una nueva relación con el nombre de la interrelación entre las entidades.
-        La clave primaria de esta relación es los atributos que son clave primaria en las entidades que interrelaciona
-        Los atributos de la interrelacion (si hubieran) se añaden a la nueva Relación.
+        2.2.3 binarias N:M (y recursiva)
+              ternaria N:M:P
+              ternaria 1:N:M
+              ternaria 1:1:N
+              ternaria 1:1:1:
+        Se crea una nueva relación con el nombre de la interrelación. 
+        Su primaria es la primaria de las interrelacionadas.
 
-        2.2.4 Interrelación ternaria N:M:P:
-        Ver 2.2.3
+        (En 1:N:M la primaria son las primarias de las N)
 
-        2.2.5 Interrelación ternaria 1:N:M:
-        Ver 2.2.3, pero la clave primaria está formada por los atributos primarios de las entidades N.
+        (En 1:1:1 la primaria son dos primarias en dos Relaciones que se originen de dos entidades)
 
-        2.2.6 Interrelación ternaria 1:1:N:
-        Ver 2.2.3 no habiendo preferencia de elección si son 1 o N.
-
-        2.2.7 Interrelación ternaria 1:1:1:
-        Ver 2.2.3 pero la clave primaria está formada por dos atributos que son claves primarias en dos Relaciones que se originen de dos entidades.
-
-        2.2.8 Interrelación recursiva binaria 1:1:
-        Ver 2.2.1
-
-        2.2.9 Interrelación recursiva binaria 1:N:
-        Ver 2.2.2
-
-        2.2.10 Interrelación recursiva binaria N:M:
-        Ver 2.2.3
-        
-
-    2.3 Traducción de las entidades débiles y las generalizaciones/especializaciones:
-        2.3.1 Entidad débil:
-        Ver 2.2.2, además este atributo forma parte de la clave primaria de la Relación de la entidad con N
-
-        2.3.2 Generalización y especialización:
-        Para cada subclase se crea una Relación con todos sus atributos, añadiendo los atributos de la clave primaria de la superclase indicando que son clave foranea.
-        La clave primaria de estas Relaciones es la misma que la superclase.
+        2.2.4 Generalización y especialización:
+        Para cada subclase se crea una Relación con todos sus atributos, añadiendo la primaria de la superclase como foránea.
+        La clave primaria es la misma que la superclase.
 
 3 NORMALIZACIÓN:
 Una relación puede tener su clave primaria formada por varios atributos, como por ejemplo "Nombre Dirección" (porque un nombre puede repetirse en varias direcciones, pero la combinacion nombre-dirección es mas "única").
 
-La normalización elimina las redundancias y anomalías
-que pueden acarrear este tipo descuidado de diseño de relaciones.
+La normalización elimina las redundancias y anomalías que pueden acarrear el uso descuidado de claves primarias redundantes.
 
-Siempre es posible normalizar hasta la tercera forma normal
+Siempre es posible normalizar hasta la tercera forma normal.
 
     3.1 Dependencias Funcionales:
-    Una dependencia funcional aparece cuando el cambio del valor en un atributo que no es clave altera el valor de otra columna que no es clave.
+    Cuando el cambio del valor de un atributo no clave puede alterar el valor de otro atributo no clave
 
     3.2 Anomalias del diseño:
-    #TODO
+
     3.3 Teoría de la normalización:
     Se basa en el principio de que toda relación debe describir un concepto semántico único.
-
-    Una Relación está en una forma normal si satisface unas restricciones determinadas.
+    Se aplican restricciones para convertir las relaciones a una forma normal.
 
         3.3.1 Primera Forma Normal:
         Todos los atributos de la relación son atómicos, no descomponibles y no repetitivos.
-
-        Los atributos no clave deben depender de los campos clave.
-
-        El modelo relacional siempre garantiza la primera forma normal.
+        Los atributos no clave deben depender de los clave.
+        El modelo relacional garantiza la primera forma normal.
 
         3.3.1 Segunda Forma Normal:
-        La clave primaria debe tener un solo atributo y todo atributo no clave depende de la clave primaria.
+        La primaria debe tener sólo un atributo y los atributos no clave dependen de la  primaria.
         Podemos generar otras relaciones para evitar las claves con varios atributos.
 
         3.3.1 Tercera Forma Normal:
         No hay dependencias funcionales entre valores.
         Podemos generar otras relaciones para evitar las dependencias funcionales.
-
-    
