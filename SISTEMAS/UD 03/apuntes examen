@@ -1,0 +1,33 @@
+Definición:
+    Sistema operativo. Conjunto de programas que gestiona los recursos de hardware y software em modo privilegiado.
+
+Características:
+    Adaptabilidad. Debe poder adaptarse al nuevo software y hardware mediante actualizaciónes.
+    
+    Facilidad de uso.
+    Referente al uso final, debe ser fácil de usar.Hay que equilibrar facilidad de uso con consumo.
+
+    Eficiencia.
+    Debe poder gestionar la importancia de cada solicitud para facilitar el acceso a recursos.
+
+Recursos:
+    RAM. La parte del SO que, por su importancia, siempre reside en memoria es el KERNEL. El resto de módulos se carga y descarga a la memoria principal desde el almacenamiento.
+    El resto de RAM se gestiona para albergar el software y datos a manejar.
+
+    CPU. El SO debe gestionar el uso de la CPU por los procesos del software.
+
+    RED. El SO debe gestionar el uso de los adaptardores de red por los procesos del software.
+
+    ALMACENAMIENTO. El acceso a discos duros puede presentar un cuello de botella importante
+
+Funciones:
+    - Interfaz entre el usuario y el hardware.
+    - Gestión eficiente de recursos de software y hardware. 
+    - Gestión de procesos. El SO organiza el paso de los procesos por la CPU, de tal manera que las tareas siguen los objetivos del SO. Gestiona:
+        · Asignación de procesos a varias CPU.
+        · Uso de la multiprogramación sobre CPUs individuales y nucleos
+        · sincronización con otros procesos o hilos.
+    objetivos definidos por politicas de planificacion:
+        · Orientadas a usuarios. Orientada a entrada y salida primando el tiempo de respuesta de usuarios.
+        · Orientada al sistema. Orientada a cálculo. Eficiencia y rendimiento de procesamiento.
+        
