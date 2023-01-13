@@ -1,0 +1,86 @@
+<factura numero="999">
+
+    <fecha dia="12" mes="01" año="2005"></fecha>
+    <pedido>731</pedido>
+    <formaPago>EFECTIVO</formaPago>
+
+    <datosEmpresa>
+        <nombreEmpresa>
+            Equipos Digitales S.L.
+        </nombreEmpresa>
+        <calleEmpresa>
+            Av. Valladolid
+        </calleEmpresa>
+        <poblacion>
+            Madrid
+        </poblacion>
+        <codigoPostal>
+            28015
+        </codigoPostal>
+        <CIF>
+            Q-9876543
+        </CIF>
+        <telefonoEmpresa>
+            91.777.66.88
+        </telefonoEmpresa>
+        <faxEmpresa>
+            91.777.66.99
+        </faxEmpresa>
+    </datosEmpresa>
+
+    <datosCliente numeroCliente="879">
+        <identCliente>
+            <nombreCliente>Darío</nombreCliente>
+            <apellidoCliente1>Bueno</apellidoCliente1>
+            <apellidoCliente2>Gutiérrez</apellidoCliente2>
+        </identCliente>
+        <direccionCliente>
+            Av. Oporto n07 4ºd
+        </direccionCliente>
+        <poblacionCliente>
+            Madrid
+        </poblacionCliente>
+        <codigoPostalCliente>
+            28043
+        </codigoPostalCliente>
+        <provinciaMadrid>
+            Madrid
+        </provinciaMadrid>
+    </datosCliente>
+
+    <datosFactura>
+        <referencia>MII900</referencia>
+        <descripcion>Pentium IV</descripcion>
+        <cantidad>1</cantidad>
+        <precio>230 eur.</precio>
+        <IVA>16,0</IVA>
+        <importe>266,80</importe>
+        
+        <referencia>MB8Q</referencia>
+        <descripcion>Placa base</descripcion>
+        <cantidad>1</cantidad>
+        <precio>180 eur.</precio>
+        <IVA>16,0</IVA>
+        <importe>208,80 eur.</importe>
+        
+        <referencia>MEDD</referencia>
+        <descripcion>512MB</descripcion>
+        <cantidad>2</cantidad>
+        <precio>40 eur.</precio>
+        <IVA>16,0</IVA>
+        <importe>92,80 eur.</importe>
+        
+        <referencia>HD250</referencia>
+        <descripcion>HDD 250GB</descripcion>
+        <cantidad>4</cantidad>
+        <precio>120 eur.</precio>
+        <IVA>16,0</IVA>
+        <importe>556,80 eur.</importe>
+    </datosFactura>
+    <totalFactura>
+        1125,20 eur
+    </totalFactura>
+    <baseImponible>970,00 eur.</baseImponible>
+    <porcientoIva>16,0</porcientoIva>
+    <cuotaIva>155,20 eur.</cuotaIva>
+</factura>

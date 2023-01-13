@@ -1,0 +1,32 @@
+<mensaje>
+    <remite>
+        <nombre>
+            Alfredo Reino
+        </nombre>
+        <email>
+            alf@ibium.com
+        </email>
+    </remite>
+    <destinatario>
+        <nombre>
+            Bill Cosby
+        </nombre>
+        <email>
+            president@whitehouse.gov
+        </email>
+    </destinatario>
+    <asunto>
+        Hola Bill
+    </asunto>
+    <texto>
+        <parrafo>
+            ¿Hola que tal?
+        </parrafo>
+        <parrafo>
+            Hace mucho tiempo que no escribes. A ver si llamas y nos hacemos un café.
+        </parrafo>
+        <parrafo>
+            Un saludo.
+        </parrafo>
+    </texto>
+</mensaje>

@@ -1,0 +1,21 @@
+<restaurante>
+    <empleado>
+        <identificacion>
+            <nombre>
+
+            </nombre>
+            <apellido1>
+
+            </apellido1>
+            <apellido2>
+                
+            </apellido2>
+        </identificacion>
+        <salario>
+
+        </salario>
+        <cargo>
+
+        </cargo>
+    </empleado>
+</restaurante>
