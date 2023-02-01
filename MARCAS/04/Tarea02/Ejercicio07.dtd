@@ -1,0 +1,19 @@
+<!ELEMENT instituto (nombre, direccion, profesores,
+                    alumnos)>
+<!ELEMENT profesores (profesor+)>
+<!ELEMENT profesor (nombre_profesor, cuerpo_profesor, telefono_profesor+)+>
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre, apellido1, apellido2, foto, telefono+)+>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+<!ATTLIST foto archivo CDATA #REQUIRED>
+<!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono tipo CDATA #REQUIRED>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT nombre_profesor (#PCDATA)>
+<!ELEMENT cuerpo_profesor (#PCDATA)>
+<!ELEMENT telefono_profesor (#PCDATA)>
+<!ATTLIST telefono_profesor tipo CDATA #REQUIRED>

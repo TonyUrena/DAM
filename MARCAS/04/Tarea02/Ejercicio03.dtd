@@ -1,0 +1,13 @@
+<!ELEMENT libros (primerLibro, segundoLibro, tercerLibro,
+                cuartoLibro, quintoLibro)>
+
+<!ELEMENT primerLibro (titulo, autor, ISBN, precio)>
+<!ELEMENT segundoLibro (titulo, autor+, ISBN, precio)>
+<!ELEMENT tercerLibro (titulo, autor, precio)>
+<!ELEMENT cuartoLibro (titulo, autor, ISBN, precio+)>
+<!ELEMENT quintoLibro (titulo, autor, ISBN)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

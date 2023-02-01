@@ -1,0 +1,33 @@
+<!DOCTYPE libros SYSTEM "./Ejercicio03.dtd">
+<libros>
+    <primerLibro>
+        <titulo>AAA</titulo>
+        <autor>AAAA</autor>
+        <ISBN>AAA</ISBN>
+        <precio>111</precio>
+    </primerLibro>
+    <segundoLibro>
+        <titulo>AAA</titulo>
+        <autor>AAAA</autor>
+        <autor>AAAA</autor>
+        <ISBN>AAA</ISBN>
+        <precio>111</precio>
+    </segundoLibro>
+    <tercerLibro>
+        <titulo>AAA</titulo>
+        <autor>AAAA</autor>
+        <precio>123</precio>
+    </tercerLibro>
+    <cuartoLibro>
+        <titulo>AAA</titulo>
+        <autor>AAAA</autor>
+        <ISBN>AAA</ISBN>
+        <precio>123</precio>
+        <precio>123</precio>
+    </cuartoLibro>
+    <quintoLibro>
+        <titulo>AAA</titulo>
+        <autor>AAAA</autor>
+        <ISBN>AAA</ISBN>
+    </quintoLibro>
+</libros>

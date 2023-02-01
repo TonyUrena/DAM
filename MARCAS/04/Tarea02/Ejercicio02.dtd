@@ -1,0 +1,33 @@
+<!ELEMENT universidad (alumno | profesor | asignatura)+>
+<!ELEMENT alumno (((DNI | (pasaporte, pais)),
+            ((nombre, apellido) | apellidos)),
+            fechaNacimiento, asignaturaAlum*)>
+
+<!ELEMENT profesor (((DNI | (pasaporte, pais)),
+            ((nombre, apellido) | apellidos)),
+            fechaNacimiento,
+            despacho,
+            horarioTutoria, asignaturaProf*)>
+
+<!ELEMENT asignatura (nombre, creditos, carrera, curso)>
+<!ATTLIST asignatura id ID #REQUIRED>
+
+<!ELEMENT asignaturaAlum (nota)>
+<!ATTLIST asignaturaAlum cod IDREF #REQUIRED>
+
+<!ELEMENT asignaturaProf (#PCDATA)>
+<!ATTLIST asignaturaProf cod IDREF #REQUIRED>
+
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT pasaporte (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT nota (#PCDATA)>
+<!ELEMENT despacho (#PCDATA)>
+<!ELEMENT horarioTutoria (#PCDATA)>
+<!ELEMENT creditos (#PCDATA)>
+<!ELEMENT carrera (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>

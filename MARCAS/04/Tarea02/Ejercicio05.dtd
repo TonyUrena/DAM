@@ -1,0 +1,7 @@
+<!ELEMENT deviceid (model, fwversion, serial, cueid,
+                    language+)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT fwversion (#PCDATA)>
+<!ELEMENT serial (#PCDATA)>
+<!ELEMENT cueid (#PCDATA)>
+<!ELEMENT language (#PCDATA)>

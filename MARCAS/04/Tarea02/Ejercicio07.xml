@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE instituto SYSTEM "./Ejercicio07.dtd">
+<instituto>
+    <nombre>IES ALIXAR</nombre>
+    <direccion>Avd la Unidad s/n</direccion>
+    <profesores>
+        <profesor>
+            <nombre_profesor>Pedro</nombre_profesor>
+            <cuerpo_profesor>Profesor Tecnico de Formación Profesional</cuerpo_profesor>
+            <telefono_profesor tipo="movil">666123123</telefono_profesor>
+            <telefono_profesor tipo="fijo">999123123</telefono_profesor>
+        </profesor>
+        <profesor>
+            <nombre_profesor>Jose María</nombre_profesor>
+            <cuerpo_profesor>Profesor de Secundaria</cuerpo_profesor>
+            <telefono_profesor tipo="movil">666323123</telefono_profesor>
+            <telefono_profesor tipo="fijo">999323123</telefono_profesor>
+        </profesor>
+    </profesores>
+    <alumnos>
+        <alumno>
+            <nombre>Antonio</nombre>
+            <apellido1>García</apellido1>
+            <apellido2>Rodríguez</apellido2>
+            <foto archivo="1.gif" />
+            <telefono tipo="movil">666523123</telefono>
+        </alumno>
+        <alumno>
+            <nombre>Juan</nombre>
+            <apellido1>Pérez</apellido1>
+            <apellido2>Villa</apellido2>
+            <foto archivo="2.gif" />
+            <telefono tipo="fijo">999723123</telefono>
+        </alumno>
+    </alumnos>
+</instituto>

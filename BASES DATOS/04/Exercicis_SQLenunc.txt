@@ -1,0 +1,96 @@
+1.
+SELECT *
+FROM clientes 
+WHERE ciudad = "Barcelona" 
+SORT BY nif;
+
+2. 
+SELECT p.codigo_proyec
+FROM clientes c JOIN proyectos p ON c.codigo_cli = p.codigo_cliente
+GROUP BY p.codigo_proyec
+HAVING COUNT(*)>=2;
+
+3.
+
+
+4.
+
+
+5.
+
+
+6.
+
+
+7. 
+SELECT codigo_empleado
+FROM empleados e
+WHERE num_proyec IS NOT NULL;
+
+8.
+
+
+9.
+SELECT p.nombre_proyec, SUM(e.sueldo)
+FROM empleados e JOIN proyectos p ON e.num_proyec = p.codigo_proyec
+GROUP BY p.codigo_proyec;
+
+
+10. 
+SELECT ciudad_dep, telefono 
+FROM departamentos 
+WHERE ciudad_dep = "Barcelona";
+
+11.
+SELECT COUNT(*)
+FROM proyectos p JOIN clientes c ON p.codigo_cliente = c.codigo_cli
+GROUP BY c.codigo_cli
+HAVING COUNT(*) > 1;
+
+12. 
+SELECT codigo_empleado, nombre_empl, apellido_empl 
+FROM empleados
+ORDER BY apellido_empl DESC nombre_empl;
+
+13.
+SELECT p.nombre_proyec, p.codigo_proyec
+FROM proyectos p JOIN clientes c ON c.codigo_cli=codigo_cliente
+WHERE c.ciudad = "Barcelona";
+
+14.
+SELECT nombre_dep, ciudad_dep
+FROM empleados
+WHERE num_proyec = 3 OR num_proyec = 4
+
+15.
+SELECT e.codigo_empleado p.nombre_proyec
+FROM empleados e JOIN proyectos p ON e.num_proyec = p.codigo_proyec
+WHERE e.sueldo BETWEEN 50000 AND 80000
+
+16.
+SELECT d.*
+FROM (empleados e JOIN proyectos p ON e.num_proyec = p.codigo_proyec)
+JOIN departamentos d USING (nombre_dep, ciudad_dep)
+WHERE p.nombre_proyec = "GESCOM"
+
+17.
+
+
+18.
+SELECT nombre_dep, ciudad_dep, MAX(sueldo)
+FROM empleados
+GROUP BY nombre_dep, ciudad_dep
+
+19.
+SELECT c.codigo_cli, c.nombre_cli
+FROM clientes c JOIN proyectos p
+ON c.codigo_cli = p.codigo_cliente
+GROUP BY c.codigo_cli;
+
+20.
+
+
+21.
+SELECT d.*
+FROM empleados e RIGHT JOIN departamentos d USING(nombre_dep, ciudad_dep)
+WHERE e.codigo_empl IS NULL;

@@ -1,0 +1,10 @@
+<!DOCTYPE deviceid SYSTEM "./Ejercicio05.dtd">
+<deviceid>
+    <model>320</model>
+    <fwversion>V0.640</fwversion>
+    <serial>CN125678FB</serial>
+    <cueid>#Hewlett-Packard#Cam320#CN125678FB</cueid>
+    <language>en</language>
+    <language>es</language>
+    <language>it</language>
+</deviceid>

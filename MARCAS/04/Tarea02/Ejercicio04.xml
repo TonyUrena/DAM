@@ -1,0 +1,24 @@
+<!DOCTYPE noticias SYSTEM "./Ejercicio04.dtd">
+<noticias>
+    <noticia dia="27" mes="2" anyo="1325">
+        <titulo>AAAAA</titulo>
+        <autor>aaaaaa</autor>
+        <url direccion="www.aaaa.com"></url>
+        <texto>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores doloribus et molestiae, corrupti excepturi perspiciatis nulla facilis exercitationem possimus sint minus dolorem odit, repellendus, quo rem dolor libero. Nesciunt, minima. </texto>
+        <foto>AAA</foto>
+    </noticia>
+    <noticia dia="25" mes="2" anyo="1325">
+        <titulo>AAAAA</titulo>
+        <autor>aaaaaa</autor>
+        <url direccion="www.aaaa.com"></url>
+        <texto>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores doloribus et molestiae, corrupti excepturi perspiciatis nulla facilis exercitationem possimus sint minus dolorem odit, repellendus, quo rem dolor libero. Nesciunt, minima. </texto>
+        <foto>AAA</foto>
+    </noticia>
+    <noticia dia="20" mes="2" anyo="1325">
+        <titulo>AAAAA</titulo>
+        <autor>aaaaaa</autor>
+        <url direccion="www.aaaa.com"></url>
+        <texto>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores doloribus et molestiae, corrupti excepturi perspiciatis nulla facilis exercitationem possimus sint minus dolorem odit, repellendus, quo rem dolor libero. Nesciunt, minima. </texto>
+        <foto>AAA</foto>
+    </noticia>
+</noticias>

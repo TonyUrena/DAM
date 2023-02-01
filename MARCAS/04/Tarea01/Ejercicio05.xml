@@ -1,0 +1,145 @@
+<coleccion>
+    <libreria nombre="Libros en almíbar">
+        <libro isbn="121341212">
+            <titulo>
+                El universo, XML y otros 1000 errores de dios.
+            </titulo>
+            <nivel>
+                básico
+            </nivel>
+            <autor>
+                Oolon Coluphid
+            </autor>
+            <editorial>
+                Mandahuevos
+            </editorial>
+            <fechaPublicacion>
+                27-11-1986
+            </fechaPublicacion>
+            <web>
+
+            </web>
+            <precio>
+                29.99€
+            </precio>
+        </libro>
+        <libro isbn="1566565654">
+            <titulo>
+                Otros 1000 errores de dios después de XML
+            </titulo>
+            <nivel>
+                Intermedio
+            </nivel>
+            <autor>
+                Oolon Coluphid
+            </autor>
+            <editorial>
+                Mandahuevos
+            </editorial>
+            <fechaPublicacion>
+                10-02-1987
+            </fechaPublicacion>
+            <web>
+
+            </web>
+            <precio>
+                29.99€
+            </precio>
+        </libro>
+        <libro isbn="3123321133">
+            <titulo>
+                ¿Quien cojones es dios?
+            </titulo>
+            <nivel>
+                Avanzado
+            </nivel>
+            <autor>
+                Oolon Coluphid
+            </autor>
+            <editorial>
+                Mandahuevos
+            </editorial>
+            <fechaPublicacion>
+                15-02-1988
+            </fechaPublicacion>
+            <web>
+
+            </web>
+            <precio>
+                29.99€
+            </precio>
+        </libro>
+    </libreria>
+
+    <libreria nombre="Libros de Informática y Artículos de pesca SL">
+        <libro isbn="3312312312123">
+            <titulo>
+                XML y la cría del salmón: Un monográfico.
+            </titulo>
+            <nivel>
+                Baśico
+            </nivel>
+            <autor>
+                Fuente de la Félix (Rodríguez)
+            </autor>
+            <editorial>
+                Grijander
+            </editorial>
+            <fechaPublicacion>
+                25-10-2012
+            </fechaPublicacion>
+            <web>
+                www.grijander.es
+            </web>
+            <precio>
+                10.99€
+            </precio>
+        </libro>
+        <libro isbn="23131223121212">
+            <titulo>
+                La pesca del siluro (Explicado con 100 tags XML)
+            </titulo>
+            <nivel>
+                Básico
+            </nivel>
+            <autor>
+                Fuente de la Félix (Rodríguez)
+            </autor>
+            <editorial>
+                Grijander
+            </editorial>
+            <fechaPublicacion>
+                10-11-2015
+            </fechaPublicacion>
+            <web>
+                www.grijander.es
+            </web>
+            <precio>
+                10.99€
+            </precio>
+        </libro>
+        <libro isbn="">
+            <titulo>
+                Críe su primer jabalí marino con la ayuda de XML.
+            </titulo>
+            <nivel>
+                Avanzado
+            </nivel>
+            <autor>
+                Fuente de la Félix (Rodríguez)
+            </autor>
+            <editorial>
+                Grijander
+            </editorial>
+            <fechaPublicacion>
+                25-10-2012
+            </fechaPublicacion>
+            <web>
+                www.grijander.es
+            </web>
+            <precio>
+                10.99€
+            </precio>
+        </libro>
+    </libreria>
+</coleccion>

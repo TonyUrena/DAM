@@ -1,0 +1,19 @@
+<!DOCTYPE biblioteca SYSTEM "./Ejercicio01.dtd">
+<biblioteca>
+    <socio DNI="12345678W" numeroSocio="123" descuento="no">
+        <nombre>PACO</nombre>
+        <apellidos>Of Lucy</apellidos>
+    </socio>
+    <socio DNI="12345678W" numeroSocio="123" descuento="no">
+        <nombre>PACO</nombre>
+        <apellidos>Of Lucy</apellidos>
+    </socio>
+    <socio DNI="12345678W" numeroSocio="123" descuento="no">
+        <nombre>PACO</nombre>
+        <apellidos>Of Lucy</apellidos>
+    </socio>
+    <socio DNI="12345678W" numeroSocio="123" descuento="no">
+        <nombre>PACO</nombre>
+        <apellidos>Of Lucy</apellidos>
+    </socio>
+</biblioteca>

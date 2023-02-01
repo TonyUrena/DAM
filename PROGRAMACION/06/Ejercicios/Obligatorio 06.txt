@@ -1,0 +1,40 @@
+Ejercicio: Corrección de exámenes.
+Se quiere hacer un programa que califique un examen de preguntas de
+selección múltiple presentado por 8 estudiantes de Programación. En cada una
+de las preguntas del examen, el estudiante debe elegir una de cinco opciones,
+identificadas con las letras A,B,C,D y E.
+
+Las entradas son:
+    -----------------------------El número de preguntas que tenía el examen.
+    -----------------------------Cada una de las respuestas dadas por cada estudiante.
+    -----------------------------Las respuestas correctas.
+
+Estructura de datos:
+    -----------------------------Un vector con los nombres de los estudiantes (8 estudiantes).
+    -----------------------------Una matriz para guardar las respuestas a las preguntas del examen una
+    -----------------------------fila por alumno y una columna por pregunta.
+    -----------------------------Un vector con las respuestas correctas a las preguntas.
+
+Control de entrada:
+    -----------------------------El número de preguntas del examen debe ser mayor que cero.
+    -----------------------------(totalPreguntas>0).
+    -----------------------------(Cada una de las respuestas del estudiante debe ser una letra mayúscula
+    -----------------------------(que está entre la A y E.
+    -----------------------------(Cada una de las respuestas correctas debe ser una letra mayúscula que
+    -----------------------------(está entre la A y E.
+
+Realiza un menú con las siguientes opciones:
+    Opción 1 Notas: Muestra la nota obtenida de cada estudiante. Esta nota
+    corresponde al número de aciertos que tuvo el estudiante.
+    -----------------------------Opción 2 Media: Muestra la media de aciertos de los 8 alumnos.
+    -----------------------------Opción 3 Nota Alumno: dado un nombre de un alumno, muestra su nota.
+    -----------------------------Opción 4 Pregunta: Muestra el número de la pregunta más acertada.
+
+Métodos a realizar (pueden ser más si lo consideras necesario):
+    -----------------------------Método para rellenar los nombres de los alumnos.
+    -----------------------------Método para rellenar las respuestas correctas.
+    -----------------------------Método para rellenar las respuestas de los alumnos.
+    -----------------------------Método que devuelve la nota de un alumno.
+    -----------------------------Método que devuelve la media.
+    Método que devuelve en número de pregunta más acertada.
+    -----------------------------Método para leer la respuesta a una pregunta.

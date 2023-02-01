@@ -1,0 +1,27 @@
+<!DOCTYPE universidad SYSTEM "./Ejercicio02.dtd">
+<universidad>
+    <asignatura id="AA">
+        <nombre>AA</nombre>
+        <creditos>30</creditos>
+        <carrera>aaaaa</carrera>
+        <curso>2</curso>
+    </asignatura>
+    <alumno>
+        <DNI>12345678W</DNI>
+        <nombre>aaaaaaa</nombre>
+        <apellido>aaa aaaa</apellido>
+        <fechaNacimiento>123</fechaNacimiento>
+        <asignaturaAlum cod="AA">
+            <nota>3</nota>
+        </asignaturaAlum>
+    </alumno>
+    <profesor>
+        <DNI>12345678W</DNI>
+        <nombre>aaaaaaa</nombre>
+        <apellido>aaa aaaa</apellido>
+        <fechaNacimiento>123</fechaNacimiento>
+        <despacho>aaa</despacho>
+        <horarioTutoria>123</horarioTutoria>
+        <asignaturaProf cod="AA"></asignaturaProf>
+    </profesor>
+</universidad>

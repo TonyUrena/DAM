@@ -1,0 +1,10 @@
+A) No está bien formado, necesita un elemento raíz que englobe al resto.
+B) Si está bien formado.
+C) No está bien formado, los tags no están bien estructurados.
+D) Si está bien formado.
+E) Si está bien formado.
+F) No está bien formado, el atributo telefono está repetido en un mismo elemento.
+G) No está bien formado, hay que añadir el carácter de escape correspondiente para escribir "<".
+H) Si está bien formado.
+I) No está bien formado. el atributo nombre se repite y hay un carácter "<" en mal lugar.
+J) No está bien formado. Hay un espacio en la etiqueta "play description".

@@ -1,0 +1,7 @@
+<!ELEMENT biblioteca (socio+)>
+<!ELEMENT socio (nombre, apellidos)>
+<!ATTLIST socio DNI CDATA #REQUIRED
+                numeroSocio CDATA #REQUIRED 
+                descuento (si | no) #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
