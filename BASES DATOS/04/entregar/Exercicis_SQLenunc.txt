@@ -1,0 +1,56 @@
+CREATE TABLE empleados (
+    numemp VARCHAR(100) PRIMARY KEY, 
+    nombre VARCHAR (255),
+    edad INTEGER,
+    oficina INTEGER FOREIGN KEY oficina REFERENCES oficinas,
+    titulo VARCHAR (100),
+    contrato DATE,
+    jefe INTEGER FOREIGN KEY dir REFERENCES oficinas,
+    cuota INTEGER,
+    ventas INTEGER
+);
+
+CREATE TABLE oficinas (
+    oficina INTEGER PRIMARY KEY,
+    ciudad VARCHAR(100),
+    region VARCHAR(10),
+    dir INTEGER FOREIGN KEY numemp REFERENCES empleados,
+    objetivo INTEGER,
+    ventas INTEGER
+);
+
+CREATE TABLE clientes (
+    numclie VARCHAR(100) PRIMARY KEY,
+    nombre VARCHAR(100),
+    repclie INT FOREIGN KEY numemp REFERENCES empleados,
+    limitecredito INT,
+);
+
+CREATE TABLE productos (
+    idfab VARCHAR(100) PRIMARY KEY,
+    idproducto VARCHAR(100),
+    descripcion VARCHAR(100),
+    precio INTEGER,
+    existencias INTEGER
+);
+
+CREATE TABLE pedidos (
+    codigo INT PRIMARY KEY,
+    numpedido VARCHAR(100),
+    fechapedido DATE,
+    clie VARCHAR(100) FOREIGN KEY numclie REFERENCES clientes,
+    rep VARCHAR(100) FOREIGN KEY numemp REFERENCES empleados,
+    fab VARCHAR(100) FOREIGN KEY idfab REFERENCES productos,
+    producto VARCHAR(100) FOREIGN KEY idproducto REFERENCES productos,
+    cant INTEGER,
+    importe INTEGER
+);
+
+1. 
+SELECT numpedido, importe, c.nombre
+AS cliente, limitecredito
+FROM pedidos p INNER JOIN clientes c ON p.clie = c.numclie;
+
+2. 
+SELECT empleados.*, ciudad, region
+FROM empleados e LEFT JOIN oficinas o ON e.oficina = o.oficina
