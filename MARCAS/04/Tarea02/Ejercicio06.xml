@@ -1,0 +1,50 @@
+<!DOCTYPE personas SYSTEM "Ejercicio06.dtd">
+<personas>
+    <persona>
+        <nombre>AAAA</nombre>
+        <apellidos>PaAAAArdo</apellidos>
+        <fechaNacimiento dia="22" mes="NOviembre"
+            anyo="1999" />
+        <direccion>
+            <calle>AAAAAA</calle>
+            <poblacion>AAAAAA</poblacion>
+            <provincia>AAAAA</provincia>
+            <codigoPostal>12222</codigoPostal>
+        </direccion>
+        <varon />
+    </persona>
+    <persona>
+        <nombre>AAAAAA</nombre>
+        <apellidos>AAAAA</apellidos>
+        <direccion>
+            <calle>AAAAAAA</calle>
+            <poblacion>AAAAAAA</poblacion>
+            <provincia>AAAAA</provincia>
+            <codigoPostal>12222</codigoPostal>
+        </direccion>
+        <direccion>
+            <calle>AAAAAA</calle>
+            <poblacion>AAAAA</poblacion>
+            <provincia>AAAAAA</provincia>
+            <codigoPostal>122222</codigoPostal>
+        </direccion>
+        <mujer />
+    </persona>
+    <persona>
+        <nombre>AAAAAA</nombre>
+        <apellidos>AAAAA</apellidos>
+        <direccion>
+            <calle>AAAAAAA</calle>
+            <poblacion>AAAAAAA</poblacion>
+            <provincia>AAAAA</provincia>
+            <codigoPostal>12222</codigoPostal>
+        </direccion>
+        <direccion>
+            <calle>AAAAAA</calle>
+            <poblacion>AAAAA</poblacion>
+            <provincia>AAAAAA</provincia>
+            <codigoPostal>122222</codigoPostal>
+        </direccion>
+        <otro />
+    </persona>
+</personas> 
