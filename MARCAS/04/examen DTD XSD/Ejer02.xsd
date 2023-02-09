@@ -1,0 +1,50 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="productosfinancieros">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="producto" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="bono">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="valoractual" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:attribute name="moneda">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="dolares"></xs:enumeration>
+                                                            <xs:enumeration value="euros"></xs:enumeration>
+                                                            <xs:enumeration value="yenes"></xs:enumeration>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="beneficio" type="xs:float" minOccurs="1" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="futuro">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="elemento" />
+                                        <xs:element name="beneficio" type="xs:float" minOccurs="1" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="acciones">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="empresa" />
+                                        <xs:element name="beneficio" type="xs:float" minOccurs="1" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
