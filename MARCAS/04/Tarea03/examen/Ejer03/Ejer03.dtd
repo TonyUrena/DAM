@@ -1,0 +1,15 @@
+<!ELEMENT email (de, para, contenido)>
+<!ATTLIST email fecha CDATA #REQUIRED>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT contenido (saludo, ejercicios, despedida)>
+<!ELEMENT saludo (#PCDATA | persona)*>
+<!ELEMENT persona (#PCDATA)>
+<!ELEMENT ejercicios (ejercicio+)>
+<!ELEMENT ejercicio (tema, descripcion)>
+<!ATTLIST ejercicio codigo ID #REQUIRED>
+<!ATTLIST ejercicio resuelto (si | no) #IMPLIED>
+<!ELEMENT tema (#PCDATA)>
+<!ATTLIST tema importancia (baja | alta) #IMPLIED>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT despedida (#PCDATA)>

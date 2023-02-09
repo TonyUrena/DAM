@@ -1,0 +1,13 @@
+<!ELEMENT productosfinancieros (producto+)>
+<!ELEMENT producto (bono | futuro | acciones)>
+<!ELEMENT bono (valoractual*, beneficio)>
+<!ELEMENT valoractual (#PCDATA)>
+<!ELEMENT beneficio (#PCDATA)>
+<!ATTLIST valoractual moneda CDATA #REQUIRED>
+<!ELEMENT futuro (elemento*, beneficio)>
+<!ELEMENT elemento (#PCDATA)>
+<!ATTLIST elemento idioma CDATA #REQUIRED>
+<!ELEMENT acciones (empresa*, beneficio)>
+<!ELEMENT empresa (#PCDATA)>
+<!ATTLIST empresa pais CDATA #REQUIRED>
+<!ELEMENT element-name (#PCDATA)>

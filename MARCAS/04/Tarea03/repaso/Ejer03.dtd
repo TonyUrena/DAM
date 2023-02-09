@@ -1,0 +1,16 @@
+<!ELEMENT afiliados (afiliado+)>
+<!ELEMENT afiliado ((DNI|NIE), nombre, apellidos, situacionLaboral,
+                    fechaNacimiento, listadoBajas, prestacionesCobradas)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT NIE (#PCDATA)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+
+<!ELEMENT situacionLaboral (en_paro | en_activo | jubilado | edad_no_laboral)>
+<!ELEMENT en_paro EMPTY>
+<!ELEMENT en_activo EMPTY>
+<!ELEMENT jubilado EMPTY>
+<!ELEMENT edad_no_laboral EMPTY>
+
+<!ELEMENT element-name (#PCDATA)>

@@ -1,0 +1,26 @@
+<!ELEMENT listado (futuro+, divisa+, bono+)>
+
+<!ELEMENT futuro (producto, mercado*, ciudad_procedencia)>
+<!ATTLIST futuro precio CDATA #REQUIRED>
+<!ELEMENT producto (#PCDATA)>
+<!ELEMENT mercado (#PCDATA)>
+
+<!ELEMENT divisa (nombre_divisa, tipo_de_cambio+, ciudad_procedencia)>
+<!ATTLIST divisa precio CDATA #REQUIRED>
+<!ATTLIST divisa estable (si | no) #IMPLIED>
+<!ELEMENT nombre_divisa (#PCDATA)>
+<!ELEMENT tipo_de_cambio (#PCDATA)>
+
+<!ELEMENT bono (pais_de_procedencia, valor_deseado, valor_minimo, valor_maximo, ciudad_procedencia)>
+<!ATTLIST bono precio CDATA #REQUIRED>
+<!ATTLIST bono estable (si | no) #IMPLIED>
+<!ELEMENT pais_de_procedencia (#PCDATA)>
+<!ELEMENT valor_deseado (#PCDATA)>
+<!ELEMENT valor_minimo (#PCDATA)>
+<!ELEMENT valor_maximo (#PCDATA)>
+
+<!ELEMENT ciudad_procedencia (madrid | nuevayork | frankfurt | tokio)>
+<!ELEMENT madrid EMPTY>
+<!ELEMENT nuevayork EMPTY>
+<!ELEMENT frankfurt EMPTY>
+<!ELEMENT tokio EMPTY>
