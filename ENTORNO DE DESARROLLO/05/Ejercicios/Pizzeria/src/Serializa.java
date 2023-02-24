@@ -1,13 +1,12 @@
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-class Serializame
+class Serializa
 {
-    public void serializa(Object objetoQueSerializas, String nombreFichero){
+    public static void serializa(Object objetoQueSerializas, String nombreFichero){
          
         // Serialization
         try
@@ -32,7 +31,7 @@ class Serializame
         }
     }
     
-    public Object deserializa(String nombreFichero){
+    public static Object deserializa(String nombreFichero){
 
         Object objetoQueRecibeLosDatosAnteriormenteSerializados = null;
         
