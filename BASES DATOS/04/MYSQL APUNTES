@@ -1,0 +1,28 @@
+MYSQL APUNTES
+
+COMANDOS:
+  - Cargar una copia de seguridad: sudo mysql < "Ruta al archivo". 
+(Con esto lo que estamos haciendo es pasar todos los comandos dentro del archivo de copia de seguridad
+como argumento al terminal de mysql)
+
+  - ctrl + L para borrar pantalla.
+
+  - empezamos con USE para seleccionar la base de datos en la que trabajaremos
+
+  - PRIMARY KEY va con parentesis jaja.
+
+  - ALTER TABLE /tabla/ ADD CONSTRAINT /key ya existente en la tabla/ FOREIGN KEY (foranea de la tabla) REFERENCES tabla(primaria otra tabla);
+
+  - Lo mismo para eliminar el constraint, pero cambiamos ADD por DROP;
+
+  - SHOW TABLES; lista todas las tablas de la BD en uso.
+
+  - SHOW COLUMNS FROM /tabla/; - Muestra todo lo interesante osease los PUTOS NOMBRES DE LAS COLUMNAS TUTUTUUTUUU +procede a pulirse con una sonrisa+
+
+  - INSERT INTO tabla VALUES();
+
+  - Un insert que introduzca una clave foranea debe hacer referencia a una clave primaria que exista en la tabla a la que referencia.
+
+www.conclase.net/mysql/curso
+
+  - AMOGUS me quiero aser la automogus

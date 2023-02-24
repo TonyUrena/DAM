@@ -1,0 +1,27 @@
+Ejercicio 1).
+    apt install : instala paquetes
+    apt update : actualiza los índices de los repositorios
+    apt upgrade : instala las actualizaciones de los paquetes
+    apt dist-upgrade : isntala actualizaciones del sistema
+    apt remove : desinstala los paquetes
+
+Ejercicio 2).
+    A- cat /etc/passwd | usuarios.txt
+    B- tail 5 /etc/passwd > 5usuarios.txt
+    C- wc usuarios.txt
+    D-
+    E- sort -k 2 5usuarios.txt
+
+
+Ejercicio 3).
+    1.  grep ^[aAeEiIoOuU] textogrep.txt
+    2.  grep -v ^[aAeEiIoOuU] textogrep.txt
+    3.  grep ^[N].*[l]$ textogrep.txt
+    4.  grep [1234] textogrep.txt
+
+Ejercicio 4).
+    A-
+    B- chmod 644
+    C- chmod 654
+    D-
+    E- chmod 666

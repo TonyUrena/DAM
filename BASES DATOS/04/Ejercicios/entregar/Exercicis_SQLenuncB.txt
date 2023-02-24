@@ -1,0 +1,139 @@
+CREATE TABLE empleados (
+    numemp VARCHAR(100) PRIMARY KEY, 
+    nombre VARCHAR (255),
+    edad INTEGER,
+    oficina INTEGER FOREIGN KEY oficina REFERENCES oficinas,
+    titulo VARCHAR (100),
+    contrato DATE,
+    jefe INTEGER FOREIGN KEY dir REFERENCES oficinas,
+    cuota INTEGER,
+    ventas INTEGER
+);
+
+CREATE TABLE oficinas (
+    oficina INTEGER PRIMARY KEY,
+    ciudad VARCHAR(100),
+    region VARCHAR(10),
+    dir INTEGER FOREIGN KEY numemp REFERENCES empleados,
+    objetivo INTEGER,
+    ventas INTEGER
+);
+
+CREATE TABLE clientes (
+    numclie VARCHAR(100) PRIMARY KEY,
+    nombre VARCHAR(100),
+    repclie INT FOREIGN KEY numemp REFERENCES empleados,
+    limitecredito INT,
+);
+
+CREATE TABLE productos (
+    idfab VARCHAR(100) PRIMARY KEY,
+    idproducto VARCHAR(100),
+    descripcion VARCHAR(100),
+    precio INTEGER,
+    existencias INTEGER
+);
+
+CREATE TABLE pedidos (
+    codigo INT PRIMARY KEY,
+    numpedido VARCHAR(100),
+    fechapedido DATE,
+    clie VARCHAR(100) FOREIGN KEY numclie REFERENCES clientes,
+    rep VARCHAR(100) FOREIGN KEY numemp REFERENCES empleados,
+    fab VARCHAR(100) FOREIGN KEY idfab REFERENCES productos,
+    producto VARCHAR(100) FOREIGN KEY idproducto REFERENCES productos,
+    cant INTEGER,
+    importe INTEGER
+);
+
+
+1)
+SELECT numpedido, importe, c.nombre, limitecredito
+FROM pedidos p INNER JOIN clientes c on p.clie = c.numclie;
+
+2)
+SELECT empleados.*, ciudad, region
+FROM empleados e LEFT JOIN oficinas o ON e.oficina = o.oficina;
+
+3)
+SELECT numpedido, importe, empleados.nombre, cliente.nombre
+FROM (pedidos p INNER JOIN clientes c ON  c.numclie = p.clie) INNER JOIN empleados e ON e.numemp = p.rep
+WHERE importe > 25000;
+
+4)
+SELECT o.*, nombre
+FROM oficinas o LEFT JOIN empleados e ON o.dir = e.numemp
+WHERE objetivo > 600000;
+
+5)
+SELECT e.*
+FROM empleados e INNER JOIN pedidos p ON e.numemp = p.rep
+WHERE fechapedido = contrato;
+
+6)
+SELECT e.*
+FROM empleados e INNER JOIN empleados jefes e ON e.jefe = jnumemp
+WHERE e.cuota > j.cuota;
+
+7)
+SELECT numemp
+FROM empleado e LEFT JOIN pedidos p ON p.rep = e.numemp
+WHERE importe > 10000 OR cuota < 10000;
+
+8)
+SELECT nombre
+FROM clientes
+WHERE repclie = (SELECT numemp FROM empleados WHERE nombre = "Alvaro Jaumes");
+
+9)
+SELECT numemp, nombre, oficina
+FROM empleados
+WHERE oficina <> ALL (SELECT oficina FROM oficinas WHERE dir = 108);
+
+10)
+SELECT idfab, idproducto, descripcion
+FROM productos
+WHERE NOT EXISTS (SELECT * FROM pedidos WHERE fab = idfab AND producto = idproducto AND importe >= 25000);
+
+11)
+SELECT numclie, nombre
+FROM clientes
+WHERE repclie IN (SELECT numemp FROM empleados WHERE nombre = "Ana Bustamante")
+AND numclie NOT IN (SELECT clie FROM pedidos WHERE importe > 3000 AND clie IS NOT NULL);
+
+12)
+SELECT *
+FROM oficinas o
+WHERE EXISTS (SELECT * FROM empleados e WHERE e.oficina = o.oficina AND ventas > objetivo * 0.55); 
+
+13)
+SELECT *
+FROM oficinas o
+WHERE (objetivo * 0.5) <= ALL (SELECT ventas FROM empleados e WHERE e.oficina = o.oficina AND ventas IS NOT NULL);
+
+14)
+SELECT *
+FROM oficinas o
+WHERE objetivo > (SELECT SUM(cuota) FROM empleados e WHERE e.oficina = o.oficina);
+
+15)
+UPDATE productos
+SET precio = precio * 1.05 WHERE idfab = 'ACI';
+
+16)
+INSERT INTO oficinas
+VALUES (30, 'Madrid', 'centro', null, 100000,0) ;
+
+17)
+UPDATE empleados SET oficina = 30 WHERE oficina = 21;
+
+18)
+DELETE FROM pedidos WHERE rep = 105;
+
+19)
+DELETE FROM oficinas o WHERE NOT EXISTS 
+(SELECT * FROM empleados e WHERE e.oficina = o.oficina);
+
+20)
+UPDATE empleados
+SET oficina = 21 WHERE oficina = 30;
