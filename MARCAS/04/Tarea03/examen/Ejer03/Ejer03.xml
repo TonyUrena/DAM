@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE email SYSTEM "Ejer03.dtd">
+<email fecha="07-02-2023">
+    <de> luca.917@gmail.com </de>
+    <para> atzen@uniroma.com </para>
+    <contenido>
+        <saludo> Hola <persona> Ramon </persona> ,te mando los ejercicios. </saludo>
+        <ejercicios>
+            <ejercicio codigo="A001" resuelto= "si">
+                <tema importancia= "baja"> DTD </tema>
+                <descripcion> convertir ficheros XML </descripcion>
+            </ejercicio>
+            <ejercicio codigo= "A002">
+                <tema> XSD </tema>
+                <descripcion> definir esquemas </descripcion>
+            </ejercicio>
+        </ejercicios>
+        <despedida> Hasta otra </despedida>
+    </contenido>
+</email>

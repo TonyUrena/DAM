@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE listado SYSTEM "Ejer04.dtd">
+<listado>
+    <futuro precio="11.28">
+        <producto>Cafe</producto>
+        <mercado>América Latina</mercado>
+        <ciudad_procedencia>
+            <frankfurt />
+        </ciudad_procedencia>
+    </futuro>
+    <divisa precio="183">
+        <nombre_divisa>Libra esterlina</nombre_divisa>
+        <tipo_de_cambio>2.7:1 euros</tipo_de_cambio>
+        <tipo_de_cambio>1:0.87 dólares</tipo_de_cambio>
+        <ciudad_procedencia>
+            <madrid />
+        </ciudad_procedencia>
+    </divisa>
+    <bono precio="10000" estable="si">
+        <pais_de_procedencia>
+            Islandia
+        </pais_de_procedencia>
+        <valor_deseado>9980</valor_deseado>
+        <valor_minimo>9950</valor_minimo>
+        <valor_maximo>10020</valor_maximo>
+        <ciudad_procedencia>
+            <tokio />
+        </ciudad_procedencia>
+    </bono>
+</listado>
