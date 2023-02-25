@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gimnasio>
+    <monitores>
+        <monitor>
+            <nombre codigo="m001">Mario</nombre>
+            <apellidos>Cansado Pérez</apellidos>
+            <telefono>968222222</telefono>
+            <salario>1200</salario>
+        </monitor>
+        <monitor>
+            <nombre codigo="m002">María</nombre>
+            <apellidos>Talón Rodríguez</apellidos>
+            <telefono>606060606</telefono>
+            <salario>1300</salario>
+        </monitor>
+        <monitor>
+            <nombre codigo="m003">María José</nombre>
+            <apellidos>Sáez Soriano</apellidos>
+            <telefono>699999999</telefono>
+            <salario>1200</salario>
+        </monitor>
+        <monitor>
+            <nombre codigo="m004">Anselmo</nombre>
+            <apellidos>Solera García</apellidos>
+            <telefono>968777777</telefono>
+            <salario>900</salario>
+        </monitor>
+        <monitor>
+            <nombre codigo="m005">Barío Son, Calisto</nombre>
+            <apellidos>Barío Son</apellidos>
+            <telefono></telefono>
+            <salario>900</salario>
+        </monitor>
+    </monitores>
+    <actividades>
+        <actividad codigo="a10">
+            <nombre>Pilates</nombre>
+            <duracion>55</duracion>
+            <intensidad>Ligero</intensidad>
+            <lugar>Sala Fitness</lugar>
+            <horario>
+                <sesion>
+                    <dia>Lunes</dia>
+                    <horas>
+                        <hora>8:00</hora>
+                        <hora>16:00</hora>
+                    </horas>
+                </sesion>
+                <sesion>
+                    <dia>Miércoles</dia>
+                    <horas>
+                        <hora>9:00</hora>
+                        <hora>16:00</hora>
+                    </horas>
+                </sesion>
+            </horario>
+            <monitores>
+                <monitor codigo="m001"></monitor>
+            </monitores>
+        </actividad>
+        <actividad codigo="a20">
+            <nombre>Crosstraining</nombre>
+            <duracion>55</duracion>
+            <intensidad>Fuerte</intensidad>
+            <lugar>Sala Fitness</lugar>
+            <horario>
+                <sesion>
+                    <dia>Martes</dia>
+                    <horas>
+                        <hora>10:00</hora>
+                        <hora>16:00</hora>
+                        <hora>20:00</hora>
+                    </horas>
+                </sesion>
+            </horario>
+            <monitores>
+                <monitor codigo="m002"></monitor>
+                <monitor codigo="m003"></monitor>
+            </monitores>
+        </actividad>
+        <actividad codigo="a30">
+            <nombre>Ciclo indoor</nombre>
+            <duracion>45</duracion>
+            <intensidad>Ligero</intensidad>
+            <lugar>Sala ciclo</lugar>
+            <horario>
+                <sesion>
+                    <dia>Miércoles</dia>
+                    <horas>
+                        <hora>17:00</hora>
+                    </horas>
+                </sesion>
+                <sesion>
+                    <dia>Jueves</dia>
+                    <horas>
+                        <hora>17:00</hora>
+                    </horas>
+                </sesion>
+            </horario>
+            <monitores>
+                <monitor codigo="m004"></monitor>
+            </monitores>
+        </actividad>
+        <actividad codigo="a40">
+            <nombre>Running</nombre>
+            <duracion>55</duracion>
+            <intensidad>Ligero</intensidad>
+            <lugar>Exterior</lugar>
+            <horario>
+                <sesion>
+                    <dia>Lunes</dia>
+                    <horas>
+                        <hora>9:00</hora>
+                    </horas>
+                </sesion>
+                <sesion>
+                    <dia>Miércoles</dia>
+                    <horas>
+                        <hora>9:00</hora>
+                    </horas>
+                </sesion>
+                <sesion>
+                    <dia>Viernes</dia>
+                    <horas>
+                        <hora>9:00</hora>
+                    </horas>
+                </sesion>
+            </horario>
+            <monitores>
+                <monitor codigo="m004"></monitor>
+                <monitor codigo="m005"></monitor>
+            </monitores>
+        </actividad>
+        <actividad codigo="a50">
+            <nombre>Body Pump</nombre>
+            <duracion>55</duracion>
+            <intensidad>Fuerte</intensidad>
+            <lugar>Sala Fitness</lugar>
+            <horario>
+                <sesion>
+                    <dia>Martes</dia>
+                    <horas>
+                        <hora>12:00</hora>
+                        <hora>15:00</hora>
+                    </horas>
+                </sesion>
+                <sesion>
+                    <dia>Jueves</dia>
+                    <horas>
+                        <hora>12:00</hora>
+                        <hora>15:00</hora>
+                    </horas>
+                </sesion>
+            </horario>
+            <monitores>
+                <monitor codigo="m001"></monitor>
+            </monitores>
+        </actividad>
+    </actividades>
+</gimnasio>
