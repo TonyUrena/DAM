@@ -1,15 +1,20 @@
 public class EjercicioSerializa {
     public static void main(String[] args) throws Exception {
         
-        Empleado emp1 = new Empleado(1,"a","a",1,"a");
-        Pedido ped1 = new Pedido(1,1,1);
+        //Empleado[] listaEmpleados = new Empleado[5];
+        //Pedido[] listaPedidos = new Pedido[10];
 
-
-        Serializa.serializa(emp1,"src/empleados.dat");
-        Serializa.serializa(ped1,"src/pedidos.dat");
-
-        System.out.println(Serializa.deserializa("src/empleados.dat"));
-        System.out.println(Serializa.deserializa("src/pedidos.dat"));
+        //Serializa.serializa(listaEmpleados,"src/empleados.dat");
+        //Serializa.serializa(listaPedidos,"src/pedidos.dat");
         
+        Pizzeria.leerEmpleados("src/empleados.dat");
+        Pizzeria.leerPedidos("src/pedidos.dat");
+
+        Pizzeria.calculaMedia(null);
+        Pizzeria.calculaPedidoMaximo(null);
+        Pizzeria.calculaPedidoMinimo(null);
+        Pizzeria.calculaTotales(null);
+        Pizzeria.calculaComision(null);
+
     }
 }
