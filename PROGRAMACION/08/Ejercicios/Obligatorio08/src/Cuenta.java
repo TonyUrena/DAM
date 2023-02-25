@@ -27,5 +27,11 @@ public class Cuenta {
     }
 
     // TODO metodos para recibir abonos y pagar recibos.
+    public void recibeAbono(float abono){
+        this.saldo += abono; 
+    }
 
+    public void pagaRecibo(float pago){
+        this.saldo -= pago;
+    }
 }
