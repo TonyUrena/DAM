@@ -20,8 +20,9 @@ public class PruebaCuentas {
     // 1. Instanciar objetos de tipo Persona
     public static Persona instanciaPersona() {
 
-        String dni;
         Scanner reader = new Scanner(System.in);
+
+        String dni;
         Cuenta cuentaArray[] = new Cuenta[3];
 
         System.out.println("Introduce el DNI de la persona a almacenar:");
@@ -29,6 +30,8 @@ public class PruebaCuentas {
 
         Persona persona = new Persona(dni, cuentaArray);
 
+        // Aumentamos el contador de personas para tener la posición correcta al almacenar
+        // las nuevas instancias en el array
         Persona.cantidadPersonas++;
 
         return persona;
@@ -40,6 +43,9 @@ public class PruebaCuentas {
 
         Scanner reader = new Scanner(System.in);
         int numeroCuenta = 0, saldoCuenta = 0, cantidadCuentas;
+
+        // Los objetos Cuenta van siempre almacenados en este array dentro
+        // de cada instancia Persona
         Cuenta cuentaArray[];
 
         System.out.println("Cuántas cuentas tiene la persona con DNI: " +
@@ -74,6 +80,7 @@ public class PruebaCuentas {
     // 3. Mostrar datos de una persona (por su dni)
     public static void muestraDatos(Persona persona) {
 
+        // Comprueba si existe la persona, si existe recoge su DNI
         if (persona == null) {
             System.out.println("--------------------------");
             System.out.println("ERROR: No hay personas en la lista");
@@ -91,7 +98,7 @@ public class PruebaCuentas {
 
     // 4. Recibir la nómina mensual de una persona (por dni y núm de cuenta).
     // 5. Recibir un pago (por dni y núm de cuenta)
-    public static void recibeNomina(Cuenta cuenta) {
+    public static void recibeIngreso(Cuenta cuenta) {
 
         Scanner reader = new Scanner(System.in);
 
@@ -121,7 +128,7 @@ public class PruebaCuentas {
         boolean sus;
         int i = 0;
 
-        while(personas[i] != null){
+        while(i < Persona.cantidadPersonas){
             sus = personas[i].esMorosa();
             if (sus){ // ඞ
                  System.out.println(personas[i].getDNI() + " ඞ");

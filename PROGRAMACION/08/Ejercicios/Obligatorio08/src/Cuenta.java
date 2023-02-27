@@ -1,3 +1,7 @@
+
+// Los objetos Cuenta van siempre almacenados en un array dentro
+// de una instancia de un objeto persona
+
 public class Cuenta {
     
     private int numCuenta;
@@ -23,10 +27,9 @@ public class Cuenta {
     }
 
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
-    // TODO metodos para recibir abonos y pagar recibos.
     public void recibeAbono(float abono){
         this.saldo += abono; 
     }
@@ -34,4 +37,5 @@ public class Cuenta {
     public void pagaRecibo(float pago){
         this.saldo -= pago;
     }
+
 }
