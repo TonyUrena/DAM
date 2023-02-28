@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img/marrakech.gif);
+    background-size: 200px;
+    background-color: #00ff00;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+#adanConKEBABU{
+    width: 1181px;
+    height: 787px;
+    margin: auto;
+    position: relative;
+}
+
+#KEBABU {
+    position: absolute;
+    top:90px;
+    left:480px;
+    opacity: 0;
+}
+
+#KEBABU:hover{
+    opacity: 1;
+}
+
+form{
+    text-align: center;
+}
+
+#invocantusJulium{
+    position:relative;
+    width: 920px;
+    height: 80px;
+    margin: auto;
+}
+
+#perroNestor{
+    position:absolute;
+    top: 150px;
+    left: 350px;
+}
+
+#julio{
+    position: fixed;
+    background-position-x: 50%;
+    background-position-y: 55%;
+    background-size: 290px;
+    width: 150px;
+    height: 150px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    background-image: url("img/julio.jpeg");
+}
+
+#julio:hover{
+    background-size: 350px;
+}
