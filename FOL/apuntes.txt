@@ -1,0 +1,70 @@
+Salud:
+    bienestar fisico
+    bienestar psiquico
+    bienestar social
+
+    en el desempeño del trabajo el trabajador puede dañar su salud
+    el trabajo tiene efectos positivos (realizacion, dinero) y negativos en la salud
+
+    riesgo laboral: posibilidad de sufrir daños en el trabajo
+    condicion del trabajo:
+        instalaciones
+        agentes fisicos
+        procedimientos
+        otras
+
+Factores riesgo laboral
+    condiciones de:
+        seguridad - lugares y equipos de trabajo
+        medioambientales - fisicos, quimicos, biologicos
+        ergonomicas - carga fisica y mental
+        psicosociales - organizacion y carac personales
+
+Daños a la salud
+    enfermedades, patologias o lesiones
+        especificas - son del trabajo
+        inespecificas - pueden ser del trabajo
+
+    accidente de trabajo
+        existe lesion
+        existe relacion laboral con el trabajador
+        causalidad entre trabajo y lesion
+
+    supuestos
+        al ir y volver del trabajo
+        por desempeño de funciones sindicales
+        tareas distintas a la categoria prof
+        salvament
+        enfermedades de trabajo
+        cosecuencias del accidente
+
+        no se consideran:
+            fuerza mayor extraña al trabajo
+            imprudencia temeraria
+    
+    prevencion
+        legalmente si no hay lesion no hay accidente
+        se amplia desde punto de vista preventivo
+
+        accidente tipico: lesion en persona y material
+        accidente caso: lesion en persona no material
+        accidente blanco: no persona si material
+        incidente: no persona no material pero situacion
+
+    enfermedad profesional
+        lista cerrada
+        diferencia con accidente de trabajo:
+            accidente instantaneo, enfermedad lenta
+            accidente, condiciones de seguridad. Enfermedad medioambientales
+            efectos individuales en enfermedad
+
+Medidas de prevencion
+    prevencion: actuan antes del accidente, reducen las causas
+    proteccion: reducen consecuencias. Colectivas e individuales
+
+    seguridad
+    higiene industrial
+    ergonomia
+    psicosociologia
+    medicina del trabajo
+
