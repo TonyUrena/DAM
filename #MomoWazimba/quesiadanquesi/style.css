@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+ @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(350);
+              transform: translateY(350);
+    }
+    100% {
+      -webkit-transform: translateY(-350px);
+              transform: translateY(-350px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(350);
+              transform: translateY(350);
+    }
+    100% {
+      -webkit-transform: translateY(-350px);
+              transform: translateY(-350px);
+    }
+  }
+  
+
 body {
     background-image: url(img/marrakech.gif);
     background-size: 200px;
@@ -68,12 +90,15 @@ form{
 
 #adCunyao{
     position: fixed;
-    bottom: 0;
+    bottom: -350;
     left: 20px;
     width:400px;
     height:350px;
     z-index: 1000;
     background-color: ghostwhite;
+    -webkit-animation: slide-top 3s linear 0.3s both;
+    animation: slide-top 3s linear 0.3s both;
+
 }
 
 #textoCunyao{
