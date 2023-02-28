@@ -1,24 +1,15 @@
 <html>
 
 <head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
+    <div id="lobsta"></div>
     <button id="julio"></button>
-    <script>
-        const audio = new Audio("https://minty.club/artist/cannibal-corpse/the-time-to-kill-is-now/cannibal-corpse-the-time-to-kill-is-now.mp3");
-        const buttons = document.querySelectorAll("button");
-
-        buttons.forEach(button => {
-            button.addEventListener("click", () => {
-                audio.play();
-            });
-        });
-    </script>
-
     <div id="adCunyao">
         <div id="closeAd"></div>
         <div id="fotoCunyao"></div>
@@ -39,43 +30,72 @@
             </p>
         </div>
         <div id="botonChat"></div>
-        <div id="mensajeChat"> <p>HABLA Y FOLLA PEDAZO IMBEZIL</p></div>
-    </div>
-    <div id="background">
-
-        <h1>QUE SI ADAN QUE SI</h1>
-
-        <div id="adanConKEBABU">
-            <img src="img/Adan.jpg">
-            <img id="KEBABU" src="img/kebab.gif">
+        <div id="mensajeChat">
+            <p>HABLA Y FOLLA PEDAZO IMBEZIL</p>
         </div>
+    </div>
+    <script>
 
-        <br><br>
+        const julio = new Audio("https://minty.club/artist/cannibal-corpse/the-time-to-kill-is-now/cannibal-corpse-the-time-to-kill-is-now.mp3");
+        const lobsta = new Audio("sound/lobsta.wav");
 
-        <form action="/action_page.php">
-            <label for="fname">QUE QUIERE EL SERVIDOR?</label>
-            <br>
-            <input type="text" id="fname" name="fname" value="DIME QUE QUIERO!">
-            <br>
-        </form>
+        document.getElementById("julio").onclick = function () {
+            julio.play();
+        };
 
+        document.getElementById("closeAd").onclick = function () {
+            lobsta.play();
+            document.getElementById("lobsta").style.left = "0";
+        };
+
+        //document.getElementById("lobsta").style.left = "0";
+
+    </script>
+
+    <h1>QUE SI ADAN QUE SI</h1>
+
+    <div id="adanConKEBABU">
+        <img src="img/Adan.jpg">
+        <img id="KEBABU" src="img/kebab.gif">
+    </div>
+
+    <br><br>
+
+    <form action="/action_page.php">
+        <label for="fname">QUE QUIERE EL SERVIDOR?</label>
         <br>
-
-        <h1>
-            <a href="https://www.change.org/p/ram%C3%B3n-melendi-el-melendi-que-melendi-vuelva-a-fumar-porros">
-                HAZ TU
-                FIRMA
-                YA! COLABORA!</a>
-        </h1>
-
+        <input type="text" id="fname" name="fname" value="DIME QUE QUIERO!">
         <br>
+    </form>
 
+    <br>
+
+    <h1>
+        <a href="https://www.change.org/p/ram%C3%B3n-melendi-el-melendi-que-melendi-vuelva-a-fumar-porros">
+            HAZ TU
+            FIRMA
+            YA! COLABORA!</a>
+    </h1>
+
+    <br>
         <div id="invocantusJulium">
-            <img src="img/piscinaNestor.png">
+            <img id="piscinaNestor" src="img/piscinaNestor.png">
             <img id="perroNestor" src="img/perroNestor.gif">
         </div>
 
-    </div>
+        <center>
+            <br>
+            <img src="img/arabcs_header.gif">
+            <br>
+            <img src="img/arab.gif">
+            <br>
+            <img src="img/change.gif">
+            <br>
+            <img  src="img/sindbad.gif">
+            <br>
+            <img src="img/t500a.gif">
+        </center>
+
 </body>
 
 </html>
