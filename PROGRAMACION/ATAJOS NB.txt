@@ -1,2 +1,0 @@
-
-newo : Object object = new object;
