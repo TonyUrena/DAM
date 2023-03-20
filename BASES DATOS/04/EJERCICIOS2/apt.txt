@@ -1,0 +1,199 @@
+CONSULTES SIMPLES
+
+1 Mostra l’estructura de la taula DEPARTMENTS i selecciona després totes les dades de la taula.
+	SHOW COLUMNS FROM DEPARTMENTS;
+	SELECT *
+	FROM DEPARTMENTS;
+
+
+
+2 Crea una consulta per mostrar el cognom, el codi de càrrec, la data de contractació i el número de treballador per cada treballador.
+	SELECT LAST_NAME, JOB_ID, HIRE_DATE, EMPLOYEE_ID 
+	FROM EMPLOYEES;
+
+
+3 Crea una consulta per mostrar els codis de càrrecs únics de la taula EMPLOYEES
+	SELECT JOB_ID
+	FROM EMPLOYEES;
+
+4 Crea una consulta per mostrar el cognom i el salari dels empleats que guanyen més de $12000.
+	SELECT LAST_NAME, SALARY
+	FROM EMPLOYEES
+	WHERE SALARY > 12000;
+
+5 Modifica la consulta de l'exercici 1 per mostrar el cognom i el salari de tots els treballadors el salari dels quals no està comprés entre $5000 i $12000.
+	SELECT LAST_NAME, SALARY
+	FROM EMPLOYEES
+	WHERE SALARY < 12000 AND SALARY > 5000;
+
+
+6 Mostra el cognom del treballador, l'identificador de càrrec i la data d'inici dels empleats contractats entre el 20 de febrer de 1998 i l'1 de maig de 1998. Ordena la consulta en ordre ascendent per data d'inici. 
+	SELECT LAST_NAME, JOB_ID, HIRE_DATE
+	FROM EMPLOYEES
+	WHERE HIRE_DATE >= 19980220 AND HIRE_DATE <= 19980501
+	ORDER BY HIRE_DATE;
+
+7 Mostra el cognom i el número de departament de tots els empleats del departament 20 i 50 en ordre alfabètic per cognom.
+	SELECT LAST_NAME, DEPARTMENT_ID
+	FROM EMPLOYEES
+	WHERE DEPARTMENT_ID = 20 || DEPARTMENT_ID = 50
+	ORDER BY LAST_NAME;
+
+8 Mostra el cognom i la data de contractació de tots els empleats contractats l'any 1994.
+	SELECT LAST_NAME, HIRE_DATE
+	FROM EMPLOYEES
+	WHERE HIRE_DATE >= 19940000 AND HIRE_DATE < 19950000;
+
+9 Mostra el cognom i el càrrec de tots els empleats que no tenen director. 
+	SELECT LAST_NAME, DEPARTMENT_ID
+	FROM EMPLOYEES
+	WHERE MANAGER_ID IS NULL;
+
+10 Mostra el cognom, el salari i la comissió per a tots els empleats que guanyen comissions. Ordena les dades en ordre descendent de salari i comissions. 
+	SELECT LAST_NAME, SALARY, COMMISSION_PCT
+	FROM EMPLOYEES
+	WHERE COMMISSION_PCT IS NOT NULL
+	ORDER BY SALARY DESC;
+
+11 Mostra el cognom de tots els empleats que tinguin la a com a tercera lletra.
+	SELECT LAST_NAME
+	FROM EMPLOYEES 
+	WHERE LAST_NAME LIKE '__a%';
+
+12 Mostra el cognom de tots els empleats que tinguin una a i una e en el cognom. 
+	SELECT LAST_NAME
+	FROM EMPLOYEES 
+	WHERE LAST_NAME LIKE '%a%e%';
+
+13 Mostra el cognom, el càrrec i el salari de tots els empleats que siguin representants de vendes (SA_REP) o encarregats de stock (ST_CLERK) i que els salaris no siguin iguals a $2500, $3500 ni $7000.
+ 	SELECT LAST_NAME, JOB_ID, SALARY
+	FROM EMPLOYEES
+	WHERE (JOB_ID = "SA_REP" OR JOB_ID = "ST_CLERK") AND (SALARY != 2500 OR SALARY != 3500 OR SALARY != 7000);
+
+
+
+CONSULTES D’AGRUPACIÓ
+
+1 Fes una consulta que visualitzi el salari major, menor, la suma i la mitjana de tots els treballadors. Etiqueta adequadament les columnes. Arrodoneix fins al nombre enter més pròxim.
+	SELECT MAX(SALARY) AS "S.MAXIMO", MIN(SALARY) AS "S.MINIMO", SUM(SALARY) AS "SUMA SALARIOS", ROUND(AVG(SALARY)) AS "MEDIA SALARIOS" 	FROM EMPLOYEES;
+
+
+2 Modifica la consulta anterior per visualitzar els mateixos camps però per a cada tipus de càrrec.
+	SELECT JOB_ID, MAX(SALARY) AS "S.MAXIMO", MIN(SALARY) AS "S.MINIMO", SUM(SALARY) AS "SUMA SALARIOS", ROUND(AVG(SALARY)) AS "MEDIA SALARIOS" 	FROM EMPLOYEES 
+	GROUP BY JOB_ID;
+
+3 Escriu una consulta per visualitzar el nombre de persones amb el mateix càrrec. 
+	SELECT JOB_ID, COUNT(*) AS "# EMP" 
+	FROM EMPLOYEES 
+	GROUP BY JOB_ID;
+
+
+4 Determina el nombre de directors sense enumerar-los. Etiqueta la columna com a “Nombre de directors” (utilitza la columna manager_id).
+	SELECT MANAGER_ID, COUNT(*) AS "# DIRECTORES" 
+	FROM EMPLOYEES 
+	GROUP BY MANAGER_ID;	
+
+5 Escriu una consulta per visualitzar la diferència entre el salari màxim i mínim. Etiqueta adequadament la columna. 
+	SELECT MAX(SALARY) - MIN(SALARY) AS "DIFERENCIA ENTRE EL MAYOR 	SALARIO Y EL MENOR" 
+	FROM EMPLOYEES;
+
+6 Visualitza el número de director i el salari del treballador amb menor sou per a aquest director.
+	SELECT MANAGER_ID, MIN(SALARY) 
+	FROM EMPLOYEES 
+	GROUP BY MANAGER_ID;
+
+	
+7 Escriu una consulta per visualitzar el nom, la ubicació, el número d'empleats i el salari mitjà de tots els treballadors de cada departament.
+
+
+8 Crea una consulta que et mostri el nombre total d'empleats i, d'aquest total, el nombre d'empleats contractats en 1995, 1996, 1997 i 1998. Crea les capçaleres de columna adequades.
+	SELECT COUNT(*) AS "TOTAL EMP", 
+		(SELECT COUNT(*) 
+		FROM EMPLOYEES 
+		WHERE HIRE_DATE BETWEEN "1995-01-01" AND "1998-12-31") AS "AÑOS" 	FROM EMPLOYEES;
+
+
+
+SUBCONSULTES
+
+1 Escriu una consulta que mostri el cognom i la data de contractació de qualsevol empleat del mateix departament que Zlotkey. Exclòs Zlotkey.
+
+
+2 Crea una consulta per a mostrar els números de l'empleat i els cognoms de tots els empleats que guanyen més salari mig. Ordena els resultats per salari en ordre ascendent.
+	SELECT EMPLOYEE_ID, LAST_NAME, SALARY
+	FROM EMPLOYEES
+	WHERE SALARY > (SELECT AVG(SALARY) FROM EMPLOYEES)
+	ORDER BY SALARY;
+
+3 Escriu una consulta que mostri els números de l'empleat i els cognoms de tots els empleats que treballen en un departament amb qualsevol empleat i el cognom del qual contingui una 'u'.
+	SELECT EMPLOYEE_ID, LAST_NAME 
+	FROM EMPLOYEES
+	WHERE DEPARTMENT_ID IN (SELECT DEPARTMENT_ID FROM EMPLOYEES WHERE LAST_NAME LIKE "%u%");
+4 Mostra el cognom, el número de departament i l'identificador de càrrec de tots els empleats els identificadors d'ubicació dels quals sigui 1700.
+	SELECT LAST_NAME, DEPARTMENT_ID, JOB_ID
+	FROM EMPLOYEES
+	WHERE DEPARTMENT_ID IN (SELECT DEPARTMENT_ID FROM DEPARTMENTS WHERE LOCATION_ID = 1700);
+
+5 Mostra el cognom, el número de departament i l'identificador de càrrec de tots els empleats del departament “Executive”.
+	SELECT DEPARTMENT_ID, LAST_NAME, JOB_ID
+	FROM EMPLOYEES
+	WHERE DEPARTMENT_ID IN (SELECT DEPARTMENT_ID FROM DEPARTMENTS WHERE DEPARTMENT_NAME = 'EXECUTIVE');
+
+MULTITAULA
+
+1 Escriu una consulta per visualitzar el cognom del treballador i el nom del departament on treballen per a tots els treballadors. 
+	SELECT LAST_NAME, DEPARTMENT_NAME
+	FROM EMPLOYEES
+	JOIN DEPARTMENTS USING (DEPARTMENT_ID);
+2 Crea un llistat únic amb tots els càrrecs que hi ha al departament 80. Inclou la ubicació del departament en el resultat.
+
+3 Escriu una consulta per mostrar el cognom del treballador, el nom del departament, l'identificador d'ubicació i la ciutat de tots els empleats que reben comissió.
+
+4 Visualitza el cognom del treballador i el nom del departament per a tots els treballadors que tinguin una 'a' minúscula en el cognom.
+	SELECT LAST_NAME, DEPARTMENT_NAME 
+	FROM EMPLOYEES 
+	JOIN DEPARTMENTS 
+	USING (DEPARTMENT_ID) WHERE LAST_NAME LIKE '%a%';
+	
+
+5 Escriu una consulta per visualitzar el cognom, el càrrec, el número i el número (¿nombre?) de departament per a tots els treballadors que treballen a Toronto.
+	SELECT LAST_NAME, JOB_TITLE, EMPLOYEES.DEPARTMENT_ID, DEPARTMENT_NAME 
+	FROM EMPLOYEES
+	JOIN JOBS USING (JOB_ID) 
+	JOIN DEPARTMENTS ON EMPLOYEES.DEPARTMENT_ID=DEPARTMENTS.DEPARTMENT_ID
+	JOIN LOCATIONS USING (LOCATION_ID)
+	WHERE CITY = 'Toronto';
+
+
+6 Visualitza el cognom i el número d'empleat amb el cognom i el número del seu director. Etiqueta les columnes per tal que sigui més clar el resultat.
+	SELECT EMPLOYEES.LAST_NAME "Empleado", EMPLOYEES.EMPLOYEE_ID 	"Num. Emp.", tabla.LAST_NAME "Director", tabla.EMPLOYEE_ID "Num. Dir."
+	FROM EMPLOYEES
+	JOIN EMPLOYEES tabla ON EMPLOYEES.MANAGER_ID = tabla.EMPLOYEE_ID;
+
+
+7 Complexa. Visualitza l'estructura de la taula JOB_GRADES. A continuació crea una consulta en la que es pugui visualitzar el nom, el càrrec, el nom del departament, el salari i el grau de tots els treballadors. 
+	SELECT FIRST_NAME, JOBS.JOB_TITLE, DEPARTMENTS.DEPARTMENT_ID, 	EMPLOYEES.SALARY
+	FROM EMPLOYEES
+	JOIN DEPARTMENTS ON EMPLOYEES.DEPARTMENT_ID = 	DEPARTMENTS.DEPARTMENT_ID
+	JOIN JOBS ON EMPLOYEES.JOB_ID = JOBS.JOB_ID;
+
+8 Crea una consulta utilitzant el natural join que et llisti les ubicacions on hi ha departaments (l'id, el carrer, el codi postal, la ciutat i el nom del país).
+
+9 Fes la mateixa consulta utilitzant el join i la clàusula using.
+10 Fes la mateixa consulta amb el join i l'on. Compara els resultats de les consultes 8, 9 i 10; han de ser els mateixos.
+
+11 Ara, refés la consulta sense utilitzar cap de les paraules clau citades en els exercicis anteriors. 
+
+12 Amplia les 4 consultes anteriors de forma que et presenti només els registres de la ciutat de Seattle.
+
+13 Hi ha una taula que no hem utilitzat fins ara: jobs. Aquesta taula ens presenta informació dels identificadors de treball, nom dels treballs i salari màxim i mínim d'aquest treball. Crea una consulta que t'indiqui: nom i cognom d'un treballador, el seu identificador de treball, el nom del seu treball i el salari mínim que podria cobrar. 
+a) Utilitzant natural join 
+b) Utilitzant join i using 
+c) Utilitzant join i on
+d) Sense utilitzar cap de les anteriors.
+e) Utilitzant el cross join. 
+Analitza el resultat que obtens. Explica per què obtens el resultat.
+
+
+
+
