@@ -34,6 +34,7 @@ public class Inventario {
     }
 
     public void anadirAnimalInventario() {
+        
     }
 
     public void retirarAnimalInventario() {
