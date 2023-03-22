@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "xslt-js",
+			"label": "xslt-js: Saxon-JS Transform (New)",
+			"xsltFile": "${workspaceFolder}/cartas.xsl",
+			"xmlSource": "${workspaceFolder}/cartas.xml",
+			"resultPath": "${workspaceFolder}/cartasTransform.html",
+			"group": {
+				"kind": "build"
+			},
+			"problemMatcher": [
+				"$saxon-xslt-js"
+			]
+		}
+	]
+}
