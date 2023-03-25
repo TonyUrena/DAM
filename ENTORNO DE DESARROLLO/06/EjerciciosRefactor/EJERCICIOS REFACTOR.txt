@@ -1,0 +1,19 @@
+EJERCICIO 01
+
+    1. - 2. - 3. Refactor > Rename
+    4. Source > Insert Code > Add Property...
+    5. Refactor > Change Method Parameters
+    6. Refactor > Encapsulate Fields
+    7. Refactor > Safely Delete...
+
+EJERCICIO 02
+
+    1. - 2. Refactor > Pull Up
+    3. Refactor > Introduce > Constant
+    4. Refactor > Introduce > Method
+
+EJERCICIO 03
+    1. Marcha es referenciado por Bicicleta. Hay que cambiar el
+    constructor para que refleje este cambio.
+    2. Refactor > Extract Interface
+    3. 
