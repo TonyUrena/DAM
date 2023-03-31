@@ -1,0 +1,40 @@
+Documento de requisitos.
+
+    Descripción general.
+
+Se pretende desarrollar una aplicación que permita calcular los precios de alquiler de una empresa de alquiler de vehículos. Cada vehículo se identifica unívocamente por medio de su matrícula.
+
+La empresa alquila distintos tipos de vehículos, tanto para transporte de personas como de carga. En la actualidad los vehículos alquilados por la empresa son: coches, microbuses, furgonetas de carga y camiones.
+
+El precio del alquiler de cualquier vehículo tiene una componente base que depende de los días de alquiler a razón de 50 €/día.
+
+        En el caso de alquiler de un coche, al precio base se le suma la cantidad de 1.5€ por plaza y día.
+        El precio de alquiler de los microbuses es igual que el de los coches, salvo que se le añade una cantidad de 2€/plaza independientemente de los días de alquiler.
+        El precio de los vehículos de carga es el precio base más 20€ * PMA (PMA=peso máximo autorizado en toneladas).
+        Además, en el caso de los camiones, al precio se suma un fijo de 40€ independientemente de los días de alquiler.
+
+    Casos de uso.
+
+Las operaciones que el empleado de la empresa de alquiler debe poder realizar son las que aparecen en los siguientes casos de uso:
+
+    Caso de uso Añade Vehículo
+
+1. el empleado selecciona la opción “añade vehículo”
+2. la aplicación permite introducir los datos del nuevo vehículo
+3. el empleado introduce los datos y pulsa aceptar
+4. la aplicación añade el vehículo a la lista de vehículos del la empresa
+
+Caso de uso Obtiene precio alquiler
+
+1. el empleado selecciona la opción “Obtener precio alquiler”
+2. la aplicación permite introducir la matrícula del vehículo y los días que ha durado el alquiler
+3. el empleado introduce los datos y pulsa aceptar
+4. si no existe ningún coche con la matrícula indicada, se notifica y finaliza el caso de uso.
+5 si existe la aplicación muestra el precio del alquiler
+
+Caso de uso Muestra todos los precios
+
+1. el empleado selecciona la opción “Muestra todos los precios”
+2. la aplicación permite introducir el número de días de alquiler
+3. el empleado introduce los días y pulsa aceptar
+4. la aplicación muestra la matrícula de cada uno de los vehículos añadidos junto con el precio que supondría su alquiler para los días indicados.
