@@ -1,3 +1,18 @@
+/*
+* Tony Ureña fortuño
+
+    Por como estaba formulado el enunciado he entendido que el objetivo es 
+    preparar un conjunto de clases para poder utilizarse en una interfaz
+    más allá de lo que hemos aprendido en clase. Por ello he programado
+    una clase llamada VehiculosEmpresa con unos métodos que pueden llamarse
+    desde cualquier punto, y he utilizado el main con pruebas como demostración.
+    Para mantener la idea de poder reutilizar la clase VehiculosEmpresa en 
+    cualquier otra implementación, he utilizado un ArrayList static pero privado
+    a la propia clase. No estoy seguro de si son malas praxis, me gustaría
+    comentarlo por si ha sido una solución rara o entra dentro del objetivo del
+    ejercicio.
+*/
+
 package obligatorio09;
 
 import java.util.ArrayList;
@@ -7,78 +22,25 @@ public class Obligatorio09 {
 
     public static void main(String[] args) {
 
-        ArrayList<Vehiculo> vehiculosEmpresa = new ArrayList();
 
-        System.out.println("1. Añade Vehiculo.");
-        System.out.println("2. Obtener precio alquiler.");
-        System.out.println("3. Muestra todos los precios.");
-        System.out.println("0. Salir.");
-
-        Scanner reader = new Scanner(System.in);
-        int opcionMenu;
-
-        do {
-            opcionMenu = reader.nextInt();
-            switch (opcionMenu) {
-                case 1:
-                    añadeVehiculo();
-                    break;
-                case 2:
-                    obtienePrecioAlquiler();
-                    break;
-                case 3:
-                    muestraPrecios();
-                    break;
-                default:
-                    System.out.println("Opcion incorrecta.");
-            }
-        } while (opcionMenu != 0);
+        // OPCION "Añade Vehículo"
+        // El usuario puede llamar a cualquiera de estos metodos desde la interfaz 
+        // donde seleccione el tipo de vehículo, pasando los argumentos necesarios para
+        // cada tipo de vehiculo.
+        VehiculosEmpresa.anadeCoche(4, "ftw1234", "Skoda", "dorado", "1.6 algo", 20, 25);
+        VehiculosEmpresa.anadeCamion(1000, "AAA1234", "Ford", "Marrón rancio", "V8", 100, 20, 4);
+        VehiculosEmpresa.anadeFurgoneta(1000, "rtx4090", "citroen", "blanco", "aaa", 150, 2);
+        VehiculosEmpresa.anadeMicroBus("HTL2333", "honda", "verde", "123", 122, 1, 154, 2);
+        
+        // OPCION "Obtener precio alquiler
+        // Buscamos en el arraylist de VehiculosEmpresa y llamamos al método dentro
+        // del vehículo para calcular su alquiler
+        System.out.println(VehiculosEmpresa.precioAlquiler("AAA1234", 50));
+        
+        // OPCION "Muestra todos los precios"
+        // Recorremos todo el arraylist de VehiculosEmpresa y construimos un string con
+        // el precio de alquiler de todos los vehiculos para N dias
+        System.out.println(VehiculosEmpresa.muestraTodosPreciosAlquiler(10));
+        
     }
-
-    public static void añadeVehiculo() {
-
-        Scanner reader = new Scanner(System.in);
-
-        System.out.println("Introduce el tipo de vehiculo: ");
-        String tipoVehiculo = reader.nextLine();
-        System.out.println("Introduce matrícula: ");
-        String matricula = reader.nextLine();
-        System.out.println("Introduce marca: ");
-        String marca = reader.nextLine();
-        System.out.println("Introduce color: ");
-        String color = reader.nextLine();
-        System.out.println("Introduce Motor");
-        String motor = reader.nextLine();
-        System.out.println("Introduce Cilindrada: ");
-        int cilindrada = reader.nextInt();
-        System.out.println("Introduce años:");
-        int anyos = reader.nextInt();
-
-        if (tipoVehiculo.equalsIgnoreCase("coche")) {
-            // Pide datos
-            Coche coche = new Coche();
-        }
-        if (tipoVehiculo.equalsIgnoreCase("camion")) {
-            // Pide datos
-            Camion camion = new Camion();
-        }
-        if (tipoVehiculo.equalsIgnoreCase("furgoneta")) {
-            // Pide datos
-            Furgoneta furgoneta = new Furgoneta();
-        }
-        if (tipoVehiculo.equalsIgnoreCase("microbus")) {
-            // Pide datos
-            MicroBus microbus = new MicroBus();
-        }
-
-    }
-
-    public static void obtienePrecioAlquiler() {
-
-    }
-
-    public static void muestraPrecios() {
-
-    }
-
 }
