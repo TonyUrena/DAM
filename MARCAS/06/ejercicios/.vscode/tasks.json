@@ -4,9 +4,9 @@
 		{
 			"type": "xslt-js",
 			"label": "xslt-js: Saxon-JS Transform (New)",
-			"xsltFile": "${workspaceFolder}/Ej07.xsl",
-			"xmlSource": "${workspaceFolder}/ciclos.xml",
-			"resultPath": "${workspaceFolder}/Ej07.xml",
+			"xsltFile": "${workspaceFolder}/Ej13.xsl",
+			"xmlSource": "${workspaceFolder}/inventario.xml",
+			"resultPath": "${workspaceFolder}/Ej13.html",
 			"group": {
 				"kind": "build",
 				"isDefault": true

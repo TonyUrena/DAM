@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<highschool name="IES Alvaro Falomir" webPage="http://www.iesalvarofalomir.es/">
+    <cicles>
+        <cicle id="ASIR">
+            <name>Administración de Sistemas Informáticos en Red</name>
+            <grade>Superior</grade>
+            <title year="2009"/>
+        </cicle>
+        <cicle id="DAW">
+            <name>Desarrollo de Aplicaciones Web</name>
+            <grade>Superior</grade>
+            <title year="2010"/>
+        </cicle>
+        <cicle id="SMR">
+            <name>Sistemas Microinformáticos y Redes</name>
+            <grade>Medio</grade>
+            <title year="2008"/>
+        </cicle>
+    </cicles>
+</highschool>
