@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <h1>IES Alvaro Falomir</h1>
+      <table border="1">
+         <tr>
+            <th>Nombre del ciclo</th>
+            <th>Año del título</th>
+         </tr>
+         <tr>
+            <td>Administración de Sistemas Informáticos en Red</td>
+            <td><span style="color: azul">2009</span></td>
+         </tr>
+         <tr>
+            <td>Desarrollo de Aplicaciones Web</td>
+            <td><span style="color: verde">2010</span></td>
+         </tr>
+         <tr>
+            <td>Sistemas Microinformáticos y Redes</td>
+            <td><span style="color: rojo">2008</span></td>
+         </tr>
+      </table>
+   </body>
+</html>
