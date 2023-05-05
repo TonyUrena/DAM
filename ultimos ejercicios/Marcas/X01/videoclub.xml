@@ -1,0 +1,1225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<videoclub>
+
+    <directores>
+        <director>
+            <cod_dir>100</cod_dir>
+            <nombre>Fernando</nombre>
+            <apellido>Trueba</apellido>
+        </director>
+        <director>
+            <cod_dir>200</cod_dir>
+            <nombre>Pedro</nombre>
+            <apellido>Almodóvar</apellido>
+        </director>
+        <director>
+            <cod_dir>300</cod_dir>
+            <nombre>Alejandro</nombre>
+            <apellido>Amenábar</apellido>
+        </director>
+        <director>
+            <cod_dir>400</cod_dir>
+            <nombre>Bigas</nombre>
+            <apellido>Luna</apellido>
+        </director>
+    </directores>
+
+    <peliculas>
+        <pelicula genero="Comedia">
+            <titulo>Volver</titulo>
+            <productora>El Deseo</productora>
+            <fecha>2006</fecha>
+            <duracion>110</duracion>
+            <cod_dir>200</cod_dir>
+        </pelicula>
+
+        <pelicula genero="Drama">
+            <titulo>La piel que habito</titulo>
+            <productora>El Deseo</productora>
+            <fecha>2011</fecha>
+            <duracion>115</duracion>
+            <cod_dir>200</cod_dir>
+        </pelicula>
+
+        <pelicula genero="Comedia">
+            <titulo>La niña de tus ojos</titulo>
+            <productora>Lolafilms</productora>
+            <fecha>1998</fecha>
+            <duracion>121</duracion>
+            <cod_dir>100</cod_dir>
+        </pelicula>
+
+        <pelicula genero="Drama">
+            <titulo>La Reina de España</titulo>
+            <productora>Atresmedia Cine</productora>
+            <fecha>2016</fecha>
+            <duracion>128</duracion>
+            <cod_dir>100</cod_dir>
+        </pelicula>
+
+        <pelicula genero="Drama">
+            <titulo>Mar adentro</titulo>
+            <productora>Sogecine</productora>
+            <fecha>2004</fecha>
+            <duracion>125</duracion>
+            <cod_dir>300</cod_dir>
+        </pelicula>
+
+        <pelicula genero="Psicológica">
+            <titulo>Abre los ojos</titulo>
+            <productora>Sogecine</productora>
+            <fecha>1997</fecha>
+            <duracion>117</duracion>
+            <cod_dir>300</cod_dir>
+        </pelicula>
+
+
+        <pelicula genero="Erótica">
+            <titulo>Las edades de Lulú</titulo>
+            <productora>Iberoamericana Films</productora>
+            <fecha>1990</fecha>
+            <duracion>95</duracion>
+            <cod_dir>400</cod_dir>
+        </pelicula>
+
+        <pelicula genero="Erótica">
+            <titulo>Jamón, Jamón</titulo>
+            <productora>Lolafilms</productora>
+            <fecha>1992</fecha>
+            <duracion>94</duracion>
+            <cod_dir>400</cod_dir>
+        </pelicula>
+
+    </peliculas>
+
+    <participar>
+        <participa>
+            <titulo>Mar adentro</titulo>
+            <cod_actor tipo="principal">2000</cod_actor>
+        </participa>
+
+        <participa>
+            <titulo>Mar adentro</titulo>
+            <cod_actor tipo="principal">2100</cod_actor>
+        </participa>
+
+        <participa>
+            <titulo>Mar adentro</titulo>
+            <cod_actor tipo="Secundario">1200</cod_actor>
+        </participa>
+
+        <participa>
+            <titulo>Mar adentro</titulo>
+            <cod_actor tipo="Secundario">2200</cod_actor>
+        </participa>
+
+
+        <participa>
+            <titulo>La niña de tus ojos</titulo>
+            <cod_actor tipo="principal">1000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La niña de tus ojos</titulo>
+            <cod_actor tipo="principal">1600</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La niña de tus ojos</titulo>
+            <cod_actor tipo="Secundario">1700</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La niña de tus ojos</titulo>
+            <cod_actor tipo="Secundario">1800</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La piel que habito</titulo>
+            <cod_actor tipo="principal">1400</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La piel que habito</titulo>
+            <cod_actor tipo="principal">2800</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La piel que habito</titulo>
+            <cod_actor tipo="Secundario">1500</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La piel que habito</titulo>
+            <cod_actor tipo="Secundario">2900</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Jamón, Jamón</titulo>
+            <cod_actor tipo="principal">1000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Jamón, Jamón</titulo>
+            <cod_actor tipo="principal">2000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Jamón, Jamón</titulo>
+            <cod_actor tipo="Secundario">2600</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Jamón, Jamón</titulo>
+            <cod_actor tipo="Secundario">2700</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Volver</titulo>
+            <cod_actor tipo="principal">1000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Volver</titulo>
+            <cod_actor tipo="principal">1100</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Volver</titulo>
+            <cod_actor tipo="Secundario">1200</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Volver</titulo>
+            <cod_actor tipo="Secundario">1300</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Abre los ojos</titulo>
+            <cod_actor tipo="principal">1000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Abre los ojos</titulo>
+            <cod_actor tipo="principal">3000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Abre los ojos</titulo>
+            <cod_actor tipo="Secundario">2500</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Abre los ojos</titulo>
+            <cod_actor tipo="Secundario">3100</cod_actor>
+        </participa>
+
+        <participa>
+            <titulo>Las edades de Lulú</titulo>
+            <cod_actor tipo="principal">2000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Las edades de Lulú</titulo>
+            <cod_actor tipo="principal">1800</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Las edades de Lulú</titulo>
+            <cod_actor tipo="Secundario">2300</cod_actor>
+        </participa>
+        <participa>
+            <titulo>Las edades de Lulú</titulo>
+            <cod_actor tipo="Secundario">2400</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La Reina de España</titulo>
+            <cod_actor tipo="principal">1000</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La Reina de España</titulo>
+            <cod_actor tipo="principal">1600</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La Reina de España</titulo>
+            <cod_actor tipo="Secundario">1900</cod_actor>
+        </participa>
+        <participa>
+            <titulo>La Reina de España</titulo>
+            <cod_actor tipo="Secundario">1700</cod_actor>
+        </participa>
+    </participar>
+
+    <actores>
+        <actor>
+            <cod_actor>1000</cod_actor>
+            <nombre>Penélope</nombre>
+            <apellido>Cruz</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+        <actor>
+            <cod_actor>1100</cod_actor>
+            <nombre>Carmen</nombre>
+            <apellido>Maura</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>1200</cod_actor>
+            <nombre>Lola</nombre>
+            <apellido>Dueñas</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>1300</cod_actor>
+            <nombre>Blanca</nombre>
+            <apellido>Portillo</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>1400</cod_actor>
+            <nombre>Antonio</nombre>
+            <apellido>Banderas</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>1500</cod_actor>
+            <nombre>Blanca</nombre>
+            <apellido>Suárez</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>1600</cod_actor>
+            <nombre>Antonio</nombre>
+            <apellido>Resines</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+        <actor>
+            <cod_actor>1700</cod_actor>
+            <nombre>Loles</nombre>
+            <apellido>León</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>1800</cod_actor>
+            <nombre>María</nombre>
+            <apellido>Barranco</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>1900</cod_actor>
+            <nombre>Ana</nombre>
+            <apellido>Belén</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2000</cod_actor>
+            <nombre>Javier</nombre>
+            <apellido>Bardem</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2100</cod_actor>
+            <nombre>Belén</nombre>
+            <apellido>Rueda</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2200</cod_actor>
+            <nombre>Celso</nombre>
+            <apellido>Bugallo</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+        <actor>
+            <cod_actor>2300</cod_actor>
+            <nombre>Francesca</nombre>
+            <apellido>Neri</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2400</cod_actor>
+            <nombre>Óscar</nombre>
+            <apellido>Ladoire</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2500</cod_actor>
+            <nombre>Fele</nombre>
+            <apellido>Martínez</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2600</cod_actor>
+            <nombre>Juán</nombre>
+            <apellido>Diego</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2700</cod_actor>
+            <nombre>Armando</nombre>
+            <apellido>Del Rio</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>2800</cod_actor>
+            <nombre>Elena</nombre>
+            <apellido>Anaya</apellido>
+            <sexo>Mujer</sexo>
+        </actor>
+        <actor>
+            <cod_actor>2900</cod_actor>
+            <nombre>Roberto</nombre>
+            <apellido>Álamo</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>3000</cod_actor>
+            <nombre>Eduardo</nombre>
+            <apellido>Noriega</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+
+        <actor>
+            <cod_actor>3100</cod_actor>
+            <nombre>Chete</nombre>
+            <apellido>Lera</apellido>
+            <sexo>Hombre</sexo>
+        </actor>
+    </actores>
+
+    <ejemplares>
+        <ejemplar>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Malo</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Malo</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Malo</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Malo</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Malo</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Malo</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Muy Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <estado_conservacion>Regular</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+        <ejemplar>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <estado_conservacion>Bueno</estado_conservacion>
+        </ejemplar>
+    </ejemplares>
+    <alquilar>
+        <alquila>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>11-12-2017</fech_alquiler>
+            <fech_devolucion>26-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>07-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>12-07-2015</fech_alquiler>
+            <fech_devolucion>27-07-2015</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10400</cod_socio>
+            <fech_alquiler>06-07-2013</fech_alquiler>
+            <fech_devolucion>21-07-2013</fech_devolucion>
+        </alquila>
+        <alquila>
+            <titulo>La piel que habito</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>24-04-2016</fech_alquiler>
+            <fech_devolucion>09-05-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>10-12-2017</fech_alquiler>
+            <fech_devolucion>25-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>24-04-2016</fech_alquiler>
+            <fech_devolucion>09-05-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10600</cod_socio>
+            <fech_alquiler>24-04-2016</fech_alquiler>
+            <fech_devolucion>09-05-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Jamón, Jamón</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>03-07-2015</fech_alquiler>
+            <fech_devolucion>18-05-2015</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>11-12-2017</fech_alquiler>
+            <fech_devolucion>26-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>24-04-2016</fech_alquiler>
+            <fech_devolucion>09-05-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Las edades de Lulú</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>10-12-2017</fech_alquiler>
+            <fech_devolucion>25-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>10-12-2017</fech_alquiler>
+            <fech_devolucion>25-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>12-07-2015</fech_alquiler>
+            <fech_devolucion>27-07-2015</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>10-12-2017</fech_alquiler>
+            <fech_devolucion>25-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10400</cod_socio>
+            <fech_alquiler>12-07-2015</fech_alquiler>
+            <fech_devolucion>27-07-2015</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>06-06-2016</fech_alquiler>
+            <fech_devolucion>21-06-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10100</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10600</cod_socio>
+            <fech_alquiler>06-06-2016</fech_alquiler>
+            <fech_devolucion>21-06-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Volver</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10600</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>7-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10100</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10400</cod_socio>
+            <fech_alquiler>10-12-2017</fech_alquiler>
+            <fech_devolucion>25-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La niña de tus ojos</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>11-12-2017</fech_alquiler>
+            <fech_devolucion>26-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>7-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>03-05-2021</fech_alquiler>
+            <fech_devolucion>18-05-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>7-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>7-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10400</cod_socio>
+            <fech_alquiler>12-07-2015</fech_alquiler>
+            <fech_devolucion>27-07-2015</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>La Reina de España</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10600</cod_socio>
+            <fech_alquiler>06-06-2016</fech_alquiler>
+            <fech_devolucion>21-06-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10100</cod_socio>
+            <fech_alquiler>7-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>11-12-2017</fech_alquiler>
+            <fech_devolucion>26-12-2017</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>06-06-2016</fech_alquiler>
+            <fech_devolucion>21-06-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Abre los ojos</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10400</cod_socio>
+            <fech_alquiler>06-07-2013</fech_alquiler>
+            <fech_devolucion>21-07-2013</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>06-07-2013</fech_alquiler>
+            <fech_devolucion>21-07-2013</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>4</numero_ejemplar>
+            <cod_socio>10600</cod_socio>
+            <fech_alquiler>06-07-2013</fech_alquiler>
+            <fech_devolucion>21-07-2013</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>06-07-2013</fech_alquiler>
+            <fech_devolucion>21-07-2013</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10400</cod_socio>
+            <fech_alquiler>06-07-2013</fech_alquiler>
+            <fech_devolucion>21-07-2013</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>5</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>06-07-2013</fech_alquiler>
+            <fech_devolucion>21-07-2013</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10100</cod_socio>
+            <fech_alquiler>06-06-2016</fech_alquiler>
+            <fech_devolucion>21-06-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10000</cod_socio>
+            <fech_alquiler>7-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10100</cod_socio>
+            <fech_alquiler>12-07-2015</fech_alquiler>
+            <fech_devolucion>27-07-2015</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10300</cod_socio>
+            <fech_alquiler>06-06-2016</fech_alquiler>
+            <fech_devolucion>21-06-2016</fech_devolucion>
+        </alquila>
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10500</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>1</numero_ejemplar>
+            <cod_socio>10700</cod_socio>
+            <fech_alquiler>11-12-2017</fech_alquiler>
+            <fech_devolucion>26-12-2017</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10400</cod_socio>
+            <fech_alquiler>12-07-2015</fech_alquiler>
+            <fech_devolucion>27-07-2015</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>3</numero_ejemplar>
+            <cod_socio>10200</cod_socio>
+            <fech_alquiler>08-01-2021</fech_alquiler>
+            <fech_devolucion>23-01-2021</fech_devolucion>
+        </alquila>
+
+
+        <alquila>
+            <titulo>Mar adentro</titulo>
+            <numero_ejemplar>2</numero_ejemplar>
+            <cod_socio>10600</cod_socio>
+            <fech_alquiler>7-11-2018</fech_alquiler>
+            <fech_devolucion>22-11-2018</fech_devolucion>
+        </alquila>
+
+
+    </alquilar>
+
+
+    <socios>
+
+
+        <socio>
+            <cod_socio>10700</cod_socio>
+            <nombre>María</nombre>
+            <apellidos>Cano Pérez</apellidos>
+            <direccion>Plaza Pecados y Danzantes 4</direccion>
+            <cod_postal>45720</cod_postal>
+            <localidad>Camuñas</localidad>
+            <provincia>Toledo</provincia>
+            <telefono>649875432</telefono>
+            <avalado_por>10600</avalado_por>
+        </socio>
+
+
+        <socio>
+            <cod_socio>10500</cod_socio>
+            <nombre>Julián</nombre>
+            <apellidos>García Fernández</apellidos>
+            <direccion>C/Alcalá 121</direccion>
+            <cod_postal>28009</cod_postal>
+            <localidad>Madrid</localidad>
+            <provincia>Madrid</provincia>
+            <telefono>6257415</telefono>
+            <avalado_por>10000</avalado_por>
+        </socio>
+
+
+        <socio>
+            <cod_socio>10400</cod_socio>
+            <nombre>Ángela</nombre>
+            <apellidos>Martínez Campos</apellidos>
+            <direccion>c/Bilbao 23</direccion>
+            <cod_postal>28939</cod_postal>
+            <localidad>Arroyomolinos</localidad>
+            <provincia>Madrid</provincia>
+            <telefono>6358917</telefono>
+            <avalado_por>10200</avalado_por>
+        </socio>
+
+        <socio>
+            <cod_socio>10600</cod_socio>
+            <nombre>Julio</nombre>
+            <apellidos>Moreno Lara</apellidos>
+            <direccion>Avenida Reyes Católicos 4</direccion>
+            <cod_postal>45800</cod_postal>
+            <localidad>Quintanar de la Orden</localidad>
+            <provincia>Toledo</provincia>
+            <telefono>6896320</telefono>
+            <avalado_por>10400</avalado_por>
+        </socio>
+
+
+        <socio>
+            <cod_socio>10000</cod_socio>
+            <nombre>Celia</nombre>
+            <apellidos>Cruz Gómez</apellidos>
+            <direccion>Avenida de la constitución 125</direccion>
+            <cod_postal>28931</cod_postal>
+            <localidad>Móstoles</localidad>
+            <provincia>Madrid</provincia>
+            <telefono>614858585</telefono>
+            <avalado_por></avalado_por>
+        </socio>
+
+
+        <socio>
+            <cod_socio>10300</cod_socio>
+            <nombre>Juan</nombre>
+            <apellidos>Paniagüa Aranda</apellidos>
+            <direccion>C/Velázquez44</direccion>
+            <cod_postal>28904</cod_postal>
+            <localidad>Getafe</localidad>
+            <provincia>Madrid</provincia>
+            <telefono>649875432</telefono>
+            <avalado_por>10100</avalado_por>
+        </socio>
+
+
+        <socio>
+            <cod_socio>10100</cod_socio>
+            <nombre>Clara</nombre>
+            <apellidos>Vega Caballero</apellidos>
+            <direccion>Paseo de Goya 24</direccion>
+            <cod_postal>28932</cod_postal>
+            <localidad>Móstoles</localidad>
+            <provincia>Madrid</provincia>
+            <telefono>639211414</telefono>
+            <avalado_por>10000</avalado_por>
+        </socio>
+
+
+        <socio>
+            <cod_socio>10200</cod_socio>
+            <nombre>Alberto</nombre>
+            <apellidos>Conde Pumpido</apellidos>
+            <direccion>C/Cádiz 36</direccion>
+            <cod_postal>28903</cod_postal>
+            <localidad>Getafe</localidad>
+            <provincia>Madrid</provincia>
+            <telefono>651258733</telefono>
+            <avalado_por>10000</avalado_por>
+        </socio>
+
+
+    </socios>
+
+</videoclub>

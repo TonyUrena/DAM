@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hoteles>
+    <Hotel>
+        <Nombre>Hotel Grann Riviera</Nombre>
+        <Localizacion>
+            <Pais>España</Pais>
+            <Ciudad>Cambrils</Ciudad>
+            <Region>Costa Sol</Region>
+        </Localizacion>
+        <Habitaciones>
+            <Dobles>
+                <Numero>350</Numero>
+                <Precio>220</Precio>
+            </Dobles>
+            <Simples>
+                <Numero>97</Numero>
+                <Precio>145</Precio>
+            </Simples>
+        </Habitaciones>
+        <Piscina>true</Piscina>
+        <Categoria>5</Categoria>
+    </Hotel>
+    <Hotel>
+        <Nombre>Hotel Port Aventura</Nombre>
+        <Localizacion>
+            <Pais>España</Pais>
+            <Ciudad>Salou</Ciudad>
+            <Region>Costa Dorada</Region>
+        </Localizacion>
+        <Habitaciones>
+            <Dobles>
+                <Numero>50</Numero>
+                <Precio>133</Precio>
+            </Dobles>
+            <Simples>
+                <Numero>10</Numero>
+                <Precio>61</Precio>
+            </Simples>
+        </Habitaciones>
+        <Piscina>false</Piscina>
+        <Categoria>3</Categoria>
+    </Hotel>
+    <Hotel>
+        <Nombre>Hotel Arts</Nombre>
+        <Localizacion>
+            <Pais>España</Pais>
+            <Ciudad>Barcelona</Ciudad>
+        </Localizacion>
+        <Habitaciones>
+            <Dobles>
+                <Numero>250</Numero>
+                <Precio>750</Precio>
+            </Dobles>
+            <Simples>
+                <Numero>50</Numero>
+                <Precio>310</Precio>
+            </Simples>
+        </Habitaciones>
+        <Piscina>true</Piscina>
+        <Categoria>5</Categoria>
+    </Hotel>
+    <Hotel>
+        <Nombre>Parador Seu d'Urgell</Nombre>
+        <Localizacion>
+            <Pais>España</Pais>
+            <Ciudad>Seu d'Urgell</Ciudad>
+            <Region>Pirineo</Region>
+        </Localizacion>
+        <Habitaciones>
+            <Dobles>
+                <Numero>40</Numero>
+                <Precio>91.5</Precio>
+            </Dobles>
+            <Simples>
+                <Numero>2</Numero>
+                <Precio>44.4</Precio>
+            </Simples>
+        </Habitaciones>
+        <Piscina>true</Piscina>
+        <Categoria>4</Categoria>
+    </Hotel>
+</Hoteles>
