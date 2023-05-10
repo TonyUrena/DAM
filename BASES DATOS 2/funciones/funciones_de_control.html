@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="es" lang="es">
+<head>
+  <title>MySQL AB :: MySQL 5.0 Reference Manual :: 12.2 Funciones de control
+  de flujo</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="docs.css" />
+</head>
+
+<body class="dev">
+
+<div class="section" xml:lang="es" lang="es">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+<h2 class="title">Funciones de control de flujo</h2>
+</div>
+</div>
+</div>
+<a class="indexterm" name="id2936653"></a><a class="indexterm"
+name="id2936663"></a>
+
+<div class="itemizedlist">
+<a class="indexterm" name="id2936677"></a>
+<ul>
+  <li><p><code class="literal">CASE <em
+    class="replaceable"><code>value</code></em> WHEN [<em
+    class="replaceable"><code>compare-value</code></em>] THEN <em
+    class="replaceable"><code>result</code></em> [WHEN [<em
+    class="replaceable"><code>compare-value</code></em>] THEN <em
+    class="replaceable"><code>result</code></em> ...] [ELSE <em
+    class="replaceable"><code>result</code></em>] END</code>, <code
+    class="literal">CASE WHEN [<em
+    class="replaceable"><code>condition</code></em>] THEN <em
+    class="replaceable"><code>result</code></em> [WHEN [<em
+    class="replaceable"><code>condition</code></em>] THEN <em
+    class="replaceable"><code>result</code></em> ...] [ELSE <em
+    class="replaceable"><code>result</code></em>] END</code> </p>
+    <p>La primera versión retorna <em
+    class="replaceable"><code>result</code></em> donde <code
+    class="literal"><em class="replaceable"><code>value</code></em>=<em
+    class="replaceable"><code>compare-value</code></em></code>. La segunda
+    versión retorna el resultado para la primera condición que es cierta.
+    Si no hay ningún resultado coincidente, el resultado tras <code
+    class="literal">ELSE</code> se retorna, o <code
+    class="literal">NULL</code> si no hay parte <code
+    class="literal">ELSE</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT CASE 1 WHEN 1 THEN 'one'
+    -&gt;     WHEN 2 THEN 'two' ELSE 'more' END;
+        -&gt; 'one'
+mysql&gt; SELECT CASE WHEN 1&gt;0 THEN 'true' ELSE 'false' END;
+        -&gt; 'true'
+mysql&gt; SELECT CASE BINARY 'B'
+    -&gt;     WHEN 'a' THEN 1 WHEN 'b' THEN 2 END;
+        -&gt; NULL</pre>
+    <p><a class="indexterm" name="id2936831"></a> </p>
+  </li>
+  <li><p><code class="literal">IF(<em
+    class="replaceable"><code>expr1</code></em>,<em
+    class="replaceable"><code>expr2</code></em>,<em
+    class="replaceable"><code>expr3</code></em>)</code> </p>
+    <p>Si <em class="replaceable"><code>expr1</code></em> es TRUE (<code
+    class="literal"><em class="replaceable"><code>expr1</code></em> &lt;&gt;
+    0</code> and <code class="literal"><em
+    class="replaceable"><code>expr1</code></em> &lt;&gt; NULL</code>)
+    entonces <code class="literal">IF()</code> retorna <em
+    class="replaceable"><code>expr2</code></em>; de otro modo retorna <em
+    class="replaceable"><code>expr3</code></em>. <code
+    class="literal">IF()</code> retorna un valor numérico o cadena de
+    caracteres, en función del contexto en que se usa. </p>
+    <pre class="programlisting">mysql&gt; SELECT IF(1&gt;2,2,3);
+        -&gt; 3
+mysql&gt; SELECT IF(1&lt;2,'yes','no');
+        -&gt; 'yes'
+mysql&gt; SELECT IF(STRCMP('test','test1'),'no','yes');
+        -&gt; 'no'</pre>
+
+    <div class="informaltable">
+    </div>
+    <p><a class="indexterm" name="id2937144"></a></p>
+  </li>
+</ul>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{
+    "arboles": [
+        {
+            "Acer monspessulanum": {
+                "Nombre Comun": [
+                    "Arce de Montpellier",
+                    "Arce menor"
+                ],
+                "Vegetación": "Caducifolio",
+                "Altura": [
+                    6,
+                    10
+                ],
+                "Forma y estructura": "Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante",
+                "Color en primavera": "Haz verde brillante, envés verde blanquecino",
+                "Resistencia a las heladas": [
+                    "Heladas fuertes",
+                    -15
+                ]
+            }
+        },
+        {
+            "Olea europea": {
+                "Nombre Comun": "Olivo",
+                "Vegetación": "Perenne",
+                "Altura": [
+                    8,
+                    15
+                ],
+                "Forma y estructura": "Copa irregular. Tronco principal irregular con bifurcaciones.",
+                "Color en primavera": "Haz verde oscuro, envés verde plateado",
+                "Resistencia a las heladas": [
+                    "Heladas medias",
+                    -10
+                ]
+            }
+        },
+        {
+            "Platanus Orientalis": {
+                "Nombre Comun": "Platano",
+                "Vegetación": "Caducifolio",
+                "Altura": [
+                    20,
+                    25
+                ],
+                "Forma y estructura": "Copa ovoidal. Tronco principal recto. Ramaje expandido",
+                "Color en primavera": "Haz verde medio, envés verde claro",
+                "Resistencia a las heladas": [
+                    "Heladas fuertes",
+                    -20
+                ]
+            }
+        }
+    ]
+}

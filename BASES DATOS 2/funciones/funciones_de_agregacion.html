@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="es" lang="es">
+<head>
+  <title>MySQL AB :: MySQL 5.0 Reference Manual :: 12.10.1 Funciones (de
+  agregación) de GROUP BY</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="docs.css" />
+</head>
+
+<body class="dev">
+
+<div class="section" xml:lang="es" lang="es">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+<h3 class="title"><a name="group-by-functions"></a>Funciones (de agregación)
+de <code class="literal">GROUP BY</code></h3>
+</div>
+</div>
+</div>
+<a class="indexterm" name="id2959767"></a><a class="indexterm"
+name="id2959776"></a>
+
+<p>Si usa una función de grupo en un comando sin la cláusula <code
+class="literal">GROUP BY</code> , es equivalente a agrupar todos los
+registros. </p>
+
+<div class="itemizedlist">
+<a class="indexterm" name="id2959803"></a><a class="indexterm"
+name="id2959812"></a><a class="indexterm" name="id2959821"></a>
+<ul>
+  <li><p><code class="literal">AVG(<em
+    class="replaceable"><code>expr</code></em>)</code></p>
+    <p>Retorna el valor medio de <code class="literal"><em
+    class="replaceable"><code>expr</code></em></code>.</p>
+    <pre class="programlisting">mysql&gt; SELECT student_name, AVG(test_score)
+    -&gt;        FROM student
+    -&gt;        GROUP BY student_name;</pre>
+    <p><a class="indexterm" name="id2959878" id="id2959878"></a></p>
+  </li>
+  <li><p><code class="literal">COUNT(<em
+    class="replaceable"><code>expr</code></em>)</code> </p>
+    <p>Retorna el contador del número de valores no <code
+    class="literal">NULL</code> en los registros recibidos por un comando
+    <code class="literal">SELECT</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT student.student_name,COUNT(*)
+    -&gt;        FROM student,course
+    -&gt;        WHERE student.student_id=course.student_id
+    -&gt;        GROUP BY student_name;</pre>
+    <p><code class="literal">COUNT(*)</code> es algo diferente en que retorna
+    un contador del número de registros retornados, si contienen o no
+    valores <code class="literal">NULL</code> . </p>
+    <p><a class="indexterm" name="id2960218" id="id2960218"></a></p>
+  </li>
+  <li><p><code class="literal">COUNT(DISTINCT <em
+    class="replaceable"><code>expr</code></em>,[<em
+    class="replaceable"><code>expr</code></em>...])</code> </p>
+    <p>Retorna un contador del número de valores no <code
+    class="literal">NULL</code> distintos. </p>
+    <pre class="programlisting">mysql&gt; SELECT COUNT(DISTINCT results) FROM student;</pre>
+    <p><a class="indexterm" name="id2960303"></a> </p>
+  </li>
+  <li><p><code class="literal">GROUP_CONCAT(<em
+    class="replaceable"><code>expr</code></em>)</code> </p>
+    <p>Esta función retorna una cadena resultado con los valores no <code
+    class="literal">NULL</code> concatenados de un grupo. Retorna <code
+    class="literal">NULL</code> si no hay valores no <code
+    class="literal">NULL</code> .</p>
+    <pre class="programlisting">mysql&gt; SELECT student_name,
+    -&gt;     GROUP_CONCAT(DISTINCT test_score
+    -&gt;               ORDER BY test_score DESC SEPARATOR ' ')
+    -&gt;     FROM student
+    -&gt;     GROUP BY student_name;</pre>
+    <p></p>
+  </li>
+  <li><p><code class="literal">MIN([DISTINCT] <em
+    class="replaceable"><code>expr</code></em>)</code>, <code
+    class="literal">MAX([DISTINCT] <em
+    class="replaceable"><code>expr</code></em>)</code> </p>
+    <p>Retornas los valores máximos y mínimos de <em
+    class="replaceable"><code>expr</code></em>. <code
+    class="literal">MIN()</code> y <code class="literal">MAX()</code> pueden
+    tener un argumento; en tales casos retornan el valor de cadena mínimo y
+    máximo.</p>
+    <pre class="programlisting">mysql&gt; SELECT student_name, MIN(test_score), MAX(test_score)
+    -&gt;        FROM student
+    -&gt;        GROUP BY student_name;</pre>
+    <p></p>
+  </li>
+  <li><p><code class="literal">SUM([DISTINCT] <em
+    class="replaceable"><code>expr</code></em>)</code> </p>
+    <p>Retorna la suma de <em class="replaceable"><code>expr</code></em>. Si
+    el conjunto resultado no tiene registros, <code
+    class="literal">SUM()</code> retorna <code class="literal">NULL</code>.
+    </p>
+    <p><a class="indexterm" name="id2960981"></a></p>
+  </li>
+</ul>
+</div>
+</div>
+</body>
+</html>

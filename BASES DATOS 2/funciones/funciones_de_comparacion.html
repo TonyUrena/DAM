@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="es" lang="es">
+<head>
+  <title>MySQL AB :: MySQL 5.0 Reference Manual :: 12.1.3 Funciones y
+  operadores de comparación</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="docs.css" />
+</head>
+
+<body class="dev">
+
+<div class="section" xml:lang="es" lang="es">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+<h3 class="title"><a name="comparison-operators"></a>Funciones y operadores
+de comparación</h3>
+</div>
+</div>
+</div>
+<a class="indexterm" name="id2934195"></a><a class="indexterm"
+name="id2934205"></a><a class="indexterm" name="id2934214"></a>
+
+<p>Las operaciones de comparación dan un valor de <code
+class="literal">1</code> (CIERTO), <code class="literal">0</code> (FALSO), o
+<code class="literal">NULL</code>. Estas operaciones funcionan tanto para
+números como para cadenas de caracteres. Las cadenas de caracteres se
+convierten automáticamente en números y los números en cadenas cuando es
+necesario. </p>
+
+<div class="itemizedlist">
+<a class="indexterm" name="id2934560"></a>
+<ul>
+  <li><p><code class="literal">=</code> </p>
+    <p>Igual: </p>
+    <pre class="programlisting">mysql&gt; SELECT 1 = 0;
+        -&gt; 0
+mysql&gt; SELECT '0' = 0;
+        -&gt; 1
+mysql&gt; SELECT '0.0' = 0;
+        -&gt; 1
+mysql&gt; SELECT '0.01' = 0;
+        -&gt; 0
+mysql&gt; SELECT '.01' = 0.01;
+        -&gt; 1</pre>
+    <p><a class="indexterm" name="id2934598"></a> <a class="indexterm"
+    name="id2934614"></a> </p>
+  </li>
+  <li><p><code class="literal">&lt;=&gt;</code> </p>
+    <p><code class="literal">NULL</code>-safe equal. Este operador realiza
+    una comparación de igualdad como el operador <code
+    class="literal">=</code>, pero retorna 1 en lugar de <code
+    class="literal">NULL</code> si ambos operandos son <code
+    class="literal">NULL</code>, y 0 en lugar de <code
+    class="literal">NULL</code> si un operando es <code
+    class="literal">NULL</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT 1 &lt;=&gt; 1, NULL &lt;=&gt; NULL, 1 &lt;=&gt; NULL;
+        -&gt; 1, 1, 0
+mysql&gt; SELECT 1 = 1, NULL = NULL, 1 = NULL;
+        -&gt; 1, NULL, NULL</pre>
+    <p><a class="indexterm" name="id2934693"></a> <a class="indexterm"
+    name="id2934702"></a> <a class="indexterm" name="id2934712"></a> <a
+    class="indexterm" name="id2934721"></a> </p>
+  </li>
+  <li><p><code class="literal">&lt;&gt;</code>, <code
+    class="literal">!=</code> </p>
+    <p>Diferente: </p>
+    <pre class="programlisting">mysql&gt; SELECT '.01' &lt;&gt; '0.01';
+        -&gt; 1
+mysql&gt; SELECT .01 &lt;&gt; '0.01';
+        -&gt; 0
+mysql&gt; SELECT 'zapp' &lt;&gt; 'zappp';
+        -&gt; 1</pre>
+    <p><a class="indexterm" name="id2934762"></a> <a class="indexterm"
+    name="id2934772"></a> </p>
+  </li>
+  <li><p><code class="literal">&lt;=</code> </p>
+    <p>Menor que o igual: </p>
+    <pre class="programlisting">mysql&gt; SELECT 0.1 &lt;= 2;
+        -&gt; 1</pre>
+    <p><a class="indexterm" name="id2934807"></a> <a class="indexterm"
+    name="id2934817"></a> </p>
+  </li>
+  <li><p><code class="literal">&lt;</code> </p>
+    <p>Menor que: </p>
+    <pre class="programlisting">mysql&gt; SELECT 2 &lt; 2;
+        -&gt; 0</pre>
+    <p><a class="indexterm" name="id2934852"></a> <a class="indexterm"
+    name="id2934861"></a> </p>
+  </li>
+  <li><p><code class="literal">&gt;=</code> </p>
+    <p>Mayor que o igual: </p>
+    <pre class="programlisting">mysql&gt; SELECT 2 &gt;= 2;
+        -&gt; 1</pre>
+    <p><a class="indexterm" name="id2934896"></a> <a class="indexterm"
+    name="id2934906"></a> </p>
+  </li>
+  <li><p><code class="literal">&gt;</code> </p>
+    <p>Mayor que: </p>
+    <pre class="programlisting">mysql&gt; SELECT 2 &gt; 2;
+        -&gt; 0</pre>
+    <p><a class="indexterm" name="id2934941"></a> <a class="indexterm"
+    name="id2934956"></a> <a class="indexterm" name="id2934972"></a> <a
+    class="indexterm" name="id2934988"></a> <a class="indexterm"
+    name="id2934997"></a> </p>
+  </li>
+  <li><p><code class="literal">IS <em class="replaceable"><code>valor
+    booleano</code></em></code>, <code class="literal">IS NOT <em
+    class="replaceable"><code>valor booleano</code></em></code> </p>
+    <p>Comprueba si un valor contra un valor booleano, donde <em
+    class="replaceable"><code>boolean_value</code></em> puede ser <code
+    class="literal">TRUE</code>, <code class="literal">FALSE</code>, o <code
+    class="literal">UNKNOWN</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT 1 IS TRUE, 0 IS FALSE, NULL IS UNKNOWN;
+        -&gt; 1, 1, 1
+mysql&gt; SELECT 1 IS NOT UNKNOWN, 0 IS NOT UNKNOWN, NULL IS NOT UNKNOWN;
+        -&gt; 1, 1, 0</pre>
+    <p> <a class="indexterm" name="id2935102"></a> <a class="indexterm"
+    name="id2935111"></a> </p>
+  </li>
+  <li><p><code class="literal">IS NULL</code>, <code class="literal">IS NOT
+    NULL</code> </p>
+    <p>Testea si un valor es o no <code class="literal">NULL</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT 1 IS NULL, 0 IS NULL, NULL IS NULL;
+        -&gt; 0, 0, 1
+mysql&gt; SELECT 1 IS NOT NULL, 0 IS NOT NULL, NULL IS NOT NULL;
+        -&gt; 1, 1, 0</pre>
+    <p> </p>
+  </li>
+  <li><p><code class="literal"><em class="replaceable"><code>expr</code></em>
+    BETWEEN <em class="replaceable"><code>min</code></em> AND <em
+    class="replaceable"><code>max</code></em></code> </p>
+    <p>Si <em class="replaceable"><code>expr</code></em> es mayor o igual que
+    <em class="replaceable"><code>min</code></em> y <em
+    class="replaceable"><code>expr</code></em> es menor o igual a <em
+    class="replaceable"><code>max</code></em>, <code
+    class="literal">BETWEEN</code> retorna <code class="literal">1</code>, de
+    otro modo retorna <code class="literal">0</code>. Esto es equivalente a
+    la expresión <code class="literal">(<em
+    class="replaceable"><code>min</code></em> &lt;= <em
+    class="replaceable"><code>expr</code></em> AND <em
+    class="replaceable"><code>expr</code></em> &lt;= <em
+    class="replaceable"><code>max</code></em>)</code> si todos los argumentos
+    son del mismo tipo. De otro modo la conversión de tipos tiene lugar
+    según las reglas descritas al principio de la sección, pero aplicadas a
+    todos los argumentos. </p>
+    <pre class="programlisting">mysql&gt; SELECT 1 BETWEEN 2 AND 3;
+        -&gt; 0
+mysql&gt; SELECT 'b' BETWEEN 'a' AND 'c';
+        -&gt; 1
+mysql&gt; SELECT 2 BETWEEN 2 AND '3';
+        -&gt; 1
+mysql&gt; SELECT 2 BETWEEN 2 AND 'x-3';
+        -&gt; 0</pre>
+    <p><a class="indexterm" name="id2935418"></a> </p>
+  </li>
+  <li><p><code class="literal"><em class="replaceable"><code>expr</code></em>
+    NOT BETWEEN <em class="replaceable"><code>min</code></em> AND <em
+    class="replaceable"><code>max</code></em></code> </p>
+    <p>Esto es lo mismo que <code class="literal">NOT (<em
+    class="replaceable"><code>expr</code></em> BETWEEN <em
+    class="replaceable"><code>min</code></em> AND <em
+    class="replaceable"><code>max</code></em>)</code>. </p>
+    <p><a class="indexterm" name="id2935472"></a> <a class="indexterm"
+    name="id2935488"></a> </p>
+  </li>
+  <li><p><code class="literal">COALESCE(<em
+    class="replaceable"><code>value</code></em>,...)</code> </p>
+    <p>Retorna el primer valore no <code class="literal">NULL</code> de la
+    lista. </p>
+    <pre class="programlisting">mysql&gt; SELECT COALESCE(NULL,1);
+        -&gt; 1
+mysql&gt; SELECT COALESCE(NULL,NULL,NULL);
+        -&gt; NULL</pre>
+    <p><a class="indexterm" name="id2935536"></a> </p>
+  </li>
+  <li><p><code class="literal">GREATEST(<em
+    class="replaceable"><code>value1</code></em>,<em
+    class="replaceable"><code>value2</code></em>,...)</code> </p>
+    <p>Con dos o más argumentos, retorna el argumento mayor (con valor
+    mayor). Los argumentos se comparan usando las mismas reglas que para
+    <code class="literal">LEAST()</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT GREATEST(2,0);
+        -&gt; 2
+mysql&gt; SELECT GREATEST(34.0,3.0,5.0,767.0);
+        -&gt; 767.0
+mysql&gt; SELECT GREATEST('B','A','C');
+        -&gt; 'C'</pre>
+    <p><a class="indexterm" name="id2935593"></a> </p>
+  </li>
+  <li><p><code class="literal"><em class="replaceable"><code>expr</code></em>
+    IN (<em class="replaceable"><code>value</code></em>,...)</code> </p>
+    <p>Retorna <code class="literal">1</code> si <em
+    class="replaceable"><code>expr</code></em> es uno de los valores en la
+    lista <code class="literal">IN</code> , de lo contrario retorna <code
+    class="literal">0</code>. Si todos los valores son constantes, se
+    evalúan según el tipo y ordenación de <em
+    class="replaceable"><code>expr</code></em> . La búsqueda para el
+    elemento se hace usando búsqueda binaria. Esto significa que <code
+    class="literal">IN</code> es muy rápido si la lista <code
+    class="literal">IN</code> consiste enteramente en constantes. Si <em
+    class="replaceable"><code>expr</code></em> es una expresión de cadenas
+    de caracteres sensible a mayúsculas, la comparación de cadenas se
+    realiza sensible a mayúsculas. </p>
+    <pre class="programlisting">mysql&gt; SELECT 2 IN (0,3,5,'wefwf');
+        -&gt; 0
+mysql&gt; SELECT 'wefwf' IN (0,3,5,'wefwf');
+        -&gt; 1</pre>
+    <p> </p>
+  </li>
+  <li><p><code class="literal"><em class="replaceable"><code>expr</code></em>
+    NOT IN (<em class="replaceable"><code>value</code></em>,...)</code> </p>
+    <p>Esto es lo mismo que <code class="literal">NOT (<em
+    class="replaceable"><code>expr</code></em> IN (<em
+    class="replaceable"><code>value</code></em>,...))</code>. </p>
+    <p><a class="indexterm" name="id2935809"></a> </p>
+  </li>
+  <li><p><code class="literal">ISNULL(<em
+    class="replaceable"><code>expr</code></em>)</code> </p>
+    <p>Si <em class="replaceable"><code>expr</code></em> es <code
+    class="literal">NULL</code>, <code class="literal">ISNULL()</code>
+    retorna <code class="literal">1</code>, sino retorna <code
+    class="literal">0</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT ISNULL(1+1);
+        -&gt; 0
+mysql&gt; SELECT ISNULL(1/0);
+        -&gt; 1</pre>
+    <p>Una comparación de valores <code class="literal">NULL</code> usando
+    <code class="literal">=</code> siempre es falsa. </p>
+    <p> </p>
+  </li>
+  <li><p><code class="literal">INTERVAL(<em
+    class="replaceable"><code>N</code></em>,<em
+    class="replaceable"><code>N1</code></em>,<em
+    class="replaceable"><code>N2</code></em>,<em
+    class="replaceable"><code>N3</code></em>,...)</code> </p>
+    <p>Retorna <code class="literal">0</code> if <em
+    class="replaceable"><code>N</code></em> &lt; <em
+    class="replaceable"><code>N1</code></em>, <code class="literal">1</code>
+    si <em class="replaceable"><code>N</code></em> &lt; <em
+    class="replaceable"><code>N2</code></em> y así o <code
+    class="literal">-1</code> si <em class="replaceable"><code>N</code></em>
+    es <code class="literal">NULL</code>. Todos los argumentos se tratan como
+    enteros. Esto requiere que <em class="replaceable"><code>N1</code></em>
+    &lt; <em class="replaceable"><code>N2</code></em> &lt; <em
+    class="replaceable"><code>N3</code></em> &lt; <code
+    class="literal">...</code> &lt; <em
+    class="replaceable"><code>Nn</code></em> para que la función funcione
+    correctamente. Esto es porque se usa una búsqueda binaria (muy rápida).
+    </p>
+    <pre class="programlisting">mysql&gt; SELECT INTERVAL(23, 1, 15, 17, 30, 44, 200);
+        -&gt; 3
+mysql&gt; SELECT INTERVAL(10, 1, 10, 100, 1000);
+        -&gt; 2
+mysql&gt; SELECT INTERVAL(22, 23, 30, 44, 200);
+        -&gt; 0</pre>
+    <p><a class="indexterm" name="id2936046"></a> </p>
+  </li>
+  <li><p><code class="literal">LEAST(<em
+    class="replaceable"><code>value1</code></em>,<em
+    class="replaceable"><code>value2</code></em>,...)</code> </p>
+    <p>Con dos o más argumentos, retorna el argumento menor (con un valor
+    menor). </p>
+    <pre class="programlisting">mysql&gt; SELECT LEAST(2,0);
+        -&gt; 0
+mysql&gt; SELECT LEAST(34.0,3.0,5.0,767.0);
+        -&gt; 3.0
+mysql&gt; SELECT LEAST('B','A','C');
+        -&gt; 'A'</pre>
+    <p> </p>
+  </li>
+</ul>
+</div>
+</div>
+</body>
+</html>

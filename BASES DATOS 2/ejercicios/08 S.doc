@@ -1,0 +1,323 @@
+{\rtf1\ansi\ansicpg1252\deff0
+{\fonttbl
+{\f0\fnil\fcharset0\fprq0\fttruetype Arial;}
+{\f1\fnil\fcharset0\fprq0\fttruetype Arial Black;}
+{\f2\fnil\fcharset0\fprq0\fttruetype Symbol;}
+{\f3\fnil\fcharset0\fprq0\fttruetype Nimbus Mono L;}
+{\f4\fnil\fcharset0\fprq0\fttruetype Times New Roman;}
+{\f5\fnil\fcharset0\fprq0\fttruetype Tahoma;}
+{\f6\fnil\fcharset0\fprq0\fttruetype Liberation Sans;}
+{\f7\fnil\fcharset0\fprq0\fttruetype Dingbats;}
+{\f8\fnil\fcharset0\fprq0\fttruetype Courier New;}
+{\f9\fnil\fcharset0\fprq0\fttruetype OpenSymbol;}
+{\f10\fnil\fcharset0\fprq0\fttruetype DejaVu Sans;}
+{\f11\fnil\fcharset0\fprq0\fttruetype Thorndale;}}
+{\colortbl
+\red0\green0\blue0;
+\red255\green255\blue255;
+\red255\green255\blue255;
+\red255\green255\blue255;
+\red192\green192\blue192;
+\red0\green0\blue0;}
+{\stylesheet
+{\s1\tx1584\sbasedon48\snext27 Chapter Heading;}
+{\s2\fi-431\li720 Box List;}
+{\s3\tqc\tx4818\tqr\tx9637\sbasedon27\snext3 Footer;}
+{\s4\keepn\sb239\sa120\f0\fs28\sbasedon27\snext37 Heading;}
+{\s5\fi-431\li720\sbasedon21 Lower Case List;}
+{\s6\qc\b\sbasedon27\snext6 Table Heading;}
+{\s7\f4\fs20\lang1027\snext7 Default Text;}
+{\s8\fi-431\li720\sbasedon21 Upper Case List;}
+{\s9\sb200\sa120\f6\fs32\b\sbasedon4\snext37 Heading 2;}
+{\s20\sb440\sa60\f6\fs24\b\sbasedon27\snext27 Heading 3;}
+{\s11\sb440\sa60\f4\fs24\b\sbasedon4\snext37 Heading 4;}
+{\s12\fi-431\li720 Heart List;}
+{\s13\li1440\ri1440\sa120\sbasedon27 Block Text;}
+{\s14\fi-431\li720 Square List;}
+{\s16\fi-431\li720 Triangle List;}
+{\s31\sa282\f10\fs64\snext31 HumanUbuntu~LT~Gliederung 1;}
+{\s18\keepn\sb440\sa60\f0\fs24\b\sbasedon27\snext27 Heading 1;}
+{\*\cs19\i\snext19 Emphasis_text;}
+{\s10\fi-431\li720 Bullet List;}
+{\s21\fi-431\li720 Numbered List;}
+{\s22\fi-431\li720 Diamond List;}
+{\s40\f4\fs20\b\sbasedon4\snext37 Heading 5;}
+{\s25\tqc\tx4818\tqr\tx9637\sbasedon27\snext25 Header;}
+{\s26\fi-431\li720\sbasedon21 Upper Roman List;}
+{\s27\f4\fs24\lang1027 Normal;}
+{\s28\sb120\sa120\fs24\i\sbasedon27\snext28 Caption;}
+{\*\cs24\f0\fs24\b\snext24 Numbering Symbols_text;}
+{\s23\fi-431\li720 Hand List;}
+{\s17\qc\sb240\sa120\f6\fs32\b\sbasedon27\snext27 Contents Header;}
+{\*\cs15\f8\snext15 Source Text_text;}
+{\s50\tx431\sbasedon20\snext27 Numbered Heading 3;}
+{\s33\fs20\sbasedon27 Footnote Text;}
+{\s34\fi-431\li720 Star List;}
+{\s35\tx1584\sbasedon48\snext27 Section Heading;}
+{\s36\sa282\snext36 lyt-darkblue~LT~Gliederung 1;}
+{\s37\sa120\sbasedon27\snext37 Text body;}
+{\*\cs38\b\snext38 Strong Emphasis_text;}
+{\s39\fi-431\li720 Implies List;}
+{\s29\fi-431\li720 Tick List;}
+{\s49\tx431\sbasedon9\snext27 Numbered Heading 2;}
+{\s51\fi-288\li288\fs20\sbasedon27 Footnote;}
+{\s43\sa120\fs16\sbasedon27\snext43 Texto independiente 3;}
+{\s44\fi-431\li720\sbasedon27 Lower Roman List;}
+{\*\cs45\fs20\super Footnote Reference;}
+{\s46\sbasedon27 Endnote Text;}
+{\*\cs47\fs20\super Endnote Reference;}
+{\s48\tx431\sbasedon18\snext27 Numbered Heading 1;}
+{\s42\fi-288\li288\sbasedon27 Endnote;}
+{\s41\fi-431\li720 Dashed List;}
+{\s55\fi-431\li2880\sbasedon27\snext27 Contents 4;}
+{\s32\f8\sbasedon27 Plain Text;}
+{\s52\fi-431\li720\sbasedon27\snext27 Contents 1;}
+{\s53\fi-431\li1440\sbasedon27\snext27 Contents 2;}
+{\s54\fi-431\li2160\sbasedon27\snext27 Contents 3;}
+{\*\cs30\f9\snext30 Bullet Symbols_text;}}
+{\*\listtable
+{\list\listtemplateid1000\listsimple{\listlevel\levelnfc23\levelstartat0\levelspace0\levelfollow0\fi-282\li582{\leveltext\'01\'b7 ;}{\levelnumbers;}\f2}\listid1000}
+{\list\listtemplateid1001\listsimple{\listlevel\levelnfc0\levelstartat1\levelspace0\levelfollow0\fi-360\li360{\leveltext\'02\'00.;}{\levelnumbers\'01;}}\listid1030}}
+{\*\listoverridetable
+{\listoverride\listoverridecount0\listid1000\levelnfc23\levelstartat0\levelspace0\levelfollow0\fi-282\li582{\leveltext\'01\'b7 ;}{\levelnumbers;}\f2\ls1}
+{\listoverride\listoverridecount0\listid1030\levelnfc0\levelstartat1\levelspace0\levelfollow0\fi-360\li360{\leveltext\'02\'00.;}{\levelnumbers\'01;}\ls2}}
+
+\kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\revprop3{\*\rdf}{\info\uc1{\author Institut March}}\deftab709\viewkind1\paperw11905\paperh16837\margl1440\margr1440\widowctrl
+{\header\pard\plain
+\pard\plain\ltrpar\ql\s25\itap0\tqc\tx4818\tqr\tx9637{\*\abitableprops table-column-props:4.718cm/8.975cm/3.307cm/; table-row-heights:/; table-sdh:0x900ca20}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-style:none; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrnone \cellx2710\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrnone \cellx7798\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\*\shppict{\pict\pngblip\picw266\pich105\picwgoal5319\picscalex46\pichgoal2099\picscaley47
+\bliptag10000{\*\blipuid 00000000000000000000000000002710}
+89504e470d0a1a0a0000000d494844520000010a0000006908020000004dbefa
+de000000017352474200aece1ce900000009704859730000149c0000149c01d5
+8bb6fb00000eff49444154785eed5d5ba8964d15feb741f8fbef9b5d1ba24c31
+c310324cd11b1384503cdc7884f042a5f2efc614ba10350d141415bbf200665a
+a4205d78bcf9f34428fa9ba0fc2688648284a4dd281b4276d285bbb599dd387b
+0e6bd61cde6fe6fdf6faf0e2f3fdd6acc333eb995933effbceee79fffefd4763
+e3d3d3d39337d0a1a1a1bc0a595b4604b274774f597a64892123a6ac8a115011
+18c77030028c800b8192f4e0a983f3b272048ad183b9517966b07b8040317a30
+fa8c40fd08303deaef23f6b018024c8f62d0b3e1fa1128b6b1cb6b8faa92a3e7
+c4883b433fabcaafc2cef0ec51b8032a312f59217952896365dde0d9a32cfe6c
+bd6a04aaa6873ae3bb667ff3ba39fe89a1d13b2e829857c6ec4cad1ab1faec4a
+015725630d968e803558737e403c371d76a1aa49aa62ae19896817e90b9706e9
+4c62b0524ffb8a2b0435f8c9fa6b44d2171cd3546f233c8f0301311aa790321e
+6932f460a564b46fc4fe2d460f789e2ffa913e2f8e3078887ff2034de445f5ba
+f522b40a12462607d31397456287d1c5ac20d09b5be74913d51485c4b614c4b2
+072b7c2b460f22342e312f434443c984b66cc834b183e40521d4a85721b17343
+edba0a396dbc235aa788b5951ed6b95bad38e5b4ab0d781450aa92210e04d2e7
+2c20b89610a1a8ba8a9fa0514f28a1ab326712912da17a5a397b68259306b4b9
+68a3c35a152b529cc90e42768589d175ac1668e5ec81a3632d5543c7e094fe8b
+6eeb5a1f47384f07816894ae90183ed1aea89083f8601d1055ffe9da5a490f64
+6ad6a0a10341ecd4fac5cc3a241184ec0a1331240e164431dc99c2f410fb5711
+bb587897ab1b7f899de16dee1a05bd0d5d0b4d395ebaca48a2450a08da1a03df
+98a228349740e28a599ea992940d31130d759525b5656185d456981ea139a4ca
+9b0cd110b4ae2f532cbaace71d5f5dfb306674d600e34040367fe214127146ec
+9a1a9031316f1774033dcc31c97ac57591d87f8898abb7128b99748b560752bc
+caae301d7c392935ea5bb1874a4c80f819de5c49c37a7221d0e2e22a1704ac87
+117021c0f4e0dc60049c0854545c597de48a8b93b720023c7b14049f4dd78e00
+d3a3f61e62ff0a22c0f428083e9bae1d81dad71eb5e337da3f5e29b5abbfbcde
+323dbc10c508304f6250abaf0dd3a3d93e619e348b6fc3dadb418f71e33eac91
+cafec5056b77807b5eafa48cfac5aacdaa0a31c10c6c8e23b5d3431043cd184a
+2e368757b4662b3dbca492e68a446d1a1d6b546c013dcc1c2a922bd1c4100ddb
+488fc490cb36cfc2e4aae941a181b5ee120de54fdae423bbcd7b5dd523841173
+6636a80e98b178a3b336d75aa9ff7595a02e9f4d1c28daca263ddd3ad3e3c390
+6c8ed06a49668edcae119da8076faefd2a49a54d83383dcc4c95fcb4969a2eda
+58af7b851112d213b4ac64167a74ed6d414a599f2843692e52c4250959687ecc
+aca21b3227044a5b8a4cd95c2f65bd6be9610554545c6ab1510a77491b7049fb
+34e192246113cabb58e7d8a28718c86b2349d3e9252a25f169da5697e9af9a1e
+eaf25ac53d7df89724e9b2ee34c3f16e00743d022901564d0fb9c6d5b8113d0a
+a6f32a8ea589765dcd11b5d69f22f4a4e45617b4ad7a6357e2ebdab2949b42da
+0a38e3eea7b9dd642e7f5d23b4745b4c83882a3593a498abb9f7bab6196095b7
+426a6e9769c0b628e3b3ec5cb5831e2dea1576b512040ad3e3e5cb978383838f
+1f3f56e1e8eded9d32654a7f7f7f5f5f5f2530b11b63138102f478f7eeddeddb
+b71f3c7870e9d2a5fbf7ef23b8cf9d3b77c58a150b162c983d7bf6f8f1e3c766
+0f71d40511e8283d9e3d7b76eddab5cd9b3787060c3cd9be7dfbd2a54b9924a1
+d0b17c0a021da2c7c0c0c08103070e1d3a94e22b9064efdebd8b162d4a51c26d
+19013a029da0c7f5ebd777edda85d751748fb76eddba67cf9ee86964dc6f874d
+bdff946ef023d1c4fc042909b0a78846781b67885b5911c8420fe77d0f58661c
+3b766cf1e2c5b9b80131c01404ab1158d317ef51176d8a3bc60e5485809d1ec0
+8d2d5bb644ac34bcb101d956ad5ad56186c05ca1fef33ac9028c8040c072df43
+70e3e4c993cd61044b912b57ae10377f659562962b721270154bd60a47bba8ce
+24528fcba8d5227251750c17c335875695cdf55d5b3437555c9d3a75aa516e00
+be30876cdbb68d02b44c1ab31c52afe0c512fcaafe53534d6b48ffafd531c40d
+dc5bebafb83314f4582611017df680b538ac37e84abff1a39fabc2ff7e74f7ed
+dfbe20363f7ffefcca952b11617540d50657eb0c60ce2148beba84c575732c57
+2de2738baac1d4660d4432d63add497f3ab0a340ecbbfac5b2cc1ea3e8017bb8
+4b962ca1acc581155ffde1aa09dffeae09d37f5fff6be0f33ffde3c80e0a826f
+debc414a2c8403d6bcc7335efa63a6a0595fb9643413881b563a091f883fa9c2
+e23bd383925442260b3d462dcd8f1f3feee546eff4d9dffbcd9f277dfa2b2b37
+c0ad2ff77ffd6bcb7f32f30f7f01496f3060d12bd3b4806bc06eda2e457fcdbe
+51fc6fbbcc077ac07df19d3b77e2f140c64fdbfd3b1731d4b6e3274e05492f3a
+6011a62c5c4ca4886b9c4edc928acb3fb192911fe2ce181288158138dfbc98b3
+001d810ff43877ee9cb7d9b77ef16b981cbc62420024bfb3fbf75ee1b367cfba
+64b47d24554cd6f42253b57cd514aa32569ae1cd8536d5a24a0c415ddc0d3310
+7a9944f1cd0b320bc42130420f18c2bd53c7a49ffe92326fa87ef4cd5fe62db1
+4e9f3e8db82ed3c8cc27ed0a3de164aeab5f540278e9ead2a02934f9ac32cddb
+616a44da12dfdb9605b22030b234a76c58cdfae35fe95387746ee0ce677fdffd
+63dcd7870f1fce9c39334b3cac84111008e45c9adfb8710387b5ef07cb22b801
+3a3f993ecbdb6177eedcf1cab00023d07904468a2bef03b95f99bf2cce392015
+500b6feb25679c696ec5082422304c0fd8b3f26af9d2c79f78655c02bdd3bf8f
+b7bd7cf9323cc912ad9f1b32020d2130bcf6a02c3c6006f8f89b53e39cf8cf3f
+9f0f7cfe19def6e9d3a7d3a64d8bd3cfad180113812c6b8f617a5cbc7871f5ea
+d56521be7af52abf2c55b60bbacc7a167a0c1757f7eedd2b0ecddbb76f8bfbc0
+0e30021a02b51c03f7ead52b57df68873417ec42793654e2b16e48a411d1a9f8
+4434cfeb4c46076a50550b3d5ebc786185433d1fb69e933fd503dd2854a1c844
+648320867a8235c5104526c299ae6c520b3d106e683fb90edeedcaeef106a59d
+bcc8e078110b12a89a1eae48b4c15b5617525e0c90e675f5a23a88aaf242095e
+b16855961076353495ab71599df43a2004ac670de3e084462a0c690ecb484d90
+cda909412628538b08b7921e2a0d5ca5855a75a83de49597992725916a44e4a2
+fcdb00d6524793d152cd6a25a26432b387e24ca2212bc848214081b4080d5c46
+87e93163c60caf4f70068f9a58d9bf1f3c78d0eb033ea26bcd434f7157e543db
+4ad3d10d05c7bc0804095014526410a36673adba93535ca2a1a0c0330a0fd303
+0ec6cda8b139559293d6e284b8e2a473cc55f678038c6e98129773fcfbbf3788
+db591cf6c26256629426656586e93175aaff76f8cd9b37cb3aeab2aecd635e27
+89f26ad9e0d5a9a5b595c6414ac464a27e429b0b794a14149920eb7202d15647
+d90d057915273c4c8fc993277b1bc34bb6ded7fabc4ada22e05af57afd8f6ee8
+d56c0a68658c14d0165ab8e68e39dc3143114862f32afc0687212c5fbedcab17
+0e66f7cae415b066000234b1be3233090368f4be0d3dc08cce20aab49f5ce050
+9cc925e3858862c8aba4330223af439d397366c3860db8c98d1b379e387122c2
+2d3813f1f0e1c34843d81b58b76e9d4b4043535be4a9bfca9facd3baac37a421
+97bc284b8498a0a89034bf68924843a94d0bd36a48d5237c2012d8058e1685ea
+0ce2808a0f82860456b56e12d5652822a3284db23c7335420fc8e049932679ad
+c6bdd6b77fff7efc4d5def81575ec758a036048a575339e901e0c2896cf0de05
+8e321cfe79ebd6ada023d6efdebd3b7ffe7c5c2d7eda556d1dcffe5010e80e7a
+7cb82d087736bc61c3021d8edfa5bfba046f9278b9b16fdf3ee261bb5ef758a0
+0604c436714b6f74e8a5affcffbc79f3280b74387e77eddab58f1e3dc27b02b6
+b9e0145dca79a46bd6aca9a153d9875c0888fde85cdacaea1975882824fdac59
+fe931384c7c0a5f5ebd7c3aa1a162db2dc8235cc93274fe0dd71efcbeb42094c
+1d3b76908e1b2d0b135b6f1d0299d71e227eef323a234c417fc620a35d563516
+1068841eb0ae80dac9bb46cf822fbf409b0546566245200b3df42776a14c3a7a
+f4288ceb4d837ee4c811facbe5e68da416dd5a8a4032283ab114d63e1146839a
+047918a4b92a61cb03ed13274ebc70e142a30c813b8c9b366d220221b641f09b
+8344552056b65f1bb2ae3da0e57ade848e124b0a04ecef7b08865036b2227084
+e5387e133d42273761041a41c01c78e495c1c14148e5bc56e1063962d1fa1338
+20360ab52758e50622725d3a6fee36ca566a80ea457577526bae59d4ac486f29
+d64d37b460adee5943765df4068880a36dd16af8e0a89a00e286421303971fca
+f1d11f9c364dc2016d59a61128a8405528042a2bacdf11da04c96b641329a5e5
+ae991c89d6916cc3c98fd3c3059a4a3c33c088d147633245bf0bb1d0c4f0cae7
+60c790e52fd35aa70b783604b6b3887733340d703f1e0806b71d232622f5feab
+f5bbebe943e275cd25eb4387c335e8e8dbc05e31a2bcb44e94b7de8db6ae67b4
+51df34e4b2e802445c37034ff1dc043622435c4db2ec5c51e9219c807be1f058
+3bdcf583b7a3bc7f660d58b170e1c23973e6443f336266437af778334c24169e
+3daa1b5af7e0cdadd671fa59f5ab175d11a90c5129440950a5131e601c3d4c7f
+321243a82a400f3506a0caebd7af617df2fcf973791d5e3c9c3061427f7f7f34
+25b48e3751d37a37b47b10ca5947476dd4740da2a1836ea27c103d82665ddc31
+9536410381b70ae8367a648fc754d881d923945dada3475c80260d5cb409d54f
+2cead2b32bcbec51ef413ed69a01462c6ba92db33605564433516dba063183b9
+cc25eaa7377749d2355010cbab8d623154266ced11aa3d451e2fd3b5c95a1812
+e4f14efa52582315a5b9596b59cb68644cd5acabe3b41985c616eb82db9a64d6
+8507122062c81ba0574028972e4979d59f9454b1b6cd327bd44b0f1c2f1779b2
+a3cc0a5b8a40167ad45b5cb5b457d8ed6e42a07df4807983a78e6e4ac19a6369
+6b715533a6ec5b0d08707155432fb00fdd8c40fb8aab6eee0d8ead3204981e95
+7508bb5313023df060634dfeb02f8c404508f0ec515167b02bb521c0f4a8ad47
+d89f8a10f81f7398f80a055464590000000049454e44ae426082}}\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-style:none; top-color:#000000; top-style:solid; top-thickness:0.05pt}
+\pard\plain\ltrpar\qc\s25\intbl\itap1\tqc\tx4818\tqr\tx9637{\s25\f5\fs22\b\lang1027{\*\listtag0}\abinodiroverride\ltrch ACTIVITATS}{\s25\f5\fs22\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\s25\intbl\itap1\tqc\tx4818\tqr\tx9637{\s25\f5\fs22\b\lang1027{\*\listtag0}\abinodiroverride\ltrch Desenvolupament d'Aplicacions Web}{\s25\f5\fs22\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\s25\intbl\itap1\tqc\tx4818\tqr\tx9637{\s25\f5\fs22\b\lang1027{\*\listtag0}\abinodiroverride\ltrch M\'f2dul 2: Bases de Dades }\cell{\*\abiendcell}{\*\abicellprops left-attach:2; right-attach:3; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}
+\pard\plain\ltrpar\qc\s25\intbl\itap1\tqc\tx4818\tqr\tx9637{\s25\f5\fs22\b\lang1027{\*\listtag0}FP_ICC0M02}\cell{\*\abiendcell}\row}{\*\abiendtable}\par
+\pard\plain\ltrpar\ql\s27\itap0}
+{\footer\pard\plain
+\pard\plain\ltrpar\qc\s3\itap0\tqc\tx4818\tqr\tx9637{\field{\*\fldinst {\f4\fs24\lang1027{\*\listtag0} PAGE }}{\fldrslt {\noproof  ?}}}}
+\sectd\sbknone\colsx360\headery1133\footery1133\margtsxn2820\margbsxn2136\marglsxn1133\margrsxn1133\pgncont\ltrsect
+\pard\plain\ltrpar\qj\s27\itap0{\s27\f0\fs24\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\itap0\cbpat3{\s27\f4\fs24\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\s27\itap0\cbpat3{\s27\f0\fs32\b\lang1027{\*\listtag0}\abinodiroverride\ltrch 2253 CFGS Desenvolupament d'Aplicacions Web}{\s27\f0\fs32\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\sb440\sa60\s18\itap0\keepn\cbpat3{\s18\f0\fs32\b\lang1027{\*\listtag0}\abinodiroverride\ltrch M\'f2dul 2 \uc1\u8211\'96 Bases de dades}{\s18\f0\fs32\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\sb440\sa60\s18\itap0\keepn\tx0\cbpat4{\s18\cb4\highlight4\f0\fs32\b\lang1027{\*\listtag0}\abinodiroverride\ltrch UF3 \uc1\u8211\'96 Llenguatges SQL: DCL i extensi\'f3 procedimental}{\s18\cb4\highlight4\f0\fs32\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\s27\itap0\cbpat3{\s27\f0\fs32\b\lang1027{\*\listtag0}\abinodiroverride\ltrch NF3 \uc1\u8211\'96 Procediments emmagatzemats, triggers i funcions}{\s27\f0\fs32\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\s27\itap0\cbpat3{\s27\f1\fs48\lang1027{\*\listtag0}\abinodiroverride\ltrch  ACTIVITATS}{\s27\f1\fs48\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qc\s43\sl240\slmult1\itap0{\s43\cf5\f0\fs22\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s43\sl240\slmult1\itap0{\s43\cf5\f0\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s43\sl240\slmult1\itap0{\*\abitableprops table-column-props:14.049cm/4.286cm/; table-row-heights:0.982cm/; table-sdh:0x8dc66c0}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.5pt; left-color:#000000; left-style:solid; left-thickness:0.5pt; right-style:none; top-color:#000000; top-style:solid; top-thickness:0.5pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10\brdrcf5 \clbrdrl\brdrs\brdrw10\brdrcf5 \clbrdrb\brdrs\brdrw10\brdrcf5 \clbrdrr\brdrnone \cellx8000\clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw10\brdrcf5 \clbrdrl\brdrs\brdrw10\brdrcf5 \clbrdrb\brdrs\brdrw10\brdrcf5 \clbrdrr\brdrs\brdrw10\brdrcf5 \cellx10430
+\pard\plain\ltrpar\ql\sb60\s27\sl360\slmult1\intbl\itap1{\s27\f0\fs24\i\b\lang1027{\*\listtag0}\abinodiroverride\ltrch TREBALL REALITZAT PER:}{\s27\f0\fs24\i\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\sl360\slmult1\intbl\itap1\cell{\*\abiendcell}{\*\abicellprops left-attach:1; right-attach:2; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.5pt; left-color:#000000; left-style:solid; left-thickness:0.5pt; right-color:#000000; right-style:solid; right-thickness:0.5pt; top-color:#000000; top-style:solid; top-thickness:0.5pt}
+\pard\plain\ltrpar\qc\sb60\s25\sl360\slmult1\intbl\itap1\tqc\tx4818\tqr\tx9637{\s25\f0\fs24\b\lang1027{\*\listtag0}\abinodiroverride\ltrch 1DAW}\cell{\*\abiendcell}\row}{\*\abiendtable}\par
+\pard\plain\ltrpar\qj\s43\sl240\slmult1\itap0{\s43\cf5\f0\fs24\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s43\sl240\slmult1\itap0{\s43\cf5\f0\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s43\sl240\slmult1\itap0{\s43\cf5\f0\fs24\i\b\lang1027{\*\listtag0}\abinodiroverride\ltrch Pr\'e0ctica 4: Seguim treballant amb funcions i procediments}{\s43\cf5\f0\fs24\i\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s43\sl240\slmult1\itap0{\s43\cf5\f0\fs24\i\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s43\sl240\slmult1\itap0{\s43\cf5\f0\fs24\i\b\lang1027{\*\listtag0}\abinodiroverride\ltrch Objectius de la pr\'e0ctica }{\s43\cf5\f0\fs24\i\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s43\sl360\slmult1\itap0{\s43\cf5\f0\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-282\li582\bullet 	}\pard\plain{\ltrpar\qj\fi-282\li582{\*\abilist\abilistid1000\abilistparentid0\abilistlevel1\abistartat0{\abifieldfont Symbol}{\abilistdecimal NULL}{\abilistdelim %L}{\abiliststyle Bullet List}}{\*\pn\pnql\pnstart0\pnlvlblt{\pntxtb\bullet}}\ls1\ilvl0\sl360\slmult1\itap0\tx284\tx360{\cf5\f0\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Desenvolupa procediments emmagatzemats avaluant i utilitzant les sent\'e8ncies del llenguatge incorporat en el sistema gestor de bases de dades corporatiu.}{\cf5\f0\fs22\lang1027{\*\listtag0}\par}
+}\pard\plain\ltrpar\qj\li299\s43\sl360\slmult1\itap0\tx284\tx360{\s43\cf5\f0\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qj\s43\sl360\slmult1\itap0\tx284\tx360{\s43\cf5\f0\fs24\i\b\lang1027{\*\listtag0}\abinodiroverride\ltrch Enunciat de la pr\'e0ctica}{\s43\cf5\f0\fs24\i\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\itap0{\s27\f0\fs26\b\lang1027{\*\listtag0}\abinodiroverride\ltrch Implementar en SQL les seg\'fcents funcions i procediments sobre les seg\'fcents base de dades:}{\s27\f0\fs26\b\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\itap0{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x8ffd7b0}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch CREATE DATABASE proced;}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch USE proced;}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch CREATE TABLE alumne}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch (codi INT PRIMARY KEY AUTO_INCREMENT,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch nom VARCHAR(20) NOT NULL,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch cognom VARCHAR(20) NOT NULL,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch data_naixement DATE,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch edat INT}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch );}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch INSERT INTO alumne VALUES (NULL,'Guillem','Homet','1992/12/20',NULL);}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch INSERT INTO alumne VALUES (NULL,'Marta','Ros','1993/01/21',NULL);}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch INSERT INTO alumne VALUES (NULL,'Miquel','Rodr\'edguez','1990/10/11',NULL);}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch CREATE TABLE professor}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch (codi INT PRIMARY KEY AUTO_INCREMENT,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch nom VARCHAR(20) NOT NULL,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch cognom VARCHAR(20) NOT NULL,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch data_naixement DATE,}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch edat INT}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch );}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch INSERT INTO professor VALUES (NULL,'N\'faria','Ribas','1985/10/06',NULL);}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch INSERT INTO professor VALUES (NULL,'Carles','Pujol','1978/06/14',NULL);}\cell{\*\abiendcell}\row}{\*\abiendtable}\par
+\pard\plain\ltrpar\ql\s27\itap0{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-360\li360 1.	}\pard\plain{\ltrpar\qj\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0\tx360{\f0\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Crea }{\f0\fs22\lang1027{\*\listtag0}un procediment que donat un nom, un cognom, la data de naixement i si \'e9s professor o alumne, l'afegeixi a la taula corresponent. Si no, que no faci res. Exemple d'execuci\'f3: CALL inserir('Xavier','Vil\'e0','1975/02/03','professor') ;}{\f0\fs22\lang1027{\*\listtag0}\par}
+}\pard\plain\ltrpar\ql\s27\itap0{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x90029f0}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch CREATE PROCEDURE EJ1(IN NOM VARCHAR(20),IN COGNOM VARCHAR(20), IN DATA DATE,IN TABLA VARCHAR(64)) BEGIN CASE TABLA WHEN 'professor' THEN INSERT INTO professor(nom,cognom,data_naixement) values (nom,cognom,data); when 'alumne' THEN INSERT INTO alumne(nom,cognom,data_naixement) values (nom,cognom,data); ELSE SELECT 'HAS INTRODUCIDO UNA TABLA NO VALIDA'; END CASE; END//}{\s27\f3\fs20\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\intbl\itap1\cell{\*\abiendcell}\row}{\*\abiendtable}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-360\li360 2.	}\pard\plain{\ltrpar\qj\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0\tx360{\f0\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Crea un procediment que, donada la taula que li diem i el codi de la persona, calculi l'edat d'una persona a partir de la data de naixement. Exemple d'execuci\'f3: CALL edat ('professor',20);}{\f0\fs22\lang1027{\*\listtag0}\par}
+}\pard\plain\ltrpar\qj\s27\itap0\tx360{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x9002e58}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch create procedure ej2(in codi int,in tabla varchar(64)) begin set @a=concat('select data_naixement into @w from ',tabla,' where codi=',codi); prepare cad1 from @a; execute cad1; select datediff(now(),@w) div 365 as edad; end}\cell{\*\abiendcell}\row}{\*\abiendtable}\par
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-360\li360 3.	}\pard\plain{\ltrpar\qj\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0\tx360{\f0\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Crea}{\f0\fs22\lang1027{\*\listtag0} un procediment per elimini els registres de la taula alumnes  que tenen el codi entre els dos que l'indicarem (inclosos). Exemple d'execuci\'f3: CALL elimina(20,22) ;}{\f0\fs22\lang1027{\*\listtag0}\par}
+}\pard\plain\ltrpar\qj\s27\itap0\tx360{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x90046a8}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+\pard\plain\ltrpar\ql\s27\intbl\itap1{\s27\f3\fs20\lang1027{\*\listtag0}\abinodiroverride\ltrch create procedure ej3(in pri int,in sec int) begin delete from alumne where codi between pri and sec; end}\cell{\*\abiendcell}\row}{\*\abiendtable}\par
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qj\s27\itap0\tx360\brdrbtw \brdrb\brdrs\brdrcf5\brdrw1\brsp41 {\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f4\fs24\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-360\li360 4.	}\pard\plain{\ltrpar\qj\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0\tx360{\f0\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Volem crear una base de dades anomenada agenda que gestionar\'e0 l'agenda dels treballadors on inserirem els esdeveniments que es produeixen. La taula diari }{\f0\fs22\lang1027{\*\listtag0}tindr\'e0 la seg\'fcent estructura:}{\f4\fs24\lang1027{\*\listtag0}\line }{\f0\fs22\lang1027{\*\listtag0}- El camp codi del tipus INT, que ser\'e0 auto num\'e8ric i la clau prim\'e0ria.\line - El camp data }{\f4\fs24\lang1027{\*\listtag0}del tipus DATE.\line }{\f0\fs22\lang1027{\*\listtag0}- El camp hora }{\f4\fs24\lang1027{\*\listtag0}del tipus HOUR.\line }{\f0\fs22\lang1027{\*\listtag0}- El camp event }{\f4\fs24\lang1027{\*\listtag0}del tipus VARCHAR(40).\line }{\f0\fs22\lang1027{\*\listtag0}\line Crea la base de dades agenda}{\f4\fs24\lang1027{\*\listtag0}.\line }{\f0\fs22\lang1027{\*\listtag0}\line Crea un procediment anomenat taula que }{\f4\fs24\lang1027{\*\listtag0}faci el seg\'fcent:\line }{\f0\fs22\lang1027{\*\listtag0}- Si passem el par\'e0metre 'T', crei l'estructura de la taula diari.}{\f4\fs24\lang1027{\*\listtag0}\line }{\f0\fs22\lang1027{\*\listtag0}- Si passem el par\'e0metre 'E', elimini la taula diari }{\f4\fs24\lang1027{\*\listtag0}si existeix.\line }{\f0\fs22\lang1027{\*\listtag0}Exemple d'execuci\'f3: CALL taula('T');}{\f4\fs24\lang1027{\*\listtag0}\par}
+}\pard\plain\ltrpar\qj\s27\itap0\tx360{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x9007018}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+\pard\plain\ltrpar\ql\s27\intbl\itap1\cell{\*\abiendcell}\row}{\*\abiendtable}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-360\li360 5.	}\pard\plain{\ltrpar\qj\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0{\f0\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Crea un procediment anomenat elim que elimini tots els registres entre dues dates. Si deixem la primera data en blanc esborrar\'e0 tots els registres anteriors a la segona data, i si deixem la segona data en blanc esborrar\'e0 tots els registres posteriors a la primera data. Sempre les dates que indiquem estan incloses.\line }{\f0\fs22\lang1027{\*\listtag0}Exemple d'execuci\'f3: CALL elim(NULL,'2011-04-25');}{\f0\fs22\lang1027{\*\listtag0}\line }{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x90088e0}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+}\pard\plain\ltrpar\ql\s27\intbl\itap1\cell{\*\abiendcell}\row}{\*\abiendtable}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\fi-360\li360 6.	}\pard\plain{\ltrpar\ql\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0{\f5\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Crea un procediment anomenat dietari }{\f0\fs22\lang1027{\*\listtag0}que donada una data i una opci\'f3 ens apareguin tots els esdeveniment de:\line }{\f0\fs22\lang1027{\*\listtag0}- si l'opci\'f3 \'e9s A els esdeveniments del mateix dia de la data.\line - si l'opci\'f3 \'e9s B els esdeveniments de la setmana a que pertany la data.\line - si l'opci\'f3 \'e9s C els esdeveniments del mes a que pertany la data.\line }{\f0\fs22\lang1027{\*\listtag0}Exemple d'execuci\'f3: CALL dietari('2011-05-25','A');}{\f0\fs22\lang1027{\*\listtag0}\line }{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x900a008}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+}\pard\plain\ltrpar\ql\s27\intbl\itap1\cell{\*\abiendcell}\row}{\*\abiendtable}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-360\li360 7.	}\pard\plain{\ltrpar\qj\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0{\f5\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Crea un procediment anomenat inser_rep }{\f0\fs22\lang1027{\*\listtag0}que faci insercions a la taula diari, de manera que inserir\'e0 un esdeveniment repetit cada cert temps. Els par\'e0metres que li donarem seran els seg\'fcents:\line }{\f0\fs22\lang1027{\*\listtag0}- }{\f0\fs22\lang1027{\*\listtag0}Data d'inici de les insercions\line }{\f0\fs22\lang1027{\*\listtag0}- }{\f0\fs22\lang1027{\*\listtag0}Data final de les insercions\line }{\f0\fs22\lang1027{\*\listtag0}- }{\f0\fs22\lang1027{\*\listtag0}Hora de l'esdeveniment\line }{\f0\fs22\lang1027{\*\listtag0}- }{\f0\fs22\lang1027{\*\listtag0}Esdeveniment\line }{\f0\fs22\lang1027{\*\listtag0}- }{\f0\fs22\lang1027{\*\listtag0}Freq\'fc\'e8ncia: D (di\'e0ria), S (setmanal) i M (mensual)\line }{\f0\fs22\lang1027{\*\listtag0}Exemple d'execuci\'f3:\line Si volem inserir un esdeveniment que es repetir\'e0 mensualment farem:\line }{\f0\fs22\lang1027{\*\listtag0}CALL inser_rep('2011-05-25','2012-05-25','12:00','Reuni\'f3 de direcci\'f3','M');\line }{\f5\fs22\lang1027{\*\listtag0}\line }{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x900ae80}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+}\pard\plain\ltrpar\ql\s27\intbl\itap1\cell{\*\abiendcell}\row}{\*\abiendtable}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\fi-360\li360 8.	}\pard\plain{\ltrpar\ql\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0{\f5\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch  }{\f0\fs22\lang1027{\*\listtag0}Crea una funci\'f3 anomenada data_es  que, donada una data en format AAAA-MM-DD, ens la retorni en format DD/MM/AAAA. }{\f0\fs22\lang1027{\*\listtag0}Exemple d'execuci\'f3: data_es('2011-05-25');}{\f5\fs22\lang1027{\*\listtag0}\line }{\*\abitableprops table-column-props:17cm/; table-row-heights:/; table-sdh:0x900b828}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+}\pard\plain\ltrpar\ql\s27\intbl\itap1\cell{\*\abiendcell}\row}{\*\abiendtable}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+{\listtext\pard\qj\fi-360\li360 9.	}\pard\plain{\ltrpar\qj\fi-360\li360{\*\abilist\abilistid1030\abilistparentid0\abilistlevel1\abistartat1{\abifieldfont NULL}{\abilistdecimal .}{\abilistdelim %L.}{\abiliststyle Numbered List}}{\*\pn\pnql\pnstart1\pnlvlbody\pndec{\pntxtb }{\pntxta .}}\fn-360\li360\ls2\ilvl0\itap0\tx360{\f5\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch Crea una funci\'f3 anomenada comprova }{\f0\fs22\lang1027{\*\listtag0} que donat un esdeveniment retorni 1 si existeix un altre esdeveniment el mateix dia a la mateixa hora, i en cas contrari retorni 0. Exemple d'execuci\'f3: comprova('2011-05-25',12:00);\line }{\*\abitableprops table-column-props:17cm/; table-row-heights:0.2500in/; table-sdh:0x900bec0}\par{\*\abicellprops left-attach:0; right-attach:1; top-attach:0; bot-attach:1; bot-color:#000000; bot-style:solid; bot-thickness:0.05pt; left-color:#000000; left-style:solid; left-thickness:0.05pt; right-color:#000000; right-style:solid; right-thickness:0.05pt; top-color:#000000; top-style:solid; top-thickness:0.05pt}{
+\trowd \itap1\trgaph36\trql\trrh0\trleft0\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \clvertalt\cltxlrtb\clbrdrt\brdrs\brdrw1\brdrcf5 \clbrdrl\brdrs\brdrw1\brdrcf5 \clbrdrb\brdrs\brdrw1\brdrcf5 \clbrdrr\brdrs\brdrw1\brdrcf5 \cellx9673
+}\pard\plain\ltrpar\ql\s27\intbl\itap1\cell{\*\abiendcell}\row}{\*\abiendtable}
+\pard\plain\ltrpar\qj\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch 10 PROC_01}{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s27\itap0\tx360{\s27\f5\fs22\lang1027{\*\listtag0}\abinodiroverride\ltrch CREATE FUNCTION DNI(NUMERO INT) RETURNS VARCHAR(10) BEGIN DECLARE RESUL INT;DECLARE LETRA VARCHAR(10); SELECT MOD(NUMERO,23) INTO RESUL;SELECT LET INTO LETRA FROM dni WHERE NUM=RESUL; RETURN CONCAT(NUMERO,LETRA);END}\par}

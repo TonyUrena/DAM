@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="es" lang="es">
+<head>
+  <title>MySQL AB :: MySQL 5.0 Reference Manual :: 12.3 Funciones para
+  cadenas de caracetres</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="docs.css" />
+</head>
+
+<body class="dev">
+
+<div class="section" xml:lang="es" lang="es">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+<h2 class="title">Funciones para cadenas de caracetres</h2>
+</div>
+</div>
+</div>
+
+<p>Para funciones que operan en posiciones de cadenas de caracteres, la
+primera posición es la 1. </p>
+
+<div class="itemizedlist">
+<a class="indexterm" name="id2937465"></a> 
+<ul>
+  <li><p><code class="literal">CHAR_LENGTH(<em
+    class="replaceable"><code>str</code></em>)</code> </p>
+    <p>Retorna la longitud de la cadena de caracteres <em
+    class="replaceable"><code>str</code></em>, medida en caracteres. Un
+    carácter de múltiples bytes cuenta como un sólo carácter. Esto
+    significa que para una cadena de caracteres que contiene cinco caracteres
+    de dos bytes, <code class="literal">LENGTH()</code> retorna <code
+    class="literal">10</code>, mientras <code
+    class="literal">CHAR_LENGTH()</code> returna <code
+    class="literal">5</code>.</p>
+    <p></p>
+  </li>
+  <li><p><code class="literal">CONCAT(<em
+    class="replaceable"><code>str1</code></em>,<em
+    class="replaceable"><code>str2</code></em>,...)</code> </p>
+    <p>Retorna la cadena resultado de concatenar los argumentos. Retorna
+    <code class="literal">NULL</code> si algúna argumento es <code
+    class="literal">NULL</code>. Puede tener uno o más argumentos. Si todos
+    los argumentos son cadenas no binarias, el resultado es una cadena no
+    binaria. Si los argumentos incluyen cualquier cadena binaria, el
+    resultado es una cadena binaria. Un argumento numérico se convierte a su
+    forma de cadena binaria equivalente; si quiere evitarlo puede usar
+    conversión de tipos explícita, como en este ejemplo: <code
+    class="literal">SELECT CONCAT(CAST(int_col AS CHAR), char_col)</code> </p>
+    <pre class="programlisting">mysql&gt; SELECT CONCAT('My', 'S', 'QL');
+        -&gt; 'MySQL'
+mysql&gt; SELECT CONCAT('My', NULL, 'QL');
+        -&gt; NULL
+mysql&gt; SELECT CONCAT(14.3);
+        -&gt; '14.3'</pre>
+    <p><a class="indexterm" name="id2938060"></a></p>
+  </li>
+  <li><p><code class="literal">INSERT(<em
+    class="replaceable"><code>str</code></em>,<em
+    class="replaceable"><code>pos</code></em>,<em
+    class="replaceable"><code>len</code></em>,<em
+    class="replaceable"><code>newstr</code></em>)</code> </p>
+    <p>Retorna la cadena <em class="replaceable"><code>str</code></em>, con
+    la subcadena comenzando en la posición <em
+    class="replaceable"><code>pos</code></em> y <em
+    class="replaceable"><code>len</code></em> caracteres reemplazados por la
+    cadena <em class="replaceable"><code>newstr</code></em>. Retorna la
+    cadena original si <em class="replaceable"><code>pos</code></em> no está
+    entre la longitud de la cadena. Replaza el resto de la cadena a partir de
+    la posición <em class="replaceable"><code>pos</code></em> si <em
+    class="replaceable"><code>len</code></em> no está dentro de la longitud
+    del resto de la cadena. Retorna <code class="literal">NULL</code> si
+    cualquier argumento es nulo. </p>
+    <pre class="programlisting">mysql&gt; SELECT INSERT('Quadratic', 3, 4, 'What');
+        -&gt; 'QuWhattic'
+mysql&gt; SELECT INSERT('Quadratic', -1, 4, 'What');
+        -&gt; 'Quadratic'
+mysql&gt; SELECT INSERT('Quadratic', 3, 100, 'What');
+        -&gt; 'QuWhat'</pre>
+    <p><a class="indexterm" name="id2938937"></a> </p>
+  </li>
+  <li><p><code class="literal">LEFT(<em
+    class="replaceable"><code>str</code></em>,<em
+    class="replaceable"><code>len</code></em>)</code> </p>
+    <p>Retorna los <em class="replaceable"><code>len</code></em> caracteres
+    empezando por la izquierda de la cadena <em
+    class="replaceable"><code>str</code></em>. </p>
+    <pre class="programlisting">mysql&gt; SELECT LEFT('foobarbar', 5);
+        -&gt; 'fooba'</pre>
+    <p><a class="indexterm" name="id2939100"></a> </p>
+  </li>
+  <li><p><code class="literal">LENGTH(<em
+    class="replaceable"><code>str</code></em>)</code> </p>
+    <p>Retorna la longitud de la cadena <em
+    class="replaceable"><code>str</code></em>, medida en bytes.Un carácter
+    multi-byte cuenta como múltiples bytes. Esto significa que para cadenas
+    que contengan cinco caracteres de dos bytes, <code
+    class="literal">LENGTH()</code> retorna 10, mientras que <code
+    class="literal">CHAR_LENGTH()</code> retorna 5. </p>
+    <pre class="programlisting">mysql&gt; SELECT LENGTH('text');
+        -&gt; 4</pre>
+    <p><a class="indexterm" name="id2939161"></a> </p>
+  </li>
+  <li><p><code class="literal">LOWER(<em
+    class="replaceable"><code>str</code></em>)</code> </p>
+    <p>Retorna la cadena <em class="replaceable"><code>str</code></em> con
+    todos los caracteres cambiados a minúsculas según el mapeo del conjunto
+    de caracteres actual (por defecto es ISO-8859-1 Latin1). </p>
+    <pre class="programlisting">mysql&gt; SELECT LOWER('QUADRATICALLY');
+        -&gt; 'quadratically'</pre>
+    <p><a class="indexterm" name="id2939408"></a> </p>
+  </li>
+  <li><p><code class="literal">REPLACE(<em
+    class="replaceable"><code>str</code></em>,<em
+    class="replaceable"><code>from_str</code></em>,<em
+    class="replaceable"><code>to_str</code></em>)</code> </p>
+    <p>Retorna la cadena <em class="replaceable"><code>str</code></em> con
+    todas las ocurrencias de la cadena <em
+    class="replaceable"><code>from_str</code></em> reemplazadas con la cadena
+    <em class="replaceable"><code>to_str</code></em>. </p>
+    <pre class="programlisting">mysql&gt; SELECT REPLACE('www.mysql.com', 'w', 'Ww');
+        -&gt; 'WwWwWw.mysql.com'</pre>
+    <p><a class="indexterm" name="id2940155"></a> </p>
+  </li>
+  <li><p><code class="literal">RIGHT(<em
+    class="replaceable"><code>str</code></em>,<em
+    class="replaceable"><code>len</code></em>)</code> </p>
+    <p>Retorna los <em class="replaceable"><code>len</code></em> caracteres
+    de la derecha de la cadena <em class="replaceable"><code>str</code></em>.
+    </p>
+    <pre class="programlisting">mysql&gt; SELECT RIGHT('foobarbar', 4);
+        -&gt; 'rbar'</pre>
+    <p><a class="indexterm" name="id2940259"></a> </p>
+  </li>
+  <li><p><code class="literal">SPACE(<em
+    class="replaceable"><code>N</code></em>)</code> </p>
+    <p>Retorna la cadena consistente en <em
+    class="replaceable"><code>N</code></em> caracteres blancos. </p>
+    <pre class="programlisting">mysql&gt; SELECT SPACE(6);
+        -&gt; '      '</pre>
+    <p><a class="indexterm" name="id2940570"></a> <a class="indexterm"
+    name="id2940579"></a> </p>
+  </li>
+  <li><p><code class="literal">SUBSTRING(<em
+    class="replaceable"><code>str</code></em>,<em
+    class="replaceable"><code>pos</code></em>)</code> , <code
+    class="literal">SUBSTRING(<em class="replaceable"><code>str</code></em>
+    FROM <em class="replaceable"><code>pos</code></em>)</code>, <code
+    class="literal">SUBSTRING(<em
+    class="replaceable"><code>str</code></em>,<em
+    class="replaceable"><code>pos</code></em>,<em
+    class="replaceable"><code>len</code></em>)</code> , <code
+    class="literal">SUBSTRING(<em class="replaceable"><code>str</code></em>
+    FROM <em class="replaceable"><code>pos</code></em> FOR <em
+    class="replaceable"><code>len</code></em>)</code> </p>
+    <p>Las formas sin el arguemnto <em
+    class="replaceable"><code>len</code></em> retornan una subcadena de la
+    cadena <em class="replaceable"><code>str</code></em> comenzando en la
+    posición <em class="replaceable"><code>pos</code></em>. Las formas con
+    el argumento <em class="replaceable"><code>len</code></em> retornan una
+    subcadena de longitud <em class="replaceable"><code>len</code></em> a
+    partir de la cadena <em class="replaceable"><code>str</code></em>,
+    comenzando en la posición <em
+    class="replaceable"><code>pos</code></em>.Las formas que usan <code
+    class="literal">FROM</code> son sintaxis SQL estándard. En MySQL 5.0, es
+    posible usar valores negativos para <em
+    class="replaceable"><code>pos</code></em>. En este caso, el inicio de la
+    subcadena son <em class="replaceable"><code>pos</code></em> caracteres a
+    partir del final de la cadena, en lugar del principio. Un valor negativo
+    puede usarse para <em class="replaceable"><code>pos</code></em> en
+    cualquier de las formas de esta función. </p>
+    <pre class="programlisting">mysql&gt; SELECT SUBSTRING('Quadratically',5);
+        -&gt; 'ratically'
+mysql&gt; SELECT SUBSTRING('foobarbar' FROM 4);
+        -&gt; 'barbar'
+mysql&gt; SELECT SUBSTRING('Quadratically',5,6);
+        -&gt; 'ratica'        
+mysql&gt; SELECT SUBSTRING('Sakila', -3);
+        -&gt; 'ila'        
+mysql&gt; SELECT SUBSTRING('Sakila', -5, 3);
+        -&gt; 'aki'
+mysql&gt; SELECT SUBSTRING('Sakila' FROM -4 FOR 2);
+        -&gt; 'ki'</pre>
+    <p><a class="indexterm" name="id2940760"></a> </p>
+  </li>
+  <li><p><code class="literal">TRIM([{BOTH | LEADING | TRAILING} [<em
+    class="replaceable"><code>remstr</code></em>] FROM] <em
+    class="replaceable"><code>str</code></em>)</code>, <code
+    class="literal">TRIM(<em class="replaceable"><code>remstr</code></em>
+    FROM] <em class="replaceable"><code>str</code></em>)</code> </p>
+    <p>Retorna la cadena <em class="replaceable"><code>str</code></em> con
+    todos los prefijos y/o sufijos <em
+    class="replaceable"><code>remstr</code></em> eliminados. Si ninguno de
+    los especificadores <code class="literal">BOTH</code>, <code
+    class="literal">LEADING</code>, o se da<code
+    class="literal">TRAILING</code>, <code class="literal">BOTH</code> se
+    asumen. Si <em class="replaceable"><code>remstr</code></em> es opcional y
+    no se especifica, los espacios se eliminan. </p>
+    <pre class="programlisting">mysql&gt; SELECT TRIM('  bar   ');
+        -&gt; 'bar'
+mysql&gt; SELECT TRIM(LEADING 'x' FROM 'xxxbarxxx');
+        -&gt; 'barxxx'
+mysql&gt; SELECT TRIM(BOTH 'x' FROM 'xxxbarxxx');
+        -&gt; 'bar'
+mysql&gt; SELECT TRIM(TRAILING 'xyz' FROM 'barxxyz');
+        -&gt; 'barx'</pre>
+    <p><a class="indexterm" name="id2940941"></a></p>
+  </li>
+  <li><p><code class="literal">UPPER(<em
+    class="replaceable"><code>str</code></em>)</code> </p>
+    <p>Retorna la cadena <em class="replaceable"><code>str</code></em> con
+    todos los caracteres cambiados a mayúsculas según el mapeo del conjunto
+    de caracteres actual (por defecto es ISO-8859-1 Latin1). </p>
+    <pre class="programlisting">mysql&gt; SELECT UPPER('Hej');
+        -&gt; 'HEJ'</pre>
+    <p> </p>
+  </li>
+</ul>
+</div>
+</div>
+</body>
+</html>

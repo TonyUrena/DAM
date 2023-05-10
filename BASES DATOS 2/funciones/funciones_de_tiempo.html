@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="es" lang="es">
+<head>
+  <title>MySQL AB :: MySQL 5.0 Reference Manual :: 12.5 Funciones de fecha y
+  hora</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="docs.css" />
+</head>
+
+<body class="dev">
+
+<div class="section" xml:lang="es" lang="es">
+
+<div class="titlepage">
+
+<div>
+
+<div>
+<h2 class="title"><a name="date-and-time-functions"></a>12.5. Funciones de
+fecha y hora</h2>
+</div>
+</div>
+</div>
+<a class="indexterm" name="id2944617"></a><a class="indexterm"
+name="id2944626"></a>
+
+<p>Esta sección describe las funciones que pueden usarse para manipular
+valores temporales. Por ejemplo, la siguiente consulta selecciona todos los
+registros con un valor <code class="literal">date_col</code> dentro de los
+últimos 30 días: </p>
+<pre class="programlisting">mysql&gt; SELECT <em class="replaceable"><code>something</code></em> FROM <em class="replaceable"><code>tbl_name</code></em>
+    -&gt; WHERE DATE_SUB(CURDATE(),INTERVAL 30 DAY) &lt;= <em class="replaceable"><code>date_col</code></em>;</pre>
+
+<div class="itemizedlist">
+<a class="indexterm" name="id2944834" id="id2944834"></a>
+<ul>
+  <li><p><code class="literal">ADDDATE(<em
+    class="replaceable"><code>date</code></em>,INTERVAL <em
+    class="replaceable"><code>expr</code></em> <em
+    class="replaceable"><code>type</code></em>)</code>, <code
+    class="literal">ADDDATE(<em
+    class="replaceable"><code>expr</code></em>,<em
+    class="replaceable"><code>days</code></em>)</code> </p>
+    <pre class="programlisting">mysql&gt; SELECT DATE_ADD('1998-01-02', INTERVAL 31 DAY);
+        -&gt; '1998-02-02'
+mysql&gt; SELECT ADDDATE('1998-01-02', INTERVAL 31 DAY);
+        -&gt; '1998-02-02'</pre>
+    <p> </p>
+  </li>
+  <li><p><code class="literal">ADDTIME(<em
+    class="replaceable"><code>expr</code></em>,<em
+    class="replaceable"><code>expr2</code></em>)</code> </p>
+    <p><code class="literal">ADDTIME()</code> añade <em
+    class="replaceable"><code>expr2</code></em> a <em
+    class="replaceable"><code>expr</code></em> y retorna el resultado. <em
+    class="replaceable"><code>expr</code></em> es una expresión de fecha u
+    hora y fecha, y <em class="replaceable"><code>expr2</code></em> es una
+    expresión temporal. </p>
+    <pre class="programlisting">mysql&gt; SELECT ADDTIME('1997-12-31 23:59:59.999999',
+    -&gt;                '1 1:1:1.000002');
+        -&gt; '1998-01-02 01:01:01.000001'
+mysql&gt; SELECT ADDTIME('01:00:00.999999', '02:00:00.999998');
+        -&gt; '03:00:01.999997'</pre>
+    <p><a class="indexterm" name="id2945036"></a> </p>
+  </li>
+  <li><p><code class="literal">CURDATE()</code> </p>
+    <p>Retorna la fecha horaria como valor en formato <code
+    class="literal">'YYYY-MM-DD'</code> o <code
+    class="literal">YYYYMMDD</code>, dependiendo de si la fucnión se usa en
+    un contexto numérico o de cadena de caracteres. </p>
+    <pre class="programlisting">mysql&gt; SELECT CURDATE();
+        -&gt; '1997-12-15'
+mysql&gt; SELECT CURDATE() + 0;
+        -&gt; 19971215</pre>
+    <p><a class="indexterm" name="id2945232"></a> </p>
+  </li>
+  <li><p><code class="literal">CURTIME()</code> </p>
+    <p>Retorna la hora actual como valor en formato <code
+    class="literal">'HH:MM:SS'</code> o <code class="literal">HHMMSS</code>
+    dependiendo de si la fucnión se usa en un contexto numérico o de cadena
+    de caracteres. </p>
+    <pre class="programlisting">mysql&gt; SELECT CURTIME();
+        -&gt; '23:50:26'
+mysql&gt; SELECT CURTIME() + 0;
+        -&gt; 235026</pre>
+    <p><a class="indexterm" name="id2945339"></a> </p>
+  </li>
+  <li><p><code class="literal">DATE(<em
+    class="replaceable"><code>expr</code></em>)</code> </p>
+    <p>Extrae la parte de fecha de la expresión de fecha o fecha y hora <em
+    class="replaceable"><code>expr</code></em>. </p>
+    <pre class="programlisting">mysql&gt; SELECT DATE('2003-12-31 01:02:03');
+        -&gt; '2003-12-31'</pre>
+    <p><a class="indexterm" name="id2945485"></a> </p>
+  </li>
+  <li><p><code class="literal">DATEDIFF(<em
+    class="replaceable"><code>expr</code></em>,<em
+    class="replaceable"><code>expr2</code></em>)</code> </p>
+    <p><code class="literal">DATEDIFF()</code> retorna el número de días
+    entre la fecha inicial <em class="replaceable"><code>expr</code></em> y
+    la fecha final <em class="replaceable"><code>expr2</code></em>. <em
+    class="replaceable"><code>expr</code></em> y <em
+    class="replaceable"><code>expr2</code></em> son expresiones de fecha o de
+    fecha y hora. Sólo las partes de fecha de los valores se usan en los
+    cálculos. </p>
+    <pre class="programlisting">mysql&gt; SELECT DATEDIFF('1997-12-31 23:59:59','1997-12-30');
+        -&gt; 1
+mysql&gt; SELECT DATEDIFF('1997-11-30 23:59:59','1997-12-31');
+        -&gt; -31</pre>
+    <p><a class="indexterm" name="id2945555"></a> </p>
+  </li>
+  <li><p><code class="literal">DATE_FORMAT(<em
+    class="replaceable"><code>date</code></em>,<em
+    class="replaceable"><code>format</code></em>)</code> </p>
+    <p>Formatea el valor <em class="replaceable"><code>date</code></em>
+    según la cadena <em class="replaceable"><code>format</code></em> . Los
+    siguientes especificadores pueden usarse en la cadena <em
+    class="replaceable"><code>format</code></em> : </p>
+
+    <div class="informaltable">
+
+    <table border="1">
+      <colgroup><col /><col /></colgroup>
+      <tbody>
+        <tr>
+          <td><span class="bold"><strong>Especificador</strong></span></td>
+          <td><span class="bold"><strong>Descripción</strong></span></td>
+        </tr>
+        <tr>
+          <td><code class="literal">%a</code></td>
+          <td>Día de semana abreviado (<code
+            class="literal">Sun</code>..<code class="literal">Sat</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%b</code></td>
+          <td>Mes abreviado (<code class="literal">Jan</code>..<code
+            class="literal">Dec</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%c</code></td>
+          <td>Mes, numérico (<code class="literal">0</code>..<code
+            class="literal">12</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%D</code></td>
+          <td>Día del mes con sufijo inglés (<code
+            class="literal">0th</code>, <code class="literal">1st</code>,
+            <code class="literal">2nd</code>, <code
+            class="literal">3rd</code>, ...)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%d</code></td>
+          <td>Día del mes numérico (<code class="literal">00</code>..<code
+            class="literal">31</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%e</code></td>
+          <td>Día del mes numérico (<code class="literal">0</code>..<code
+            class="literal">31</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%f</code></td>
+          <td>Microsegundos (<code class="literal">000000</code>..<code
+            class="literal">999999</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%H</code></td>
+          <td>Hora (<code class="literal">00</code>..<code
+            class="literal">23</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%h</code></td>
+          <td>Hora (<code class="literal">01</code>..<code
+            class="literal">12</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%I</code></td>
+          <td>Hora (<code class="literal">01</code>..<code
+            class="literal">12</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%i</code></td>
+          <td>Minutos, numérico (<code class="literal">00</code>..<code
+            class="literal">59</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%j</code></td>
+          <td>Día del año (<code class="literal">001</code>..<code
+            class="literal">366</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%k</code></td>
+          <td>Hora (<code class="literal">0</code>..<code
+            class="literal">23</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%l</code></td>
+          <td>Hora (<code class="literal">1</code>..<code
+            class="literal">12</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%M</code></td>
+          <td>Nombre mes (<code class="literal">January</code>..<code
+            class="literal">December</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%m</code></td>
+          <td>Mes, numérico (<code class="literal">00</code>..<code
+            class="literal">12</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%p</code></td>
+          <td><code class="literal">AM</code> o <code
+            class="literal">PM</code> </td>
+        </tr>
+        <tr>
+          <td><code class="literal">%r</code></td>
+          <td>Hora, 12 horas (<code class="literal">hh:mm:ss</code> seguido
+            de <code class="literal">AM</code> o <code
+            class="literal">PM</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%S</code></td>
+          <td>Segundos (<code class="literal">00</code>..<code
+            class="literal">59</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%s</code></td>
+          <td>Segundos (<code class="literal">00</code>..<code
+            class="literal">59</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%T</code></td>
+          <td>Hora, 24 horas (<code class="literal">hh:mm:ss</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%U</code></td>
+          <td>Semana (<code class="literal">00</code>..<code
+            class="literal">53</code>), donde domingo es el primer día de la
+            semana</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%u</code></td>
+          <td>Semana (<code class="literal">00</code>..<code
+            class="literal">53</code>), donde lunes es el primer día de la
+            semana</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%V</code></td>
+          <td>Semana (<code class="literal">01</code>..<code
+            class="literal">53</code>), donde domingo es el primer día de la
+            semana; usado con <code class="literal">%X</code> </td>
+        </tr>
+        <tr>
+          <td><code class="literal">%v</code></td>
+          <td>Semana (<code class="literal">01</code>..<code
+            class="literal">53</code>), donde lunes es el primer día de la
+            semana; usado con <code class="literal">%x</code> </td>
+        </tr>
+        <tr>
+          <td><code class="literal">%W</code></td>
+          <td>Nombre día semana (<code class="literal">Sunday</code>..<code
+            class="literal">Saturday</code>)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%w</code></td>
+          <td>Día de la semana (<code class="literal">0</code>=Sunday..<code
+            class="literal">6</code>=Saturday)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%X</code></td>
+          <td>Año para la semana donde domingo es el primer día de la
+            semana, numérico, cuatro dígitos; usado con <code
+            class="literal">%V</code> </td>
+        </tr>
+        <tr>
+          <td><code class="literal">%x</code></td>
+          <td>Año para la semana, donde lunes es el primer día de la
+            semana, numérico, cuatro dígitos; usado con <code
+            class="literal">%v</code> </td>
+        </tr>
+        <tr>
+          <td><code class="literal">%Y</code></td>
+          <td>Año, numérico, cuatro dígitos</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%y</code></td>
+          <td>Año, numérico (dos dígitos)</td>
+        </tr>
+        <tr>
+          <td><code class="literal">%%</code></td>
+          <td>Carácter '<code class="literal">%</code>' literal</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Todos los otros caracteres se copian al resultado sin interpretación.
+    </p>
+    <p>Tenga en cuenta que el carácter '<code class="literal">%</code>' se
+    necesita antes de caracteres especificadores de formato. </p>
+    <p>Los rangos para los especificadores de mes y día comienzan en cero
+    debido a que MySQL permite almacenar fechas incompletas tales como <code
+    class="literal">'2004-00-00'</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT DATE_FORMAT('1997-10-04 22:23:00', '%W %M %Y');
+        -&gt; 'Saturday October 1997'
+mysql&gt; SELECT DATE_FORMAT('1997-10-04 22:23:00', '%H:%i:%s');
+        -&gt; '22:23:00'
+mysql&gt; SELECT DATE_FORMAT('1997-10-04 22:23:00',
+                          '%D %y %a %d %m %b %j');
+        -&gt; '4th 97 Sat 04 10 Oct 277'
+mysql&gt; SELECT DATE_FORMAT('1997-10-04 22:23:00',
+                          '%H %k %I %r %T %S %w');
+        -&gt; '22 22 10 10:23:00 PM 22:23:00 00 6'
+mysql&gt; SELECT DATE_FORMAT('1999-01-01', '%X %V');
+        -&gt; '1998 52'</pre>
+    <p><a class="indexterm" name="id2947286"></a> </p>
+  </li>
+  <li><p><code class="literal">DAYNAME(<em
+    class="replaceable"><code>date</code></em>)</code> </p>
+    <p>Retorna el nombre del día de la semana para <em
+    class="replaceable"><code>date</code></em>. </p>
+    <pre class="programlisting">mysql&gt; SELECT DAYNAME('1998-02-05');
+        -&gt; 'Thursday'</pre>
+    <p><a class="indexterm" name="id2947375"></a> </p>
+  </li>
+  <li><p><code class="literal">DAYOFMONTH(<em
+    class="replaceable"><code>date</code></em>)</code> </p>
+    <p>Retorna el día del mes para <em
+    class="replaceable"><code>date</code></em>, en el rango <code
+    class="literal">1</code> a <code class="literal">31</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT DAYOFMONTH('1998-02-03');
+        -&gt; 3</pre>
+    <p><a class="indexterm" name="id2947430"></a> </p>
+  </li>
+  <li><p><code class="literal">HOUR(<em
+    class="replaceable"><code>time</code></em>)</code> </p>
+    <p>Retorna la hora para <em class="replaceable"><code>time</code></em>.
+    El rango del valor de retorno es 0 a 23 para valores de horas del día.
+    </p>
+    <pre class="programlisting">mysql&gt; SELECT HOUR('10:05:03');
+        -&gt; 10</pre>
+    <p>Además, el rango de los valores <code class="literal">TIME</code> es
+    mucho mayor, así que <code class="literal">HOUR</code> puede retornar
+    valores mayores que <code class="literal">23</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT HOUR('272:59:59');
+        -&gt; 272</pre>
+    <p><a class="indexterm" name="id2948261"></a> </p>
+  </li>
+  <li><p><code class="literal">LAST_DAY(<em
+    class="replaceable"><code>date</code></em>)</code> </p>
+    <p>Toma una fecha o fecha/hora y retorna el valor correspondiente para el
+    último día del mes. Retorna <code class="literal">NULL</code> si el
+    argumento es inválido. </p>
+    <pre class="programlisting">mysql&gt; SELECT LAST_DAY('2003-02-05');
+        -&gt; '2003-02-28'
+mysql&gt; SELECT LAST_DAY('2004-02-05');
+        -&gt; '2004-02-29'
+mysql&gt; SELECT LAST_DAY('2004-01-01 01:01:01');
+        -&gt; '2004-01-31'
+mysql&gt; SELECT LAST_DAY('2003-03-32');
+        -&gt; NULL</pre>
+    <p><a class="indexterm" name="id2948318"></a> </p>
+  </li>
+  <li><p><code class="literal">MAKEDATE(<em
+    class="replaceable"><code>year</code></em>,<em
+    class="replaceable"><code>dayofyear</code></em>)</code> </p>
+    <p>Retorna una fecha, dado un año y día del año. <em
+    class="replaceable"><code>dayofyear</code></em> debe ser mayor a 0 o el
+    resultado es <code class="literal">NULL</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT MAKEDATE(2001,31), MAKEDATE(2001,32);
+        -&gt; '2001-01-31', '2001-02-01'
+mysql&gt; SELECT MAKEDATE(2001,365), MAKEDATE(2004,365);
+        -&gt; '2001-12-31', '2004-12-30'
+mysql&gt; SELECT MAKEDATE(2001,0);
+        -&gt; NULL</pre>
+    <p><a class="indexterm" name="id2948483"></a> </p>
+  </li>
+  <li><p><code class="literal">MAKETIME(<em
+    class="replaceable"><code>hour</code></em>,<em
+    class="replaceable"><code>minute</code></em>,<em
+    class="replaceable"><code>second</code></em>)</code> </p>
+    <p>Retorna un valor horario calculado a partir de los argumentos <em
+    class="replaceable"><code>hour</code></em>, <em
+    class="replaceable"><code>minute</code></em>, y <em
+    class="replaceable"><code>second</code></em> . </p>
+    <pre class="programlisting">mysql&gt; SELECT MAKETIME(12,15,30);
+        -&gt; '12:15:30'</pre>
+    <p><a class="indexterm" name="id2948541"></a> </p>
+  </li>
+  <li><p><code class="literal">MINUTE(<em
+    class="replaceable"><code>time</code></em>)</code> </p>
+    <p>Retorna el minuto de <em class="replaceable"><code>time</code></em>,
+    en el rango <code class="literal">0</code> a <code
+    class="literal">59</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT MINUTE('98-02-03 10:05:03');
+        -&gt; 5</pre>
+    <p><a class="indexterm" name="id2948658"></a> </p>
+  </li>
+  <li><p><code class="literal">MONTH(<em
+    class="replaceable"><code>date</code></em>)</code> </p>
+    <p>Retorna el mes para <em class="replaceable"><code>date</code></em>, en
+    el rango <code class="literal">1</code> a <code
+    class="literal">12</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT MONTH('1998-02-03');
+        -&gt; 2</pre>
+    <p><a class="indexterm" name="id2948713"></a> </p>
+  </li>
+  <li><p><code class="literal">MONTHNAME(<em
+    class="replaceable"><code>date</code></em>)</code> </p>
+    <p>Retorna el nombre completo del mes para <em
+    class="replaceable"><code>date</code></em>. </p>
+    <pre class="programlisting">mysql&gt; SELECT MONTHNAME('1998-02-05');
+        -&gt; 'February'</pre>
+    <p><a class="indexterm" name="id2948756"></a> </p>
+  </li>
+  <li><p><code class="literal">NOW()</code> </p>
+    <p>Retorna la fecha y hora actual como valor en formato <code
+    class="literal">'YYYY-MM-DD HH:MM:SS'</code> o <code
+    class="literal">YYYYMMDDHHMMSS</code> , dependiendo de si la función se
+    usa en contexto numérico o de cadena de caracteres. </p>
+    <pre class="programlisting">mysql&gt; SELECT NOW();
+        -&gt; '1997-12-15 23:50:26'
+mysql&gt; SELECT NOW() + 0;
+        -&gt; 19971215235026</pre>
+    <p><a class="indexterm" name="id2948810"></a> </p>
+  </li>
+  <li><p><code class="literal">SECOND(<em
+    class="replaceable"><code>time</code></em>)</code> </p>
+    <p>Retorna el segundo para <em
+    class="replaceable"><code>time</code></em>, en el rango <code
+    class="literal">0</code> a <code class="literal">59</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT SECOND('10:05:03');
+        -&gt; 3</pre>
+    <p><a class="indexterm" name="id2949078"></a> </p>
+  </li>
+  <li><p><code class="literal">SEC_TO_TIME(<em
+    class="replaceable"><code>seconds</code></em>)</code> </p>
+    <p>Retorna el argumento <em class="replaceable"><code>seconds</code></em>
+    , convertido a horas, minutos y segundos, como un valor en formato <code
+    class="literal">'HH:MM:SS'</code> o <code class="literal">HHMMSS</code>,
+    dependiendo de si la función se usa en contexto numérico o de cadena de
+    caracteres. </p>
+    <pre class="programlisting">mysql&gt; SELECT SEC_TO_TIME(2378);
+        -&gt; '00:39:38'
+mysql&gt; SELECT SEC_TO_TIME(2378) + 0;
+        -&gt; 3938</pre>
+    <p><a class="indexterm" name="id2949141"></a> </p>
+  </li>
+  <li><p><code class="literal">SUBDATE(<em
+    class="replaceable"><code>date</code></em>,INTERVAL <em
+    class="replaceable"><code>expr</code></em> <em
+    class="replaceable"><code>type</code></em>)</code>, <code
+    class="literal">SUBDATE(<em
+    class="replaceable"><code>expr</code></em>,<em
+    class="replaceable"><code>days</code></em>)</code> </p>
+    <pre class="programlisting">mysql&gt; SELECT DATE_SUB('1998-01-02', INTERVAL 31 DAY);
+        -&gt; '1997-12-02'
+mysql&gt; SELECT SUBDATE('1998-01-02', INTERVAL 31 DAY);
+        -&gt; '1997-12-02'</pre>
+    <p><a class="indexterm" name="id2949468"></a> </p>
+  </li>
+  <li><p><code class="literal">SUBTIME(<em
+    class="replaceable"><code>expr</code></em>,<em
+    class="replaceable"><code>expr2</code></em>)</code> </p>
+    <p><code class="literal">SUBTIME()</code> resta <em
+    class="replaceable"><code>expr2</code></em> de <em
+    class="replaceable"><code>expr</code></em> y retorna el resultado. <em
+    class="replaceable"><code>expr</code></em> es una expresión de hora o
+    fecha/hora, y <em class="replaceable"><code>expr2</code></em> es una
+    expresión de hora. </p>
+    <pre class="programlisting">mysql&gt; SELECT SUBTIME('1997-12-31 23:59:59.999999','1 1:1:1.000002');
+        -&gt; '1997-12-30 22:58:58.999997'
+mysql&gt; SELECT SUBTIME('01:00:00.999999', '02:00:00.999998');
+        -&gt; '-00:59:59.999999'</pre>
+    <p><a class="indexterm" name="id2949541"></a> </p>
+  </li>
+  <li><p><code class="literal">TIME(<em
+    class="replaceable"><code>expr</code></em>)</code> </p>
+    <p>Extrae la parte de hora de la expresión hora o fecha/hora <em
+    class="replaceable"><code>expr</code></em>. </p>
+    <pre class="programlisting">mysql&gt; SELECT TIME('2003-12-31 01:02:03');
+        -&gt; '01:02:03'
+mysql&gt; SELECT TIME('2003-12-31 01:02:03.000123');
+        -&gt; '01:02:03.000123'</pre>
+    <p><a class="indexterm" name="id2949630"></a> </p>
+  </li>
+  <li><p><code class="literal">TIMEDIFF(<em
+    class="replaceable"><code>expr</code></em>,<em
+    class="replaceable"><code>expr2</code></em>)</code> </p>
+    <p><code class="literal">TIMEDIFF()</code> retorna el tiempo entre la
+    hora de inicio <em class="replaceable"><code>expr</code></em> y la hora
+    final <em class="replaceable"><code>expr2</code></em>. <em
+    class="replaceable"><code>expr</code></em> y <em
+    class="replaceable"><code>expr2</code></em> son expresiones de hora o de
+    fecha/hora, pero ambas deben ser del mismo tipo. </p>
+    <pre class="programlisting">mysql&gt; SELECT TIMEDIFF('2000:01:01 00:00:00',
+    -&gt;                 '2000:01:01 00:00:00.000001');
+        -&gt; '-00:00:00.000001'
+mysql&gt; SELECT TIMEDIFF('1997-12-31 23:59:59.000001',
+    -&gt;                 '1997-12-30 01:01:01.000002');
+        -&gt; '46:58:57.999999'</pre>
+    <p><a class="indexterm" name="id2949699"></a> </p>
+  </li>
+  <li><p><code class="literal">YEAR(<em
+    class="replaceable"><code>date</code></em>)</code> </p>
+    <p>Retorna el año para <em class="replaceable"><code>date</code></em>,
+    en el rango <code class="literal">1000</code> a <code
+    class="literal">9999</code>. </p>
+    <pre class="programlisting">mysql&gt; SELECT YEAR('98-02-03');
+        -&gt; 1998</pre>
+    <p><a class="indexterm" name="id2951334"></a> </p>
+  </li>
+</ul>
+</div>
+</div>
+</body>
+</html>
