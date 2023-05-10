@@ -1,28 +1,134 @@
 {
     "contenedores": [
         {
-            "contenedor": {
-                "@tipo": "Grande",
-                "envase": {
-                    "@tipo": "Grande Ancho",
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Agua"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Leche"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Aceite"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Vinagre"
-                    }
+            "contenedores": [
+                {
+                    "@tipo": "Grande",
+                    "envases": [
+                        {
+                            "@tipo": "Grande Ancho",
+                            "liquidos": [
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Agua"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Leche"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Aceite"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Vinagre"
+                                }
+                            ]
+                        },
+                        {
+                            "@tipo": "Grande Alto",
+                            "liquidos": [
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Agua"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Leche"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Aceite"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Vinagre"
+                                }
+                            ]
+                        }
+                    ]
                 },
-                "envase": {
+                {
+                    "@tipo": "Mediano",
+                    "envases": [
+                        {
+                            "@tipo": "Mediano Ancho",
+                            "liquidos": [
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Agua"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Leche"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Aceite"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Vinagre"
+                                }
+                            ]
+                        },
+                        {
+                            "@tipo": "Mediano Alto",
+                            "liquidos": [
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Agua"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Leche"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Aceite"
+                                },
+                                {
+                                    "@tipo": "alimento",
+                                    "#text": "Vinagre"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "@tipo": "Pequeño",
+                    "liquidos": [
+                        {
+                            "@tipo": "corrosivo",
+                            "#text": "Lejía"
+                        },
+                        {
+                            "@tipo": "corrosivo",
+                            "#text": "Amoniaco"
+                        },
+                        {
+                            "@tipo": "corrosivo",
+                            "#text": "Jabón"
+                        },
+                        {
+                            "@tipo": "corrosivo",
+                            "#text": "Aguarrás"
+                        },
+                        {
+                            "@tipo": "corrosivo",
+                            "#text": "Gasolina"
+                        },
+                        {
+                            "@tipo": "corrosivo",
+                            "#text": "Alcohol"
+                        }
+                    ]
+                }
+            ],
+            "@tipo": "Vertical",
+            "envase": [
+                {
                     "@tipo": "Grande Alto",
                     "liquido": {
                         "@tipo": "alimento",
@@ -41,29 +147,9 @@
                         "#text": "Vinagre"
                     }
                 }
-            },
-            "contenedor": {
-                "@tipo": "Mediano",
-                "envase": {
-                    "@tipo": "Mediano Ancho",
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Agua"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Leche"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Aceite"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Vinagre"
-                    }
-                },
-                "envase": {
+            ],
+            "envase": [
+                {
                     "@tipo": "Mediano Alto",
                     "liquido": {
                         "@tipo": "corrosivo",
@@ -89,84 +175,8 @@
                         "@tipo": "corrosivo",
                         "#text": "Alcohol"
                     }
-                },
-                "envase": {
-                    "@tipo": "Pequeño",
-                    "liquido": {
-                        "@tipo": "corrosivo",
-                        "#text": "Lejía"
-                    },
-                    "liquido": {
-                        "@tipo": "corrosivo",
-                        "#text": "Amoniaco"
-                    },
-                    "liquido": {
-                        "@tipo": "corrosivo",
-                        "#text": "Jabón"
-                    },
-                    "liquido": {
-                        "@tipo": "corrosivo",
-                        "#text": "Aguarrás"
-                    },
-                    "liquido": {
-                        "@tipo": "corrosivo",
-                        "#text": "Gasolina"
-                    },
-                    "liquido": {
-                        "@tipo": "corrosivo",
-                        "#text": "Alcohol"
-                    }
                 }
-            },
-            "contenedor": {
-                "@tipo": "Vertical",
-                "envase": {
-                    "@tipo": "Grande Alto",
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Agua"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Leche"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Aceite"
-                    },
-                    "liquido": {
-                        "@tipo": "alimento",
-                        "#text": "Vinagre"
-                    }
-                }
-            },
-            "envase": {
-                "@tipo": "Mediano Alto",
-                "liquido": {
-                    "@tipo": "corrosivo",
-                    "#text": "Lejía"
-                },
-                "liquido": {
-                    "@tipo": "corrosivo",
-                    "#text": "Amoniaco"
-                },
-                "liquido": {
-                    "@tipo": "corrosivo",
-                    "#text": "Jabón"
-                },
-                "liquido": {
-                    "@tipo": "corrosivo",
-                    "#text": "Aguarrás"
-                },
-                "liquido": {
-                    "@tipo": "corrosivo",
-                    "#text": "Gasolina"
-                },
-                "liquido": {
-                    "@tipo": "corrosivo",
-                    "#text": "Alcohol"
-                }
-            }
+            ]
         }
     ]
 }
