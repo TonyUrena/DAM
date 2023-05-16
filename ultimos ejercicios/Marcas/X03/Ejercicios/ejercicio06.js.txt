@@ -1,0 +1,52 @@
+const fs = require('fs')
+let data = fs.readFileSync("../pruebas.json")
+let jsonDatos = JSON.parse(data)
+
+//¿Cuantas pruebas de idiomas están descritas en el documento?
+console.log(jsonDatos.length)
+console.log("------------------------------")
+
+//Devuelve el título de las pruebas de nivel que van a durar más de dos horas.
+for (let i = 0; i < jsonDatos.length; i++) {
+    if (jsonDatos[i].Horas > 2) {
+        console.log(jsonDatos[i].Titulo)
+    }
+}
+console.log("------------------------------")
+
+//De las pruebas de tipo “No Presencial” devuelve la URL de información.
+for (let i = 0; i < jsonDatos.length; i++) {
+    if (jsonDatos[i].TipoFormacion = "NoPresencial") {
+        console.log(jsonDatos[i].URL)
+    }
+}
+console.log("------------------------------")
+
+//Recibe el código de la prueba “ID” y muestra su título y profesores.
+let ID = "A15050167"
+for (let i = 0; i < jsonDatos.length; i++) {
+    if (jsonDatos[i].TipoFormacion = "A15050167") {
+        console.log(jsonDatos[i].Titulo)
+
+        for (let j = 0; j < jsonDatos[i].Profesorado.length; j++) {
+            console.log(jsonDatos[i].Profesorado[j].NombreCompleto)
+        }
+        console.log("")
+        
+    }
+}
+console.log("------------------------------")
+
+
+//Para cada uno de las pruebas, muestra su título y sus profesores.
+for (let i = 0; i < jsonDatos.length; i++) {
+
+        console.log(jsonDatos[i].Titulo)
+
+        for (let j = 0; j < jsonDatos[i].Profesorado.length; j++) {
+            console.log(jsonDatos[i].Profesorado[j].NombreCompleto)
+
+        }
+
+        console.log("")
+}

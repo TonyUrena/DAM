@@ -1,0 +1,45 @@
+const fs = require('fs')
+let data = fs.readFileSync("../municipios.json")
+let jsonDatos = JSON.parse(data)
+
+//Función que devuelve todas las provincias.
+console.log(devuelveProvincias(jsonDatos))
+
+function devuelveProvincias(jsonDatos) {
+    let array = [jsonDatos.lista.provincia.length]
+    for (let i = 0; i < jsonDatos.lista.provincia.length; i++) {
+        array[i] = jsonDatos.lista.provincia[i].nombre.__cdata
+    }
+    return array
+}
+
+//Función que devuelve todos los municipios.
+console.log(devuelveMunicipios(jsonDatos))
+
+function devuelveMunicipios(jsonDatos) {
+    let arrayProv = [jsonDatos.lista.provincia.length]
+
+    for (let i = 0; i < jsonDatos.lista.provincia.length; i++) {
+        
+    let arrayMuni = [jsonDatos.lista.provincia[i].localidades.localidad.length]
+
+        for (let j = 0; j < jsonDatos.lista.provincia[i].localidades.localidad.length; j++) {
+
+            arrayMuni[j] = jsonDatos.lista.provincia[i].localidades.localidad[j].__cdata
+
+        }
+        
+        array[i] = jsonDatos.lista.provincia[i].nombre.__cdata
+    }
+    return array
+}
+
+
+//Función que devuelve la lista de provincias y el total de municipios que tiene cada una.
+
+
+//Función que recibe el nombre de una provincia y devuelve sus municipios.
+
+
+//Función que recibe el nombre de un municipio y te devuelve la provincia donde se encuentra.
+
