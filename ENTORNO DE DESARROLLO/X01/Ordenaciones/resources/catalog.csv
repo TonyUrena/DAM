@@ -1,0 +1,11 @@
+id,name,price,category
+0,Milk,1.09,Refrigerated
+1,Bread,1.59,Shelf
+2,Butter,1.19,Refrigerated
+3,Croissant,0.69,Shelf
+4,Cheese,1.49,Refrigerated
+5,Pizza,3.59,Frozen
+6,Cookies,2.19,Shelf
+7,Yogurt,0.49,Refrigerated
+8,Wine,14.99,Shelf
+9,Beer,1.49,Shelf

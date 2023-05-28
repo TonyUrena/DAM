@@ -1,0 +1,155 @@
+Creo que lo he resumido demasiado asi que apoyare con palabras
+
+QUE ES UN ERP: 
+    · Enterprise Resource planning
+    · Sistema de gestion empresarial que ayuda a controlar recursos procesos y operaciones
+    Plataforma centralizada
+    · Combina modulos para gestionar diferentes areas (finanzas, ventas, compras, inventario, RH...)
+    · Automatiza tareas
+    · Recopila info en tiempo real
+    · Mejora la toma de decisiones, eficiencia y productividad.
+
+CARACTERISTICAS DE UN ERP:
+    · Integración: Centraliza procesos y funciones
+    · Modularidad: Adaptabilidad con modulos independientes
+    · Automatización: Reduce errores y mejora la eficiencia 
+    · Información en tiempo real: datos actualizados para la toma de decisiones
+    · Gestión de recursos: optimiza recursos como el inventario y las finanzas
+    · Reporting y análisis: genera informes y analiza datos
+
+HISTORIA DE LOS PRIMEROS ERPs:
+    1950-1960: a raiz de las investigaciones y la aplicación de las primeras computadoras en el ámbito militar se pasa a sentar las bases de los primeros sistemas para la gestión automatizada.
+    1970-1980: 1970 IBM lanza MRPy se funda SAP. Los MRP se centralizaban en ordenadores gigantes excesivamente caros. Solo solian administrarse materiales.
+    En 1980 se democratiza en cierta manera con MRP-II. gestionaba tambien recursos economicos y RH.
+    1990-presente:
+    Surgen los ERP como se conocen hoy dia. Su evolución es más iterativa pero lo importante es su adopción en masa. entre 2000 y actualmente se pasa a un modelo cloud y ultimamente aportan soluciones con IA.
+
+TIPOS DE ERP:
+    A parte de poder construirse a medida o ser más generico he decidido diferenciarlos en su aplicación actual:
+        On premise:
+            Local. 
+            Modelo tradicional centralizado. 
+            100% responsabilidad de la empresa, pero por contra Necesita gestión local
+        Cloud:
+            En la nube
+            Teóricamente es más seguro pues la gestión deriva en empresas especializadas
+            Más actualizado, pero te toca pasar por el aro de estas actualizaciones
+            Pasa a un modelo por subscripción, con sus ventajas e inconvenientes.
+        Híbridos:
+            Básicamente es un cloud que tiene un fallback local.
+            Es una implementación más concreta para los señores mayores que no se fian de las suscripciones
+
+QUIEN UTILIZA LOS ERP:
+    Industrias como manufactura, retail, finanzas etc.
+    Todos los tamaños desde pequeñas a grandes
+    Simplemente hay que tener claros los objetivos de la empresa y como puede beneficiarla, no tiene porque ser una gran corporación
+
+BENEFICIOS:
+    Integración
+    Automatización
+    Eficiencia y productividad
+    toma de decisiones mas informada
+    gestion de inventario optimizada
+    reduccion de costos a la larga
+
+SOFT LIBRE:
+    ODOO:
+        2005 TinyErp 2009 OpenErp 2014 Odoo
+        Versión comunitaria y otra empresarial
+        Arqu. web con 46 modulos
+    ERPNext:
+        2010 primera version ultima versión hace 40 dias
+        Gratuito
+        Similar a odoo
+    Dolibarr:
+        2003 primera version
+        desarrollado en php y mysql
+        web
+
+SOFT PROPIETARIO:
+    Microsoft dynamics 365:
+        tambien tiene crm
+        dirigido a medianas y grandes
+        gran cuota de mercado junto a SAP y oracle
+    Oracle ERP Cloud:
+        desde 2012
+        Hibrida
+        implementacion desde servidores de oracle o propios
+    Infor ERP:
+        Nube
+        IA
+
+Ventajas Open Source:
+    Costo: Suelen ser gratuitas o por lo menos no tan caras.
+    Personalización: 100% personalizables más alla del codigo por su filosofía.
+    COmunidad: Los proyectos open source suelen atraer a comunidades.
+    Transparencia y control.
+
+Ventajas Propietario:
+    Funciones avanzadas: suelen ser mas completos.
+    Soporte tecnico: No confiar en frikis barbudos de discord
+    integración con otros productos del mismo proveedor
+    Estabilidad y seguridad: son empresas grandes al fin y al cabo
+
+SAP:
+    No me atrevo a pronunciar lo que significan sus siglas
+    Principal proveedor de servicios ERP
+    Fundada en 1972 en alemania
+    enfocada en la integracion de procesos y datos
+    Gran cuota de mercado y utilizada por empresas enormes
+
+HISTORIA:
+    se fundó en 1972 según su pagina por un pequeño grupo de cinco amigos que tenian una gran idea. Aunque en realidad eran cinco ex empleados de IBM que sabian vender mejor que nadie.
+    Empezaron con SAP R/2 y R/3 y ahora van por SAP S/4HANA que ya empieza a toquetear IA
+
+CARACTERISTICAS SAP:
+    CApacidad de integración
+    escalabilidad
+    analitica avanzada (HANA tiene IA)
+    Personalizable y configurable
+    Actualizaciones y soporte regular y constante
+
+SAP EN CIFRAS
+    No me he querido pillar los dedos porque al contrastar información habían muchas incoherencias con los porcentajes, pero pese a las cifras todos coinciden que SAP es uno de los líderes si no el líder del mercado
+    400.000 clientes en todo el mundo
+
+MODULOS:
+    FI: finanzas
+    HCM: Gestion de capital humano, que para nada suena a distopia fascista
+    MM: materiales
+    SD: Ventas y distro
+    PP: logísticas (hablando de fascismo)
+
+BENEFICIOS:
+    Integración
+    Automatización
+    Tiempo real
+    Optimización
+    Mejora en productividad
+    blablabla...
+    En concreto lo mas interesante de SAP es el control normativo y con la seguridad en los datos
+
+EMPRESAS:
+    Coca-cola: cadena suministro y control financiero
+    BMW: tiene un logo que es una rueda. produccion, ventas y servicio cliente
+    Nestlé: gestión de la cadena de suministro(perfecto para agotar acuíferos), produccion y control financiero
+    Siemens: gestion proyectos, RH procesos de negocios.
+
+COMO IMPLEMENTAR SAP
+    Si nuestras operaciones se alinean con las practicas de SAP y sus módulos
+    SI nuestra estructura empresarial puede beneficiarse de SAP, puesto que necesita una implementacion eficiente y una gestion continua
+    Batería de pruebas antes de implementar SAP
+
+Implementar un ERP
+    Porque para algo estamos aprendiendo esto no?
+    Declarar nuestros objetivos y, al igual que con SAP, asegurarnos que nuestra empresa puede beneficiarse
+    Seleccionar el proveedor adecuado. A lo mejor estamos empezando, somos pobres y no podemos permitirnos la licencia de SAP (no pone los precios en la tienda, lo que quiere decir CARO)
+    planificar y gestionar el proyecto para adaptarlo al SAP
+    tener por seguro que el resto de los empleados van a saber manejar el SAP
+
+CONCLUSION
+    Los erp son esenciales y no deberiamos salir a la calle sin uno
+    en concreto SAP es el mejor aunque no nos ha sponsorizado para lo mucho que lo estamos nombrando
+    soft libre vs provado es una cuestion de necesidades
+    implementar un ERP no es trivial y requiere una planificación y una gestión y mantenimiento posterior
+    Pero: si se implementa con exito y la empresa pueden aprovecharse de esos recursos, tienen muchos beneficios
