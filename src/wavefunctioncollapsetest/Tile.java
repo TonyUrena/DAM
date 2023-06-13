@@ -6,7 +6,7 @@ public class Tile {
 
     private String character;
     //Qué tiles pueden aparecer, en orden horario empezando por el arriba Izquierda
-    private String[][] options = new String[8][];
+    private ArrayList<ArrayList<String>> options = new ArrayList<ArrayList<String>>();
     
     public Tile(String character) {
         this.character = character;
@@ -20,12 +20,14 @@ public class Tile {
         this.character = character;
     }
 
-    public String[][] getOptions() {
+    public ArrayList<ArrayList<String>> getOptions() {
         return options;
     }
 
-    public void setOptions(String[][] options) {
+    public void setOptions(ArrayList<ArrayList<String>> options) {
         this.options = options;
     }
+
+    
 
 }
