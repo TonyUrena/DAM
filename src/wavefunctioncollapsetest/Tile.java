@@ -1,12 +1,13 @@
 package wavefunctioncollapsetest;
 
+import java.util.ArrayList;
 
 public class Tile {
 
     private String character;
     //Qué tiles pueden aparecer, en orden horario empezando por el arriba Izquierda
-    private Tile[][] options = new Tile[8][];
-
+    private String[][] options = new String[8][];
+    
     public Tile(String character) {
         this.character = character;
     }
@@ -19,12 +20,12 @@ public class Tile {
         this.character = character;
     }
 
-    public Tile[][] getOptions() {
+    public String[][] getOptions() {
         return options;
     }
 
-    public void setOptions(Tile[][] options) {
+    public void setOptions(String[][] options) {
         this.options = options;
     }
-    
+
 }

@@ -1,12 +1,15 @@
 package wavefunctioncollapsetest;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Map;
 import java.util.Random;
 
 public class Utils {
 
-    public static Tile[][] generaMapaWFC(int ancho, int alto, Tile[] tileArray) {
+    public static Tile[][] generaMapaWFC(int ancho, int alto, Map tileMap) {
         Tile[][] mapa = new Tile[ancho][alto];
-        int posX = 20, posY = 5,
+        int posX = 0, posY = 0,
                 posXrdm, posYrdm,
                 newPosX, newPosY;
         Random random = new Random();
@@ -14,52 +17,21 @@ public class Utils {
         // Inicializamos el mapa (para poder empezar el algoritmo)
         for (int i = 0; i < mapa.length; i++) {
             for (int j = 0; j < mapa[0].length; j++) {
-                mapa[i][j] = tileArray[5];
+                mapa[i][j] = (Tile) tileMap.get("tileNULL");
             }
         }
+        // Colocamos el primer tile. Por el momento empezaremos siempre con el mismo tile,
+        // TODO implementar una forma de encontrar un tile aleatorio en el hashmap
 
-        // Colocamos el primer tile. Por el momento lo colocaremos siempre en el mismo punto
-        mapa[posX][posY] = tileArray[1];
+        Tile tile = (Tile) tileMap.get("tile01");
 
-        // Comenzamos a comprobar y colocar los tiles alrededor del tile de origen
-        int cont = 10;
-        do {
-            if (mapa[posX - 1][posY - 1].getCharacter().equals("·")) {
-                mapa[posX - 1][posY - 1] = tileArray[random.nextInt(5)];
+        colapsaTile(mapa, posX, posY, tileMap, tile);
+
+        for (int i = 0; i < mapa[0].length; i++) {
+            for (int j = 0; j < mapa.length; j++) {
+                colapsaTile(mapa, posX + j, posY + i, tileMap, tile);
             }
-            
-            if (mapa[posX][posY - 1].getCharacter().equals("·")) {
-                mapa[posX][posY - 1] = tileArray[random.nextInt(5)];
-            }
-            
-            if (mapa[posX + 1][posY - 1].getCharacter().equals("·")) {
-                mapa[posX + 1][posY - 1] = tileArray[random.nextInt(5)];
-            }
-            
-            if (mapa[posX + 1][posY].getCharacter().equals("·")) {
-                mapa[posX + 1][posY] = tileArray[random.nextInt(5)];
-            }
-            
-            if (mapa[posX + 1][posY + 1].getCharacter().equals("·")) {
-                mapa[posX + 1][posY + 1] = tileArray[random.nextInt(5)];
-            }
-            
-            if (mapa[posX][posY + 1].getCharacter().equals("·")) {
-                mapa[posX][posY + 1] = tileArray[random.nextInt(5)];
-            }
-            
-            if (mapa[posX - 1][posY + 1].getCharacter().equals("·")) {
-                mapa[posX - 1][posY + 1] = tileArray[random.nextInt(5)];
-            }
-            
-            if (mapa[posX - 1][posY].getCharacter().equals("·")) {
-                mapa[posX - 1][posY] = tileArray[random.nextInt(5)];
-            }
-            
-            posX++;
-            
-            cont--;
-        } while (cont > 0);
+        }
 
         // Comprobamos si la nueva posición está dentro de los límites del mapa
         /*
@@ -68,9 +40,35 @@ public class Utils {
         if(newPosX < 0) newPosX++;
         if(newPosY < 0) newPosY++;
          */
-        // Cambiamos por un nuevo tile si no había uno antes
-
         return mapa;
+    }
+
+    // Colapsa un tile individual considerando las opciones del tile que se le pasa como argumento
+    public static void colapsaTile(Tile[][] mapa, int posX, int posY, Map tileMap, Tile tile) {
+
+        Random random = new Random();
+
+        //Comprobamos si hay un tile
+        if (mapa[posX][posY].equals(tileMap.get("tileNULL"))) {
+            // Si no hay un tile recogemos las opciones de los 8 tiles de alrededor y generamos una tabla nueva
+            // con la entropía del tile que vamos a colocar
+            ArrayList<ArrayList<String>> tileOptions = new ArrayList();
+            
+            //Usamos el NULL para tomar la base de la lista de opciones, porque tiene todas las opciones posibles.
+            //Comprobamos si algula de las opciones NO está en las opciones del tile que estamos comprobando,
+            //si no está, la eliminamos de la lista
+            
+            Tile tileAcomprobar = (Tile)tileMap.get("tileNULL");
+            
+            for (int i = 0; i < tileAcomprobar.getOptions().length; i++) {
+                for (int j = 0; j < tileAcomprobar.getOptions()[0].length; j++) {
+                    tileOptions.get(i).add(tileAcomprobar.getOptions()[i][j]);
+                }
+            }
+            
+            //Colocamos un tile aleatorio de la lista que hemos generado
+            mapa[posX][posY] = (Tile) tileMap.get(tileOptions.get(random.nextInt(tileOptions.size())));
+        }
     }
 
     public static void dibujaPantalla(Tile[][] array) {
